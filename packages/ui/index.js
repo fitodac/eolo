@@ -88,3 +88,8 @@ module.exports = plugin.withOptions((options = {
 		}
 	}
 })
+
+
+exports.printMsg = function() {
+	console.log("This is a message from the npm package");
+}
