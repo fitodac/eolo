@@ -1,0 +1,31 @@
+table.table{
+	min-width: 640px;
+
+	tbody{
+		tr td{
+			@apply
+			border-slate-100
+			dark:border-slate-800;
+		}
+	}
+
+
+
+	&.table-striped{
+		> tbody tr:nth-child(odd) td{
+			@apply
+			bg-slate-50
+			dark:bg-slate-800;
+		}
+	}
+
+
+	&.hoverable{
+		> tbody tr{
+			> td{ @apply transition-all; }
+
+			&:hover > td{ @apply bg-primary-50 bg-opacity-70; }
+		}
+	}
+
+}

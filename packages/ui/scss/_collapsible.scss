@@ -1,0 +1,12 @@
+/**
+Collapsible
+**/
+.collapsible{
+	@apply border-slate-200;
+}
+
+
+.collapsible [type=checkbox]:checked ~ .collapsible-head,
+.collapsible [type=radio]:checked ~ .collapsible-head{
+	@apply text-primary;
+}

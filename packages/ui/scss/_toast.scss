@@ -1,0 +1,7 @@
+.toast:not([class*=bg-]){
+	@apply
+	bg-white
+	border-slate-200
+	dark:bg-slate-800
+	dark:border-slate-700;
+}

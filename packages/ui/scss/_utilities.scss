@@ -1,0 +1,10 @@
+.ghost,
+.btn.ghost:not(:hover):not(:active):not(:focus):not(:active:focus){ 
+	@apply 
+	bg-opacity-20 
+	border-transparent 
+	dark:bg-opacity-20 
+	dark:border-transparent;
+}
+
+.overlay{ @apply bg-black bg-opacity-70; }

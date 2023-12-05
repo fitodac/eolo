@@ -1,0 +1,22 @@
+.content{
+
+	code{
+		@apply
+		text-blue-400
+		dark:text-blue-400;
+	}
+
+
+	pre{
+		@apply 
+		bg-slate-100
+		text-slate-400
+		dark:bg-slate-800;
+
+		code{
+			@apply
+			text-slate-400;
+		}
+	}
+
+}

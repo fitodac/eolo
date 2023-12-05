@@ -1,0 +1,11 @@
+.badge{
+	@apply
+	bg-slate-400
+	text-white
+	border-slate-400;
+}
+
+.dot-badge{
+	font-size: 0;
+	@apply bg-red-600;
+}

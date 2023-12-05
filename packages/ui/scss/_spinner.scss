@@ -1,0 +1,15 @@
+.spinner{
+
+	&::after{
+		@apply
+		border-slate-100
+		dark:border-slate-600;
+	}
+
+	&:not([class*=border-l-]){
+		@apply 
+		border-l-primary 
+		dark:border-l-primary;
+	}
+
+}

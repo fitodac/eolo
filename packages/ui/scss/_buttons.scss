@@ -1,0 +1,57 @@
+.btn{
+	@apply 
+	hover:opacity-80;
+
+	&:not([class*=bg-]){ @apply bg-slate-200 dark:bg-slate-800; }
+	&:not([class*=border-]){ @apply border-slate-200 dark:border-slate-800; }
+	&::not([class*=text-]){ @apply text-slate-500 dark:text-slate-200; }
+}
+
+.btn.ghost{ @apply hover:bg-opacity-100; }
+
+.btn-icon svg:not([class*=fill-]){ 
+	@apply fill-white;
+}
+
+
+
+
+
+
+
+
+/** Button primary */
+.btn-group-primary > label > input:checked + .btn{
+	@apply 
+	bg-primary-700 
+	border-primary-700;
+}
+
+
+
+/** Button secondary */
+.btn-group-secondary > label > input:checked + .btn{ 
+	@apply 
+	bg-secondary-700 
+	border-secondary-700;
+}
+
+
+
+/** Button alternative */
+.btn-group-alt > label > input:checked + .btn,
+.btn-toggler input:checked + .btn-alt{ 
+	@apply 
+	bg-alt-700 
+	border-alt-700;
+}
+
+
+
+
+.btn.btn-link{
+	@apply
+	bg-transparent
+	border-transparent
+	rounded-none;
+}
