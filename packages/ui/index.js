@@ -1,6 +1,5 @@
 /**
- * TailwindCSS UI Kit
- * version: beta 1.0.0
+ * EOLO - TailwindCSS UI Kit
  */
 const plugin = require('tailwindcss/plugin')
 
