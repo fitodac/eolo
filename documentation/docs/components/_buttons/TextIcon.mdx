@@ -1,0 +1,43 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Texto + iconos">
+<div className="grid gap-4 mt-6 md:flex">
+	<div>
+		<button className="btn space-x-2 bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+			<i className="ri-message-2-line"></i>
+			<span>Before</span>
+		</button>
+	</div>
+	<div>
+		<button className="btn space-x-2 bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+			<span>After</span>
+			<i className="ri-sound-module-line"></i>
+		</button>
+	</div>
+	<div>
+		<button className="btn space-x-2 bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+			<i className="ri-error-warning-line"></i>
+			<span>Double</span>
+			<i className="ri-arrow-right-line"></i>
+		</button>
+	</div>
+</div>
+
+```html
+<button class="btn space-x-2 bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+  <i class="ri-message-2-line"></i>
+  <span>Before</span>
+</button>
+
+<button class="btn space-x-2 bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+  <span>After</span>
+  <i class="ri-sound-module-line"></i>
+</button>
+
+<button class="btn space-x-2 bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+  <i class="ri-error-warning-line"></i>
+  <span>Double</span>
+  <i class="ri-arrow-right-line"></i>
+</button>
+```
+</DemoCard>

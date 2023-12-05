@@ -1,0 +1,55 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Tamaños de grupos">
+<div className="flex items-center gap-x-4 mt-6">
+	<span className="text-slate-400 text-xs">Small</span>
+	<div className="btn-group-sm">
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">One</button>
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Two</button>
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Three</button>
+	</div>
+</div>
+
+<div className="flex items-center gap-x-4 mt-8">
+	<span className="text-slate-400 text-xs">Large</span>
+	<div className="btn-group-lg">
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">One</button>
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Two</button>
+		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Three</button>
+	</div>
+</div>
+
+```html
+<!-- Small -->
+<div class="btn-group-sm">
+  <button class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    One
+  </button>
+  <button class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Two
+  </button>
+  <button class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Three
+  </button>
+</div>
+```
+
+```html
+<!-- Large -->
+<div class="btn-group-lg">
+  <button 
+    class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    One
+  </button>
+  <button 
+    class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Two
+  </button>
+  <button 
+    class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Three
+  </button>
+</div>
+```
+
+</DemoCard>
