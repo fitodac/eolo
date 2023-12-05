@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import twUiKit from './src/twUiKit'
+import eolo from 'eolo'
 
 module.exports = {
 	content: [
@@ -11,5 +11,5 @@ module.exports = {
 	theme: {
 		extend: {},
 	},
-	plugins: [twUiKit],
+	plugins: [eolo],
 }

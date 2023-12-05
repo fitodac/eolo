@@ -3358,7 +3358,7 @@ input[type=radio]:checked + .toast {
 
 .datepicker DATE_PICKER GRID {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   flex-wrap: wrap;
   flex: auto;
 }
@@ -3395,6 +3395,7 @@ input[type=radio]:checked + .toast {
 
 .datepicker DROPDOWN {
   position: absolute;
+  border-radius: 0 0 .8rem .8rem;
   z-index: 20;
 }
 
@@ -3523,7 +3524,7 @@ input[type=radio]:checked + .toast {
 
 .datepicker .datepicker-picker GRID {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   flex-wrap: wrap;
   flex: auto;
 }
@@ -3798,7 +3799,7 @@ input[type=radio]:checked + .toast {
 
 .datepicker .datepicker-picker .datepicker-main .datepicker-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   flex-wrap: wrap;
   flex: auto;
 }
@@ -3891,6 +3892,7 @@ input[type=radio]:checked + .toast {
 
 .datepicker.datepicker-dropdown {
   position: absolute;
+  border-radius: 0 0 .8rem .8rem;
   z-index: 20;
 }
 
@@ -5610,7 +5612,8 @@ table.table.hoverable > tbody tr:hover > td {
 }
 
 .markdown {
-  font-weight: 300;
+  font-size: .94rem;
+  font-weight: 300
 }
 
 :is([data-theme="dark"] .markdown) {
@@ -5654,6 +5657,28 @@ table.table.hoverable > tbody tr:hover > td {
   :is([data-theme="dark"] & h3) {
     --tw-text-opacity: 1;
     color: rgb(226 232 240 / var(--tw-text-opacity));
+  }
+  & strong {
+    font-weight: 600;
+  }
+  & p code {
+    padding: 0.25rem;
+  }
+  & p code {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  & p code {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+  }
+  :is([data-theme="dark"] & p code) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  }
+  :is([data-theme="dark"] & p code) {
+    --tw-text-opacity: 1;
+    color: rgb(14 165 233 / var(--tw-text-opacity));
   }
   .theme-code-block {
     margin-top: 1.5rem;

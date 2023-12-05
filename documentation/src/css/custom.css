@@ -43,6 +43,7 @@
 }
 
 .markdown {
+	font-size: .94rem;
 	@apply font-light dark:text-slate-300;
 
 	& h1 {
@@ -55,6 +56,16 @@
 
 	& h3 {
 		@apply text-xl font-bold dark:text-slate-200;
+	}
+
+	& strong{@apply font-semibold;}
+	& p code{
+		@apply
+		text-indigo-600
+		text-sm
+		p-1
+		dark:bg-slate-900
+		dark:text-sky-500;
 	}
 
 	.theme-code-block {
