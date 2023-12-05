@@ -8,8 +8,8 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Tailwind UI',
-	tagline: 'Dinosaurs are cool',
+	title: 'Eolo',
+	tagline: 'Tailwind css UI kit',
 	favicon: 'img/favicon.ico',
 
 	// Set the production url of your site here
@@ -82,9 +82,9 @@ const config = {
 			// Replace with your project's social card
 			image: 'img/docusaurus-social-card.jpg',
 			navbar: {
-				title: 'Tailwind UI',
+				title: 'Eolo',
 				logo: {
-					alt: 'Tailwind UI',
+					alt: 'Eolo',
 					src: 'img/logo.svg',
 				},
 				items: [
