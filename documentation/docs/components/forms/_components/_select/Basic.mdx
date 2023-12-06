@@ -1,0 +1,44 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Básicos">
+
+<div className="grid grid-cols-3 gap-6">
+	<div className="space-y-1">
+		<label>Basic</label>
+		<select>
+			<option selected>Select one city</option>
+			<option value="new york">New York</option>
+			<option value="london">London</option>
+			<option value="paris">Paris</option>
+			<option value="hong kong">Hong Kong</option>
+			<option value="dubai">Dubai</option>
+			<option value="tokyo">Tokyo</option>
+		</select>
+	</div>
+	<div className="space-y-1">
+		<label>Disabled</label>
+		<select disabled>
+			<option selected>Select one city</option>
+		</select>
+	</div>
+</div>
+
+```html
+<!-- Basic -->
+<select>
+  <option selected>Select one city</option>
+  <option value="new york">New York</option>
+  <option value="london">London</option>
+  <option value="paris">Paris</option>
+  <option value="hong kong">Hong Kong</option>
+  <option value="dubai">Dubai</option>
+  <option value="tokyo">Tokyo</option>
+</select>
+
+
+<!-- Disabled -->
+<select disabled>
+  <option selected>Select one city</option>
+</select>
+```
+</DemoCard>

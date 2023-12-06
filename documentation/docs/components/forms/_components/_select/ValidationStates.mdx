@@ -1,0 +1,54 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Estados de validación">
+<div className="grid grid-cols-3 gap-6">
+	<div className="space-y-1">
+		<select className="input-valid">
+			<option selected>Select one city</option>
+			<option value="new york">New York</option>
+			<option value="london">London</option>
+			<option value="paris">Paris</option>
+			<option value="hong kong">Hong Kong</option>
+			<option value="dubai">Dubai</option>
+			<option value="tokyo">Tokyo</option>
+		</select>
+	</div>
+	<div>
+		<select className="input-error">
+			<option selected>Select one city</option>
+			<option value="new york">New York</option>
+			<option value="london">London</option>
+			<option value="paris">Paris</option>
+			<option value="hong kong">Hong Kong</option>
+			<option value="dubai">Dubai</option>
+			<option value="tokyo">Tokyo</option>
+		</select>
+	</div>
+</div>
+
+
+```html
+<!-- Valid -->
+<select className="input-valid">
+  <option selected>Select one city</option>
+  <option value="new york">New York</option>
+  <option value="london">London</option>
+  <option value="paris">Paris</option>
+  <option value="hong kong">Hong Kong</option>
+  <option value="dubai">Dubai</option>
+  <option value="tokyo">Tokyo</option>
+</select>
+
+
+<!-- Error -->
+<select className="input-error">
+  <option selected>Select one city</option>
+  <option value="new york">New York</option>
+  <option value="london">London</option>
+  <option value="paris">Paris</option>
+  <option value="hong kong">Hong Kong</option>
+  <option value="dubai">Dubai</option>
+  <option value="tokyo">Tokyo</option>
+</select>
+```
+</DemoCard>
