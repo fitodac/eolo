@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import eolo from 'eolo'
+// import eolo from '../packages/ui'
 
 module.exports = {
 	content: [

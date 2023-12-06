@@ -110,7 +110,7 @@ html:root {
 	/* --ifm-color-content-secondary: #525860; */
 
 	/* --ifm-background-color: transparent; */
-	/* --ifm-background-surface-color: var(--ifm-color-content-inverse); */
+	--ifm-background-surface-color: rgb(15 23 42);
 	/* --ifm-global-border-width: 1px; */
 	/* --ifm-global-radius: 0.4rem; */
 
@@ -280,7 +280,7 @@ html:root {
 	/* --ifm-toc-link-color: var(--ifm-color-content-secondary); */
 	/* --ifm-toc-padding-vertical: 0.5rem; */
 	/* --ifm-toc-padding-horizontal: 0.5rem; */
-	/* --ifm-dropdown-background-color: var(--ifm-background-surface-color); */
+	--ifm-dropdown-background-color: var(--ifm-background-surface-color);
 	/* --ifm-dropdown-font-weight: var(--ifm-font-weight-semibold); */
 	/* --ifm-dropdown-link-color: var(--ifm-font-color-base); */
 	/* --ifm-dropdown-hover-background-color: var(--ifm-hover-overlay); */
@@ -303,7 +303,7 @@ html:root {
 	/* --ifm-menu-link-padding-vertical: 0.375rem; */
 	/* --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>'); */
 	/* --ifm-menu-link-sublist-icon-filter: none; */
-	--ifm-navbar-background-color: rgb(15 23 42);
+	--ifm-navbar-background-color: var(--ifm-background-surface-color);
 	/* --ifm-navbar-height: 3.75rem; */
 	/* --ifm-navbar-item-padding-horizontal: 0.75rem; */
 	/* --ifm-navbar-item-padding-vertical: 0.25rem; */
@@ -351,4 +351,39 @@ html:root {
 
 		@apply bg-slate-900 border-slate-900;
   }
+}
+
+
+.navbar__item{
+	@apply text-xs select-none;
+	
+	/* &.dropdown{
+
+	} */
+}
+
+.navbar__link{
+	@apply flex items-center gap-x-2;
+}
+
+.menu__list-item{
+	@apply text-sm leading-tight select-none;
+}
+.menu__list-item:not(:first-child){
+	@apply m-0;
+}
+.menu__link{
+	@apply py-1;
+}
+.theme-doc-sidebar-item-category-level-1{
+	@apply pt-2;
+}
+.menu__list .menu__list{
+	@apply pl-0 ml-2;
+}
+.menu__link:not([href]){
+	@apply text-xs font-bold opacity-50;
+}
+.menu__list-item.theme-doc-sidebar-item-category-level-2{
+	@apply mt-2;
 }

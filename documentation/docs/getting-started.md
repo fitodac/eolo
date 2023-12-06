@@ -20,6 +20,12 @@ export default {
 }
 ```
 
+Finalmente deberás importar `eolo.css`.
+
+```css
+@import 'eolo';
+```
+
 <br/>
 ### Sobre Eolo
 

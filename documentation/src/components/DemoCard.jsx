@@ -1,8 +1,8 @@
 export const DemoCard = ({ title, children }) => {
 	return (
 		<div
-			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl shadow-dark-100 shadow-md
-			dark:bg-slate-700 dark:border-slate-700 dark:bg-opacity-60
+			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl shadow-slate-900 shadow-md
+			dark:bg-slate-700 dark:border-slate-600 dark:bg-opacity-60
 			lg:mx-0"
 		>
 			<div className="flex justify-between items-center px-6 pt-5">

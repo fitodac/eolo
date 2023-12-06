@@ -1,9 +1,28 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
+
+import Heading from './_content/Heading.mdx'
+import Paragraph from './_content/Paragraph.mdx'
+import InlineText from './_content/InlineText.mdx'
+import UnorderedList from './_content/UnorderedList.mdx'
+import OrderedList from './_content/OrderedList.mdx'
 
 # Contenido
 
 Por defecto, si utilizas elementos como listas no ordenadas `<ul>` o encabezados `<h1>`, no generarán ningún estilo. Para lograrlo, pueden ser envueltos dentro de un div con la clase `.content`.
 
 <!-- By default, if you use elements such as unordered lists `<ul>` or headers `<h1>`, they won't generate any styling. To achieve that, they can be wrapped inside a div with the class `.content`. -->
+
+<div className="space-y-8 use-h2-only-for-anchors">
+	## Cabeceras
+	<Heading />
+	## Textos inline
+	<InlineText />
+	## Párrafos
+	<Paragraph />
+	## Lista desordenada
+	<UnorderedList />
+	## Listas ordenadas
+	<OrderedList />
+</div>
