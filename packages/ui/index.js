@@ -8,7 +8,6 @@ const content = require('./components/content')
 const button = require('./components/button')
 const form_input = require('./components/form-input')
 const form_select = require('./components/form-select')
-const form_custom_select = require('./components/form-select-custom')
 const form_checkbox = require('./components/form-checkbox')
 const form_radiobutton = require('./components/form-radiobutton')
 const scroll_bar_base = require('./base/scroll-bar.js')
@@ -32,7 +31,6 @@ module.exports = plugin.withOptions((options = {
 	...button.OPTIONS,
 	...form_input.OPTIONS,
 	...form_select.OPTIONS,
-	...form_custom_select.OPTIONS,
 	...form_checkbox.OPTIONS,
 	...form_radiobutton.OPTIONS,
 	...avatar.OPTIONS,
@@ -54,7 +52,6 @@ module.exports = plugin.withOptions((options = {
 		content.COMPONENTS(addComponents, options)
 		form_input.COMPONENTS(addComponents, options)
 		form_select.COMPONENTS(addComponents, options)
-		form_custom_select.COMPONENTS(addComponents, options)
 		form_checkbox.COMPONENTS(addComponents, options)
 		form_radiobutton.COMPONENTS(addComponents, options)
 		scroll_bar_base.STYLES(addBase)

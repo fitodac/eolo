@@ -1,23 +1,25 @@
 {
   "name": "eolo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind css UI kit",
   "author": "fitodac <fitodac@gmail.com>",
-	"scripts": {},
-	"dependencies": {
-		"tailwindcss": "3.3.2",
-		"remixicon": "^3.2.0"
+  "scripts": {
+		"prod": "sass 'scss/eolo.scss' 'index.css'"
 	},
-	"devDependencies": {
-		"postcss": "8.4.23"
-	},
+  "dependencies": {
+    "remixicon": "^3.2.0"
+  },
+  "devDependencies": {
+    "postcss": "8.4.23",
+    "sass": "^1.69.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fitodac/eolo.git"
   },
   "keywords": [
     "tailwind",
-		"eolo",
+    "eolo",
     "css",
     "ui"
   ],
