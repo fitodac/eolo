@@ -1,0 +1,30 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Textos de ayuda">
+
+<div className="grid gap-x-6 gap-y-4 xl:grid-cols-3">
+	<div className="space-y-1">
+		<label>Basic helper text</label>
+		<input type="text" placeholder="..." defaultValue="" />
+		<div className="input-helper">Please, write a cool username above</div>
+	</div>
+	<div className="space-y-1">
+		<label>Helper text at right</label>
+		<input type="text" placeholder="..." defaultValue="" />
+		<div className="input-helper text-right">The helper text could be at right too</div>
+	</div>
+</div>
+
+```html
+<div class="space-y-1">
+  <input type="text" placeholder="Insert text here..." />
+  <div class="input-helper">Please, write a cool username above</div>
+</div>
+
+
+<div class="space-y-1">
+  <input type="text" placeholder="Insert text here..." />
+  <div class="input-helper text-right">The helper text could be at right too</div>
+</div>
+```
+</DemoCard>

@@ -1,0 +1,42 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Básicos">
+
+<div className="grid gap-x-6 gap-y-4 xl:grid-cols-3">
+	<div className="space-y-1">
+		<label>Basic</label>
+		<input type="text" placeholder="Insert text here..." defaultValue="" />
+	</div>
+	<div className="space-y-1">
+		<label>Disabled</label>
+		<input type="text" placeholder="This is not allowed" defaultValue="" disabled />
+	</div>
+	<div className="space-y-1">
+		<label>Read only</label>
+		<input type="text" defaultValue="This is only FYI" readOnly />
+	</div>
+</div>
+
+```html
+<!-- Basic -->
+<div class="space-y-1">
+  <label>Basic</label>
+  <input type="text" placeholder="Insert text here..." />
+</div>
+
+
+<!-- Disabled -->
+<div class="space-y-1">
+  <label>Disabled</label>
+  <input type="text" placeholder="Insert text here..." disabled />
+</div>
+
+
+<!-- Read only -->
+<div class="space-y-1">
+  <label>Read only</label>
+  <input type="text" placeholder="Insert text here..." readonly />
+</div>
+```
+
+</DemoCard>

@@ -1,0 +1,33 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Estados de validación">
+
+<div className="grid gap-x-6 gap-y-4 xl:grid-cols-3">
+	<div className="space-y-1">
+		<input type="text" defaultValue="Success!!" className="input-valid" />
+		<div className="input-helper input-helper-valid">
+			<i className="ri-thumb-up-line"></i> Your request was approved
+		</div>
+	</div>
+	<div className="space-y-1">
+		<input type="text" defaultValue="Sad response :(" className="input-error" />
+		<div className="input-helper input-helper-error">
+			<i className="ri-alert-line"></i> We're sorry, your request wasn't approved
+		</div>
+	</div>
+</div>
+
+```html
+<!-- Success -->
+<div class="space-y-1">
+  <input type="text" class="input-valid" value="Success!!" />
+  <div class="input-helper input-helper-valid">Your request was approved</div>
+</div>
+
+<!-- Error -->
+<div class="space-y-1">
+  <input type="text" class="input-error" value="Sad response :(" />
+  <div class="input-helper input-helper-error">We're sorry, your request wasn't approved</div>
+</div>
+```
+</DemoCard>

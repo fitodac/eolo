@@ -4380,6 +4380,29 @@ label {
 
 /** Helpers */
 
+.input-helper {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.input-helper [class*='ri-'] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.input-helper.input-helper-valid {
+  color: var(--tw-ui-input-valid-color);
+}
+
+.input-helper.input-helper-error {
+  color: var(--tw-ui-input-error-color);
+}
+
 .content code {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -5169,6 +5192,10 @@ table.table.hoverable > tbody tr:hover > td {
   margin-top: 2rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -5201,6 +5228,22 @@ table.table.hoverable > tbody tr:hover > td {
   display: none;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -5212,6 +5255,14 @@ table.table.hoverable > tbody tr:hover > td {
 .select-none {
   -webkit-user-select: none;
           user-select: none;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-wrap {
@@ -5230,6 +5281,14 @@ table.table.hoverable > tbody tr:hover > td {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-x-12 {
   column-gap: 3rem;
 }
@@ -5242,10 +5301,20 @@ table.table.hoverable > tbody tr:hover > td {
   row-gap: 1rem;
 }
 
+.gap-x-6 {
+  column-gap: 1.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -5326,6 +5395,10 @@ table.table.hoverable > tbody tr:hover > td {
   fill: #2196F3;
 }
 
+.fill-slate-400 {
+  fill: #94a3b8;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -5337,6 +5410,10 @@ table.table.hoverable > tbody tr:hover > td {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-sm {
@@ -5860,6 +5937,14 @@ table.table.hoverable > tbody tr:hover > td {
 @media (min-width: 1280px) {
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

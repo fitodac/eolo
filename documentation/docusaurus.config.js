@@ -92,7 +92,7 @@ const config = {
 						type: 'docSidebar',
 						sidebarId: 'tutorialSidebar',
 						position: 'left',
-						label: 'Tutorial',
+						label: 'Docs',
 					},
 
 					// { to: '/blog', label: 'Blog', position: 'left' },
@@ -155,8 +155,8 @@ const config = {
 				copyright: `&copy; ${new Date().getFullYear()} Built with Docusaurus.`,
 			},
 			prism: {
-				theme: prismThemes.github,
-				darkTheme: prismThemes.dracula,
+				theme: prismThemes.nightOwlLight,
+				darkTheme: prismThemes.nightOwl,
 			},
 		}),
 }
