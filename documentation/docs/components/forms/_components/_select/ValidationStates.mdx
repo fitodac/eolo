@@ -1,7 +1,7 @@
 import { DemoCard, DemoCardDescription } from '@site/src/components'
 
 <DemoCard title="Estados de validación">
-<div className="grid grid-cols-3 gap-6">
+<div className="grid gap-y-4 gap-x-10 mt-6 xl:grid-cols-3">
 	<div className="space-y-1">
 		<select className="input-valid">
 			<option selected>Select one city</option>
@@ -12,6 +12,9 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 			<option value="dubai">Dubai</option>
 			<option value="tokyo">Tokyo</option>
 		</select>
+		<div className="input-helper input-helper-valid">
+			<i className="ri-thumb-up-line"></i> Your request was approved
+		</div>
 	</div>
 	<div>
 		<select className="input-error">
@@ -23,32 +26,41 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 			<option value="dubai">Dubai</option>
 			<option value="tokyo">Tokyo</option>
 		</select>
+		<div className="input-helper input-helper-error">
+			<i className="ri-alert-line"></i> We're sorry, your request wasn't approved
+		</div>
 	</div>
 </div>
 
 
 ```html
 <!-- Valid -->
-<select className="input-valid">
-  <option selected>Select one city</option>
-  <option value="new york">New York</option>
-  <option value="london">London</option>
-  <option value="paris">Paris</option>
-  <option value="hong kong">Hong Kong</option>
-  <option value="dubai">Dubai</option>
-  <option value="tokyo">Tokyo</option>
-</select>
+<div class="space-y-1">
+  <select className="input-valid">
+    <option selected>Select one city</option>
+    <option value="new york">New York</option>
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="hong kong">Hong Kong</option>
+    <option value="dubai">Dubai</option>
+    <option value="tokyo">Tokyo</option>
+  </select>
+  <div class="input-helper input-helper-valid">Your request was approved</div>
+</div>
 
 
 <!-- Error -->
-<select className="input-error">
-  <option selected>Select one city</option>
-  <option value="new york">New York</option>
-  <option value="london">London</option>
-  <option value="paris">Paris</option>
-  <option value="hong kong">Hong Kong</option>
-  <option value="dubai">Dubai</option>
-  <option value="tokyo">Tokyo</option>
-</select>
+<div class="space-y-1">
+  <select className="input-error">
+    <option selected>Select one city</option>
+    <option value="new york">New York</option>
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="hong kong">Hong Kong</option>
+    <option value="dubai">Dubai</option>
+    <option value="tokyo">Tokyo</option>
+  </select>
+  <div class="input-helper input-helper-error">We're sorry, your request wasn't approved</div>
+</div>
 ```
 </DemoCard>

@@ -1,4 +1,5 @@
-@import '../twUiKit/twUiKit.css';
+@import 'theme.css';
+@import 'eolo';
 
 @tailwind base;
 @tailwind components;
