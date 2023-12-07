@@ -22,7 +22,6 @@ const modal = require('./components/modal')
 const overlay = require('./components/overlay')
 const toast = require('./components/toast')
 const collapsible = require('./components/collapsible')
-const datepicker = require('./components/datepicker')
 
 
 
@@ -43,7 +42,6 @@ module.exports = plugin.withOptions((options = {
 	...overlay.OPTIONS,
 	...toast.OPTIONS,
 	...collapsible.OPTIONS,
-	...datepicker.OPTIONS,
 }) => {
 	
 	return function ({addComponents, addBase, addUtilities, matchUtilities, theme}) {
@@ -67,7 +65,6 @@ module.exports = plugin.withOptions((options = {
 		overlay.COMPONENTS(addComponents, options)
 		toast.COMPONENTS(addComponents, options)
 		collapsible.COMPONENTS(addComponents, options)
-		datepicker.COMPONENTS(addComponents, options)
 
 		if( options.nocompatible ){
 			scroll_bar_utilities.ADD_ROUNDED_UTILITIES({matchUtilities, theme});
