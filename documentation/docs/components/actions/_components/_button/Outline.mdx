@@ -1,46 +1,47 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Outline">
 
 <div className="grid gap-4 mt-6 xl:flex">
 	<div>
-		<button className="btn bg-opacity-20 hover:bg-opacity-100 dark:bg-opacity-20 dark:hover:bg-opacity-100">
+		<button className="eolo-btn bg-opacity-20 hover:bg-opacity-100 dark:bg-opacity-20 dark:hover:bg-opacity-100">
 			Default
 		</button>
 	</div>
 	<div>
-		<button className="btn bg-primary border-primary text-primary bg-opacity-10 hover:bg-primary hover:text-white dark:bg-primary dark:border-primary dark:text-primary dark:bg-opacity-10 dark:hover:bg-primary dark:hover:text-white">
+		<button className="eolo-btn bg-primary border-primary text-primary bg-opacity-10 hover:bg-primary hover:text-white dark:bg-primary dark:border-primary dark:text-primary dark:bg-opacity-10 dark:hover:bg-primary dark:hover:text-white">
 			Primary
 		</button>
 	</div>
 	<div>
-		<button className="btn bg-secondary border-secondary text-secondary bg-opacity-10 hover:bg-secondary hover:text-white dark:bg-secondary dark:border-secondary dark:text-secondary dark:bg-opacity-10 dark:hover:bg-secondary dark:hover:text-white">
+		<button className="eolo-btn bg-secondary border-secondary text-secondary bg-opacity-10 hover:bg-secondary hover:text-white dark:bg-secondary dark:border-secondary dark:text-secondary dark:bg-opacity-10 dark:hover:bg-secondary dark:hover:text-white">
 			Secondary
 		</button>
 	</div>
 	<div>
-		<button className="btn bg-alt border-alt text-alt bg-opacity-10 hover:bg-alt hover:text-white dark:bg-alt dark:border-alt dark:text-alt dark:bg-opacity-10 dark:hover:bg-alt dark:hover:text-white">
+		<button className="eolo-btn bg-alt border-alt text-alt bg-opacity-10 hover:bg-alt hover:text-white dark:bg-alt dark:border-alt dark:text-alt dark:bg-opacity-10 dark:hover:bg-alt dark:hover:text-white">
 			Alternative
 		</button>
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
-<button class="btn bg-opacity-20 hover:bg-opacity-100 dark:bg-opacity-20 dark:hover:bg-opacity-100">
+<button class="eolo-btn bg-opacity-20 hover:bg-opacity-100 dark:bg-opacity-20 dark:hover:bg-opacity-100">
   Default
 </button>
 
-<button class="btn bg-primary border-primary text-primary bg-opacity-10 hover:bg-primary hover:text-white dark:bg-primary dark:border-primary dark:text-primary dark:bg-opacity-10 dark:hover:bg-primary dark:hover:text-white">
+<button class="eolo-btn bg-primary border-primary text-primary bg-opacity-10 hover:bg-primary hover:text-white dark:bg-primary dark:border-primary dark:text-primary dark:bg-opacity-10 dark:hover:bg-primary dark:hover:text-white">
   Primary
 </button>
 
-<button class="btn bg-secondary border-secondary text-secondary bg-opacity-10 hover:bg-secondary hover:text-white dark:bg-secondary dark:border-secondary dark:text-secondary dark:bg-opacity-10 dark:hover:bg-secondary dark:hover:text-white">
+<button class="eolo-btn bg-secondary border-secondary text-secondary bg-opacity-10 hover:bg-secondary hover:text-white dark:bg-secondary dark:border-secondary dark:text-secondary dark:bg-opacity-10 dark:hover:bg-secondary dark:hover:text-white">
   Secondary
 </button>
 
-<button class="btn bg-alt border-alt text-alt bg-opacity-10 hover:bg-alt hover:text-white dark:bg-alt dark:border-alt dark:text-alt dark:bg-opacity-10 dark:hover:bg-alt dark:hover:text-white">
+<button class="eolo-btn bg-alt border-alt text-alt bg-opacity-10 hover:bg-alt hover:text-white dark:bg-alt dark:border-alt dark:text-alt dark:bg-opacity-10 dark:hover:bg-alt dark:hover:text-white">
   Alternative
 </button>
 ```
-
+</DemoCardCode>
 </DemoCard>

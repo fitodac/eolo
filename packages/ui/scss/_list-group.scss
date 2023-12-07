@@ -1,34 +1,28 @@
-.list-group{
-
-		.list-group-item{
-			@apply
-			border-slate-200
-			dark:border-slate-500;
-		}
-
-
-		.list-group-head{
-			@apply 
-			bg-slate-100
-			dark:bg-slate-800;
-		}
-
-
-		&.striped{
-			.list-group-item:nth-child(even){ 
-				@apply 
-				bg-slate-50
-				dark:bg-slate-600;
-			}
-		}
-
-
-		&.hoverable,
-		&.striped.hoverable{
-			.list-group-item:hover{
-				@apply 
-				bg-primary-50 
-				dark:text-slate-800;
-			}
+.eolo-list-group {
+	&:not(.striped) {
+		.eolo-list-group-item {
+			@apply border-black/10 dark:border-white/20;
 		}
 	}
+
+	.eolo-list-group-head {
+		@apply bg-black/10 dark:bg-white/5;
+	}
+
+	&.striped {
+		.eolo-list-group-item:nth-child(even) {
+			@apply bg-black/5 dark:bg-black/20;
+		}
+
+		.eolo-list-group-item {
+			@apply border-transparent dark:border-transparent;
+		}
+	}
+
+	&.hoverable,
+	&.striped.hoverable {
+		.eolo-list-group-item:hover {
+			@apply bg-primary/10;
+		}
+	}
+}

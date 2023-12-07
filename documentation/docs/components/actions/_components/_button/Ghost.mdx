@@ -1,45 +1,46 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Fantasma">
 <div className="grid gap-4 mt-6 xl:flex">
 	<div>
-		<button className="btn ghost">
+		<button className="eolo-btn eolo-ghost">
 			Default
 		</button>
 	</div>
 	<div>
-		<button className="btn ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
+		<button className="eolo-btn eolo-ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
 			Primary
 		</button>
 	</div>
 	<div>
-		<button className="btn ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
+		<button className="eolo-btn eolo-ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
 			Secondary
 		</button>
 	</div>
 	<div>
-		<button className="btn ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:bg-alt dark:text-alt-600 dark:hover:text-white">
+		<button className="eolo-btn eolo-ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:text-alt-600 dark:hover:text-white">
 			Alternative
 		</button>
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
-<button class="btn ghost">
+<button class="eolo-btn eolo-ghost">
   Default
 </button>
 
-<button class="btn ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
+<button class="eolo-btn eolo-ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
   Primary
 </button>
 
-<button class="btn ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
+<button class="eolo-btn eolo-ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
   Secondary
 </button>
 
-<button class="btn ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:bg-alt dark:text-alt-600 dark:hover:text-white">
+<button class="eolo-btn eolo-ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:text-alt-600 dark:hover:text-white">
   Alternative
 </button>
 ```
-
+</DemoCardCode>
 </DemoCard>

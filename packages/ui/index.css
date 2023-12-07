@@ -1,39 +1,39 @@
 @layer components {
-  .btn {
+  .eolo-btn {
     @apply hover:opacity-80;
   }
-  .btn:not([class*=bg-]) {
+  .eolo-btn:not([class*=bg-]) {
     @apply bg-slate-200 dark:bg-slate-800;
   }
-  .btn:not([class*=border-]) {
+  .eolo-btn:not([class*=border-]) {
     @apply border-slate-200 dark:border-slate-800;
   }
-  .btn::not([class*=text-]) {
+  .eolo-btn::not([class*="text-"]) {
     @apply text-slate-500 dark:text-slate-200;
   }
-  .btn.ghost {
+  .eolo-btn.eolo-ghost {
     @apply hover:bg-opacity-100;
   }
-  .btn-icon svg:not([class*=fill-]) {
+  .eolo-btn-icon svg:not([class*=fill-]) {
     @apply fill-white;
   }
   /** Button primary */
-  .btn-group-primary > label > input:checked + .btn {
+  .eolo-btn-group-primary > label > input:checked + .btn {
     @apply bg-primary-700 
 	border-primary-700;
   }
   /** Button secondary */
-  .btn-group-secondary > label > input:checked + .btn {
+  .eolo-btn-group-secondary > label > input:checked + .btn {
     @apply bg-secondary-700 
 	border-secondary-700;
   }
   /** Button alternative */
-  .btn-group-alt > label > input:checked + .btn,
-  .btn-toggler input:checked + .btn-alt {
+  .eolo-btn-group-alt > label > input:checked + .btn,
+  .eolo-btn-toggler input:checked + .btn-alt {
     @apply bg-alt-700 
 	border-alt-700;
   }
-  .btn.btn-link {
+  .eolo-btn.eolo-btn-link {
     @apply bg-transparent
 	border-transparent
 	rounded-none;
@@ -344,12 +344,26 @@
   /**
   Collapsible
   **/
-  .collapsible {
-    @apply border-slate-200;
+  .eolo-collapsible {
+    @apply border-black/10 dark:border-white/10;
   }
-  .collapsible [type=checkbox]:checked ~ .collapsible-head,
-  .collapsible [type=radio]:checked ~ .collapsible-head {
+  .eolo-collapsible .eolo-collapsible-head {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(0 0 0/.3)' viewBox='0 0 24 24'%3E%3Cpath d='M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  .eolo-collapsible [type=checkbox]:checked ~ .eolo-collapsible-head,
+  .eolo-collapsible [type=radio]:checked ~ .eolo-collapsible-head {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(0 0 0/.3)' viewBox='0 0 24 24'%3E%3Cpath d='M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z'%3E%3C/path%3E%3C/svg%3E");
     @apply text-primary;
+  }
+  .dark .eolo-collapsible .eolo-collapsible-head,
+  [data-theme=dark] .eolo-collapsible .eolo-collapsible-head {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255 255 255/.4)' viewBox='0 0 24 24'%3E%3Cpath d='M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  .dark .eolo-collapsible [type=checkbox]:checked ~ .eolo-collapsible-head,
+  .dark .eolo-collapsible [type=radio]:checked ~ .eolo-collapsible-head,
+  [data-theme=dark] .eolo-collapsible [type=checkbox]:checked ~ .eolo-collapsible-head,
+  [data-theme=dark] .eolo-collapsible [type=radio]:checked ~ .eolo-collapsible-head {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255 255 255/.4)' viewBox='0 0 24 24'%3E%3Cpath d='M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z'%3E%3C/path%3E%3C/svg%3E");
   }
   table.eolo-table {
     min-width: 640px;
@@ -365,8 +379,7 @@
     @apply border-black/10 dark:border-white/10;
   }
   table.eolo-table.eolo-table-striped > tbody tr:nth-child(odd) {
-    @apply bg-black/5
-			dark:bg-black/30;
+    @apply bg-black/5 dark:bg-black/30;
   }
   table.eolo-table.eolo-table-hoverable > tbody tr > td {
     @apply transition-all;
@@ -374,21 +387,20 @@
   table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
     @apply bg-primary/10;
   }
-  .list-group .list-group-item {
-    @apply border-slate-200
-			dark:border-slate-500;
+  .eolo-list-group:not(.striped) .eolo-list-group-item {
+    @apply border-black/10 dark:border-white/20;
   }
-  .list-group .list-group-head {
-    @apply bg-slate-100
-			dark:bg-slate-800;
+  .eolo-list-group .eolo-list-group-head {
+    @apply bg-black/10 dark:bg-white/5;
   }
-  .list-group.striped .list-group-item:nth-child(even) {
-    @apply bg-slate-50
-				dark:bg-slate-600;
+  .eolo-list-group.striped .eolo-list-group-item:nth-child(even) {
+    @apply bg-black/5 dark:bg-black/20;
   }
-  .list-group.hoverable .list-group-item:hover, .list-group.striped.hoverable .list-group-item:hover {
-    @apply bg-primary-50 
-				dark:text-slate-800;
+  .eolo-list-group.striped .eolo-list-group-item {
+    @apply border-transparent dark:border-transparent;
+  }
+  .eolo-list-group.hoverable .eolo-list-group-item:hover, .eolo-list-group.striped.hoverable .eolo-list-group-item:hover {
+    @apply bg-primary/10;
   }
   .badge {
     @apply bg-slate-400
@@ -630,8 +642,8 @@
   }
 }
 @layer utilities {
-  .ghost,
-  .btn.ghost:not(:hover):not(:active):not(:focus):not(:active:focus) {
+  .eolo-ghost,
+  .eolo-btn.eolo-ghost:not(:hover):not(:active):not(:focus):not(:active:focus) {
     @apply bg-opacity-20 
 	border-transparent 
 	dark:bg-opacity-20 

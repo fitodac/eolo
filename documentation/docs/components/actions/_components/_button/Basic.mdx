@@ -1,4 +1,4 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 
 <DemoCard title="Básicos">
@@ -9,40 +9,41 @@ Los botones son elementos esenciales para la interactividad en páginas web. Per
 
 <div className="grid gap-4 xl:flex">
 	<div>
-		<button className="btn">Default</button>
+		<button className="eolo-btn">Default</button>
 	</div>
 	<div>
-		<button className="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+		<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
 		Primary
 		</button>
 	</div>
 	<div>
-		<button className="btn bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+		<button className="eolo-btn bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
 			Secondary
 		</button>
 	</div>
 	<div>
-		<button className="btn bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+		<button className="eolo-btn bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
 			Alternative
 		</button>
 	</div>
 </div>
 
 
-
+<DemoCardCode>
 ```html
-<button class="btn">Default</button>
+<button class="eolo-btn">Default</button>
 
-<button class="btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+<button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
   Primary
 </button>
 
-<button class="btn bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+<button class="eolo-btn bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
   Secondary
 </button>
 
-<button className="btn bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+<button className="eolo-btn bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
   Alternative
 </button>
 ```
+</DemoCardCode>
 </DemoCard>
