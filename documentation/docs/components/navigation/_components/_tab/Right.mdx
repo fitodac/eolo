@@ -1,0 +1,56 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+import BasicContent from './_tabContent/BasicContent.mdx'
+
+<DemoCard title="Vertical derecha">
+
+<DemoCardDescription>
+Si usas la clase `.eolo-tabs-vertical` pero ubicas `.eolo-tabs-content` antes de 
+`.eolo-tabs-nav`, los tabs se alinearán a la derecha.
+</DemoCardDescription>
+
+<div>
+  <div className="eolo-tabs eolo-tabs-vertical">
+    <input id="tab4_1" type="radio" name="tabs-right" defaultChecked />
+    <input id="tab4_2" type="radio" name="tabs-right" />
+    <input id="tab4_3" type="radio" name="tabs-right" />
+    <BasicContent />
+    <nav className="eolo-tabs-nav">
+      <label htmlFor="tab4_1" className="eolo-tab-item">Profile</label>
+      <label htmlFor="tab4_2" className="eolo-tab-item">Account</label>
+      <label htmlFor="tab4_3" className="eolo-tab-item">Notification</label>
+    </nav>
+  </div>
+</div>
+
+```html
+<div class="eolo-tabs eolo-tabs-vertical">
+  <input id="tab1" type="radio" name="tabs" checked />
+  <input id="tab2" type="radio" name="tabs" />
+  <input id="tab3" type="radio" name="tabs" />
+  
+  <div class="eolo-tabs-content">
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      ...
+    </div>
+  </div>
+
+  <nav class="eolo-tabs-nav">
+    <label for="tab1" class="eolo-tab-item">Profile</label>
+    <label for="tab2" class="eolo-tab-item">Account</label>
+    <label for="tab3" class="eolo-tab-item">Notification</label>
+  </nav>
+</div>
+```
+
+</DemoCard>

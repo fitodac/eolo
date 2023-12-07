@@ -1,0 +1,68 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+import BasicContent from './_tabContent/BasicContent.mdx'
+
+<DemoCard title="Básicos">
+
+<DemoCardDescription>
+El componente **Tab** funciona con el estado `checked` de los radio inputs que sean hijos directos 
+del componente.
+
+Es importante que los radio inputs se ubiquen antes que cualquier otro elemento dentro del 
+componente y que la cantidad de estos corresponda con la cantidad de tabs.
+</DemoCardDescription>
+
+<div>
+  <div className="eolo-tabs">
+    <input id="tab1_1" type="radio" name="tabs-default" defaultChecked />
+    <input id="tab1_2" type="radio" name="tabs-default" />
+    <input id="tab1_3" type="radio" name="tabs-default" />
+    <nav className="eolo-tabs-nav">
+      <label htmlFor="tab1_1" className="eolo-tab-item">Profile</label>
+      <label htmlFor="tab1_2" className="eolo-tab-item">Account</label>
+      <label htmlFor="tab1_3" className="eolo-tab-item">Notifications</label>
+    </nav>
+    <BasicContent />
+  </div>
+</div>
+
+```html
+<div class="eolo-tabs">
+  <input id="tab1" type="radio" name="tabs" checked />
+  <input id="tab2" type="radio" name="tabs" />
+  <input id="tab3" type="radio" name="tabs" />
+  
+  <nav class="eolo-tabs-nav">
+    <label for="tab1" class="eolo-tab-item">Profile</label>
+    <label for="tab2" class="eolo-tab-item">Account</label>
+    <label for="tab3" class="eolo-tab-item">Notifications</label>
+  </nav>
+  
+  <div class="eolo-tabs-content">
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      <div class="mt-3 space-y-3">
+        <p>...</p>
+        <p>...</p>
+      </div>
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Account</h4>
+      <div class="mt-3 space-y-3">
+        <p>...</p>
+        <p>...</p>
+      </div>
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Notifications</h4>
+      <div class="mt-3 space-y-3">
+        <p>...</p>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+</DemoCard>
