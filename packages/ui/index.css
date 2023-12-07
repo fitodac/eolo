@@ -401,99 +401,79 @@
     @apply border-l-primary 
 		dark:border-l-primary;
   }
-  .tabs .tabs-nav {
+  .eolo-tabs .eolo-tabs-nav {
     @apply md:flex;
   }
-  .tabs .tabs-nav .tab-item {
+  .eolo-tabs .eolo-tabs-nav .eolo-tab-item {
     @apply border-slate-200
 			space-x-2
 			dark:border-slate-500;
   }
-  .tabs > input[type=radio]:checked:nth-child(1) ~ .tabs-nav .tab-item:nth-child(1) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(1) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(1) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(2) ~ .tabs-nav .tab-item:nth-child(2) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(2) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(2) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(3) ~ .tabs-nav .tab-item:nth-child(3) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(3) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(3) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(4) ~ .tabs-nav .tab-item:nth-child(4) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(4) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(4) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(5) ~ .tabs-nav .tab-item:nth-child(5) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(5) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(5) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(6) ~ .tabs-nav .tab-item:nth-child(6) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(6) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(6) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(7) ~ .tabs-nav .tab-item:nth-child(7) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(7) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(7) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(8) ~ .tabs-nav .tab-item:nth-child(8) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(8) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(8) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(9) ~ .tabs-nav .tab-item:nth-child(9) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(9) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(9) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(10) ~ .tabs-nav .tab-item:nth-child(10) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(10) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(10) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(11) ~ .tabs-nav .tab-item:nth-child(11) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(11) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(11) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(12) ~ .tabs-nav .tab-item:nth-child(12) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(12) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(12) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(13) ~ .tabs-nav .tab-item:nth-child(13) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(13) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(13) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(14) ~ .tabs-nav .tab-item:nth-child(14) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(14) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(14) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(15) ~ .tabs-nav .tab-item:nth-child(15) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(15) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(15) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(16) ~ .tabs-nav .tab-item:nth-child(16) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(16) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(16) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(17) ~ .tabs-nav .tab-item:nth-child(17) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(17) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(17) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(18) ~ .tabs-nav .tab-item:nth-child(18) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(18) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(18) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(19) ~ .tabs-nav .tab-item:nth-child(19) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(19) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(19) {
+    @apply border-primary text-primary;
   }
-  .tabs > input[type=radio]:checked:nth-child(20) ~ .tabs-nav .tab-item:nth-child(20) {
-    @apply border-primary
-			text-primary;
+  .eolo-tabs > input[type=radio]:checked:nth-child(20) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(20) {
+    @apply border-primary text-primary;
   }
-  .tabs .tabs-content {
+  .eolo-tabs .eolo-tabs-content {
     @apply border-slate-200
 		dark:border-slate-500;
   }
-  .tabs.tabs-vertical .tabs-nav {
+  .eolo-tabs.eolo-tabs-vertical .eolo-tabs-nav {
     @apply md:block;
   }
   .modal {
