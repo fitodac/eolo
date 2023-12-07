@@ -1,86 +1,92 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Tamaños">
 
-<div className="grid gap-4 mt-6 xl:flex">
-	<span className="text-slate-400 text-xs">Small</span>
-	<div>
-		<button className="btn btn-sm">Default</button>
-	</div>
-	<div>
-		<button className="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
-			Primary
-		</button>
-	</div>
-	<div>
-		<button className="btn btn-sm bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
-			Secondary
-		</button>
-	</div>
-	<div>
-		<button className="btn btn-sm bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
-			Alternative
-		</button>
-	</div>
-</div>
+<DemoCardDescription>
+Usa la clase `.eolo-btn-sm` para crear botones pequeños.
+</DemoCardDescription>
 
-<div className="grid gap-4 mt-8 xl:flex">
-	<span className="text-slate-400 text-xs">Large</span>
-	<div>
-		<button className="btn btn-lg">Default</button>
-	</div>
-	<div>
-		<button className="btn btn-lg bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
-			Primary
-		</button>
-	</div>
-	<div>
-		<button className="btn btn-lg btn-sm bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
-			Secondary
-		</button>
-	</div>
-	<div>
-		<button className="btn btn-lg bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
-			Alternative
-		</button>
-	</div>
+<div className="grid gap-4 xl:flex">
+  <div>
+    <button className="eolo-btn eolo-btn-sm">Default</button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+      Primary
+    </button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-sm bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+      Secondary
+    </button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-sm bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+      Alternative
+    </button>
+  </div>
 </div>
 
 
-```html
-<!-- Small -->
+<DemoCardCode>
+```html title="Small buttons"
+<button class="eolo-btn eolo-btn-sm">Default</button>
 
-<button class="btn btn-sm">Default</button>
-
-<button class="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+<button class="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
   Primary
 </button>
 
-<button class="btn btn-sm bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+<button class="eolo-btn eolo-btn-sm bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
   Secondary
 </button>
 
-<button class="btn btn-sm bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+<button class="eolo-btn eolo-btn-sm bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
   Alternative
 </button>
 ```
+</DemoCardCode>
 
-```html
-<!-- Large -->
+<DemoCardDescription>
+Usa la clase `.eolo-btn-lg` para crear botones grandes.
+</DemoCardDescription>
 
-<button class="btn btn-lg">Default</button>
+<div className="grid gap-4 xl:flex">
+  <div>
+    <button className="eolo-btn eolo-btn-lg">Default</button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-lg bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+      Primary
+    </button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-lg bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+      Secondary
+    </button>
+  </div>
+  <div>
+    <button className="eolo-btn eolo-btn-lg bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+      Alternative
+    </button>
+  </div>
+</div>
 
-<button class="btn btn-lg bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+
+<DemoCardCode>
+```html title="Large buttons"
+<button class="eolo-btn eolo-btn-lg">Default</button>
+
+<button class="eolo-btn eolo-btn-lg bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
   Primary
 </button>
 
-<button class="btn btn-lg bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
+<button class="eolo-btn eolo-btn-lg bg-secondary border-secondary text-white dark:bg-secondary dark:border-secondary dark:text-white">
   Secondary
 </button>
 
-<button class="btn btn-lg bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
+<button class="eolo-btn eolo-btn-lg bg-alt border-alt text-white dark:bg-alt dark:border-alt dark:text-white">
   Alternative
 </button>
 ```
-
+</DemoCardCode>
 </DemoCard>

@@ -2,4 +2,39 @@
 sidebar_position: 4
 ---
 
+import Accordion from './_components/_collapsible/Accordion.mdx'
+import Toggleable from './_components/_collapsible/Toggleable.mdx'
+
 # Colapsable
+
+
+<div className="space-y-8 use-h2-only-for-anchors">
+	## Acordeón
+	<Accordion />
+	## Conmutable
+	<Toggleable />
+</div>
+
+## Uso básico
+
+El componente Collapsible usa la clase `.eolo-collapsible` y se compone de 3 elementos 
+necesarios para su funcionamiento.
+
+El primero es un `input` de tipo checkbox o radio. Aquí deberás usar un ID.<br/>
+Si usas un `checkbox`, podrás abrir varios collapsibles a la vez, por el contrario si usas 
+`radio` podrás abrir el collapsible de a uno por vez.
+
+Luego debes usar un `<label>` con la clase `.eolo-collapsible-head` y el atributo `for={ID}` 
+en donde apuntarás al ID del input (checkbox/radio).
+
+Finalmente el contenido debe ir dentro de un elemento con la clase `.eolo-collapsible-content`. 
+
+Por defecto, el `.eolo-coallapsible-content` tiene un `max-height` de 20rem por lo que se 
+recomienda usar la siguiente lista de clases para conseguir una barra de scroll cuando el 
+contenido supere la altura del contenedor.
+
+```html
+<div class="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+  ... Some content here
+</div>
+```

@@ -1,0 +1,121 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+import { Block1, Block2, Block3 } from './Content.jsx'
+
+<DemoCard title="Conmutable">
+
+<div className="grid gap-x-10 gap-y-4 mt-6 xl:grid-cols-2">
+	<div className="space-y-4">
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-7" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-7">
+        <span>What is your app about?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block1 />
+        </div>
+      </div>
+    </div>
+    
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-8" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-8">
+        <span>How does your app work?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block2 />
+        </div>
+      </div>
+    </div>
+    
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-9" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-9">
+        <span>Is your app free to use?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block3 />
+        </div>
+      </div>
+    </div>
+	</div>
+
+
+  <div className="space-y-4">
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-10" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-10">
+        <span>What are the features of your app?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block3 />
+        </div>
+      </div>
+    </div>
+    
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-11" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-11">
+        <span>How do I download and install your app?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block2 />
+        </div>
+      </div>
+    </div>
+    
+    <div className="eolo-collapsible">
+      <input type="checkbox" name="accordion" id="tab-12" />
+      <label className="eolo-collapsible-head text-sm" htmlFor="tab-12">
+        <span>What devices is your app compatible with?</span>
+      </label>
+      <div className="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+        <div className="space-y-5 p-5">
+          <Block1 />
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-4">
+  <div class="eolo-collapsible">
+    <input type="checkbox" name="collapsible" id="tab1">
+    <label class="eolo-collapsible-head text-sm" for="tab1">
+      <span>What is your app about?</span>
+    </label>
+    <div class="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+      ... Some content here
+    </div>
+  </div>
+  
+  <div class="eolo-collapsible">
+    <input type="checkbox" name="collapsible" id="tab1">
+    <label class="eolo-collapsible-head text-sm" for="tab1">
+      <span>How does your app work?</span>
+    </label>
+    <div class="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+      ... Some content here
+    </div>
+  </div>
+  
+  <div class="eolo-collapsible">
+    <input type="checkbox" name="collapsible" id="tab1">
+    <label class="eolo-collapsible-head text-sm" for="tab1">
+      <span>Is your app free to use?</span>
+    </label>
+    <div class="eolo-collapsible-content scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+      ... Some content here
+    </div>
+  </div>
+</div>
+```
+</DemoCardCode>
+
+</DemoCard>

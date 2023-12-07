@@ -4,29 +4,29 @@ const MEDIA = require('./mediaqueries')
 
 
 const OPTIONS = {
-	'.btn': {},
-	'.btn-sm': {},
-	'.btn-lg': {},
-	'.btn.ghost': {},
-	'.btn-icon': {},
-	'.btn_icon > svg': {},
-	'.btn.rounded': {},
-	'.btn.block': {},
-	'.btn-link': {},
-	'.btn > [class^=ri-]': {},
-	'.btn-group': {},
-	'.btn-group > .btn': {},
-	'.btn-group > .btn:first-child': {},
-	'.btn-group > .btn:last-child': {},
-	'.btn-group > label': {},
-	'.btn-group-sm': {},
-	'.btn-group-lg': {},
-	'.btn-group-sm > .btn': {},
-	'.btn-group-lg > .btn': {},
-	'.btn-group-sm > .btn:first-child': {},
-	'.btn-group-sm > .btn:last-child': {},
-	'.btn-group-lg > .btn:first-child': {},
-	'.btn-group-lg > .btn:last-child': {},
+	'.eolo-btn': {},
+	'.eolo-btn-sm': {},
+	'.eolo-btn-lg': {},
+	'.eolo-btn.eolo-ghost': {},
+	'.eolo-btn-icon': {},
+	'.eolo-btn_icon > svg': {},
+	'.eolo-btn.rounded': {},
+	'.eolo-btn.block': {},
+	'.eolo-btn-link': {},
+	'.eolo-btn > [class^=ri-]': {},
+	'.eolo-btn-group': {},
+	'.eolo-btn-group > .eolo-btn': {},
+	'.eolo-btn-group > .eolo-btn:first-child': {},
+	'.eolo-btn-group > .eolo-btn:last-child': {},
+	'.eolo-btn-group > label': {},
+	'.eolo-btn-group-sm': {},
+	'.eolo-btn-group-lg': {},
+	'.eolo-btn-group-sm > .eolo-btn': {},
+	'.eolo-btn-group-lg > .eolo-btn': {},
+	'.eolo-btn-group-sm > .eolo-btn:first-child': {},
+	'.eolo-btn-group-sm > .eolo-btn:last-child': {},
+	'.eolo-btn-group-lg > .eolo-btn:first-child': {},
+	'.eolo-btn-group-lg > .eolo-btn:last-child': {},
 }
 
 
@@ -132,94 +132,94 @@ const BASE = {
 const COMPONENTS = (addComponents, options) => {
 	
 	addComponents({
-		['.btn']: {
+		['.eolo-btn']: {
 			...BASE.BTN, 
 			...options['.btn'],
 			
-			['&.btn-sm']: {...BASE.BTN.SM, ...options['.btn-sm']},
-			['&.btn-lg']: {...BASE.BTN.LG, ...options['.btn-lg']},
-			['&.ghost']: {...BASE.BTN.GHOST, ...options['.btn.ghost']},
-			['&.btn-icon']: {
+			['&.eolo-btn-sm']: {...BASE.BTN.SM, ...options['.eolo-btn-sm']},
+			['&.eolo-btn-lg']: {...BASE.BTN.LG, ...options['.eolo-btn-lg']},
+			['&.eolo-ghost']: {...BASE.BTN.GHOST, ...options['.eolo-btn.eolo-ghost']},
+			['&.eolo-btn-icon']: {
 				...BASE.BTN.ICON, 
-				...options['.btn-icon'],
+				...options['.eolo-btn-icon'],
 
-				['svg']: {...BASE.BTN.ICON.SVG, ...options['.btn_icon > svg']}
+				['svg']: {...BASE.BTN.ICON.SVG, ...options['.eolo-btn_icon > svg']}
 			},
-			['&.rounded-full']: {...BASE.BTN.ROUNDED, ...options['.btn.rounded']},
-			['&.btn-link']: {...BASE.LINK, ...options['.btn-link']},
-			['> [class^=ri-]']: {...BASE.RI, ...options['.btn > [class^=ri-]']},
-			['&.block']: {...BASE.BTN.BLOCK, ...options['.btn.block']},
+			['&.rounded-full']: {...BASE.BTN.ROUNDED, ...options['.eolo-btn.rounded']},
+			['&.eolo-btn-link']: {...BASE.LINK, ...options['.eolo-btn-link']},
+			['> [class^=ri-]']: {...BASE.RI, ...options['.eolo-btn > [class^=ri-]']},
+			['&.block']: {...BASE.BTN.BLOCK, ...options['.eolo-btn.block']},
 		}
 	})
 
 	addComponents({
-		['.btn-group']: {
+		['.eolo-btn-group']: {
 			...BASE.GROUP.GROUP,
-			...options['.btn-group'],
+			...options['.eolo-btn-group'],
 
-			['> .btn']: {
+			['> .eolo-btn']: {
 				...BASE.GROUP.CHILDREN,
-				...options['.btn-group > .btn'],
+				...options['.eolo-btn-group > .eolo-btn'],
 
-				['&:first-child']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.btn-group > .btn:first-child']},
-				['&:last-child']: {...BASE.GROUP.CHILDREN_LAST, ...options['.btn-group > .btn:last-child']}
+				['&:first-child']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.eolo-btn-group > .eolo-btn:first-child']},
+				['&:last-child']: {...BASE.GROUP.CHILDREN_LAST, ...options['.eolo-btn-group > .eolo-btn:last-child']}
 			},
 
 			['> label']: {
 				...BASE.GROUP.LABEL,
-				...options['.btn-group > label'],
+				...options['.eolo-btn-group > label'],
 
 				['> [type=checkbox], > [type=radio]']: { display: 'none' },
-				['> .btn']: {
+				['> .eolo-btn']: {
 					...BASE.GROUP.CHILDREN,
 					...BASE.GROUP.LABEL.BTN,
-					...options['.btn-group > .btn'],
+					...options['.eolo-btn-group > .eolo-btn'],
 				},
-				['&:first-child > .btn']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.btn-group > .btn:first-child']},
-				['&:last-child > .btn']: {...BASE.GROUP.CHILDREN_LAST, ...options['.btn-group > .btn:last-child']},
+				['&:first-child > .eolo-btn']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.eolo-btn-group > .eolo-btn:first-child']},
+				['&:last-child > .eolo-btn']: {...BASE.GROUP.CHILDREN_LAST, ...options['.eolo-btn-group > .eolo-btn:last-child']},
 			},
 
-			['> .dropdown > .btn-toggler > .btn']: {...BASE.GROUP.CHILDREN, ...options['.btn-group > .btn']},
-			['> .dropdown:first-child > .btn-toggler > .btn']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.btn-group > .btn:first-child']},
-			['> .dropdown:last-child > .btn-toggler > .btn']: {...BASE.GROUP.CHILDREN_LAST, ...options['.btn-group > .btn:last-child']}
+			['> .eolo-dropdown > .eolo-btn-toggler > .btn']: {...BASE.GROUP.CHILDREN, ...options['.eolo-btn-group > .eolo-btn']},
+			['> .eolo-dropdown:first-child > .eolo-btn-toggler > .btn']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.eolo-btn-group > .eolo-btn:first-child']},
+			['> .eolo-dropdown:last-child > .eolo-btn-toggler > .btn']: {...BASE.GROUP.CHILDREN_LAST, ...options['.eolo-btn-group > .eolo-btn:last-child']}
 
 		}
 	})
 
 	addComponents({
-		['.btn-group-sm']: {
+		['.eolo-btn-group-sm']: {
 			...BASE.GROUP.GROUP,
-			...options['.btn-group-sm'],
+			...options['.eolo-btn-group-sm'],
 
-			['& > .btn']: {
+			['& > .eolo-btn']: {
 				...BASE.GROUP.CHILDREN,
 				...BASE.GROUP.SM.BTN,
-				...options['.btn-group-sm > .btn'],
+				...options['.eolo-btn-group-sm > .eolo-btn'],
 
-				['&:first-child']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.btn-group-sm > .btn:first-child']},
-				['&:last-child']: {...BASE.GROUP.CHILDREN_LAST, ...options['.btn-group-sm > .btn:last-child']},
+				['&:first-child']: {...BASE.GROUP.CHILDREN_FIRST, ...options['.eolo-btn-group-sm > .eolo-btn:first-child']},
+				['&:last-child']: {...BASE.GROUP.CHILDREN_LAST, ...options['.eolo-btn-group-sm > .eolo-btn:last-child']},
 			}
 		}
 	})
 	
 	addComponents({
-		['.btn-group-lg']: {
+		['.eolo-btn-group-lg']: {
 			...BASE.GROUP.GROUP,
-			...options['.btn-group-lg'],
+			...options['.eolo-btn-group-lg'],
 
-			['& > .btn']: {
+			['& > .eolo-btn']: {
 				...BASE.GROUP.CHILDREN,
 				...BASE.GROUP.LG.BTN,
-				...options['.btn-group-lg > .btn'],
+				...options['.eolo-btn-group-lg > .eolo-btn'],
 
-				['&:first-child']: {...BASE.GROUP.LG.BTN.FIRST_CHILD, ...options['.btn-group-lg > .btn:first-child']},
-				['&:last-child']: {...BASE.GROUP.LG.BTN.LAST_CHILD, ...options['.btn-group-lg > .btn:last-child']},
+				['&:first-child']: {...BASE.GROUP.LG.BTN.FIRST_CHILD, ...options['.eolo-btn-group-lg > .eolo-btn:first-child']},
+				['&:last-child']: {...BASE.GROUP.LG.BTN.LAST_CHILD, ...options['.eolo-btn-group-lg > .eolo-btn:last-child']},
 			}
 		}
 	})
 
 	addComponents({
-		['.btn-toggler']: {
+		['.eolo-btn-toggler']: {
 			['> [type=checkbox], > [type=radio]']: { display: 'none' }
 		}
 	})
