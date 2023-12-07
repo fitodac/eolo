@@ -1,4 +1,4 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 import LargeContent from './_tabContent/LargeContent.mdx'
 
 <DemoCard title="Tabs con iconos">
@@ -11,27 +11,27 @@ import LargeContent from './_tabContent/LargeContent.mdx'
     <input id="tab5_4" type="radio" name="tabs-iconized" />
     <input id="tab5_5" type="radio" name="tabs-iconized" />
     <nav className="eolo-tabs-nav">
-      <label for="tab5_1" className="eolo-tab-item" data-tab="tab1_1">
+      <label htmlFor="tab5_1" className="eolo-tab-item" data-tab="tab1_1">
         <i className="ri-user-3-line ri-lg" />
         <span>Profile</span>
       </label>
-      <label for="tab5_2" className="eolo-tab-item" data-tab="tab1_2">
+      <label htmlFor="tab5_2" className="eolo-tab-item" data-tab="tab1_2">
         <i className="ri-chat-smile-2-line ri-lg" />
         <span>Account</span>
       </label>
-      <label for="tab5_3" className="eolo-tab-item" data-tab="tab1_3">
+      <label htmlFor="tab5_3" className="eolo-tab-item" data-tab="tab1_3">
         <i className="ri-notification-2-line ri-lg" />
         <span>Notifications</span>
       </label>
-      <label for="tab5_4" className="eolo-tab-item" data-tab="tab1_3">
+      <label htmlFor="tab5_4" className="eolo-tab-item" data-tab="tab1_3">
         <i className="ri-settings-line ri-lg" />
         <span>Settings</span>
       </label>
-      <label for="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
+      <label htmlFor="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
         <i className="ri-shopping-cart-2-line ri-lg" />
         <span>Cart</span>
       </label>
-      <label for="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
+      <label htmlFor="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
         <i className="ri-message-2-line ri-lg" />
         <span>Messages</span>
       </label>
@@ -40,6 +40,7 @@ import LargeContent from './_tabContent/LargeContent.mdx'
   </div>
 </div>
 
+<DemoCardCode>
 ```html
 <div class="eolo-tabs">
   <input id="tab1" type="radio" name="tabs" checked />
@@ -81,5 +82,6 @@ import LargeContent from './_tabContent/LargeContent.mdx'
   </div>
 </div>
 ```
+</DemoCardCode>
 
 </DemoCard>
