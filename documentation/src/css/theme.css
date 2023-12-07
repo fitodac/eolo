@@ -109,7 +109,7 @@ html:root {
 	/* --ifm-color-content-inverse: var(--ifm-color-emphasis-0); */
 	/* --ifm-color-content-secondary: #525860; */
 
-	/* --ifm-background-color: transparent; */
+	--ifm-background-color: rgb(30 41 59);
 	--ifm-background-surface-color: rgb(15 23 42);
 	/* --ifm-global-border-width: 1px; */
 	/* --ifm-global-radius: 0.4rem; */
@@ -284,7 +284,7 @@ html:root {
 	/* --ifm-dropdown-font-weight: var(--ifm-font-weight-semibold); */
 	/* --ifm-dropdown-link-color: var(--ifm-font-color-base); */
 	/* --ifm-dropdown-hover-background-color: var(--ifm-hover-overlay); */
-	/* --ifm-footer-background-color: var(--ifm-color-emphasis-100); */
+	--ifm-footer-background-color: var(--ifm-background-color);
 	/* --ifm-footer-color: inherit; */
 	/* --ifm-footer-link-color: var(--ifm-color-emphasis-700); */
 	/* --ifm-footer-link-hover-color: var(--ifm-color-primary); */
@@ -355,11 +355,7 @@ html:root {
 
 
 .navbar__item{
-	@apply text-xs select-none;
-	
-	/* &.dropdown{
-
-	} */
+	@apply text-sm select-none;
 }
 
 .navbar__link{
@@ -386,4 +382,8 @@ html:root {
 }
 .menu__list-item.theme-doc-sidebar-item-category-level-2{
 	@apply mt-2;
+}
+
+.footer{
+	@apply text-xs;
 }

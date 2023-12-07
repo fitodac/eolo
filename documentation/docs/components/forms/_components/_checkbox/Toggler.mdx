@@ -1,0 +1,47 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Toggler">
+
+<div className="grid gap-x-10 gap-y-4 mt-6 md:flex">
+	<div className="flex items-center">
+		<label className="input-checkbox toggler">
+			<input type="checkbox" />
+			<span>Like</span>
+		</label>
+	</div>
+	<div className="flex items-center">
+		<label className="input-checkbox toggler">
+			<span>Yes</span>
+			<input type="checkbox" />
+			<span>No</span>
+		</label>
+	</div>
+	<div className="flex items-center">
+		<label className="input-checkbox toggler">
+			<input type="checkbox" disabled />
+			<span>Disabled</span>
+		</label>
+	</div>
+</div>
+
+```html
+<label class="input-checkbox toggler">
+  <input type="checkbox"/>
+  <span>Like</span>
+</label>
+
+
+<label class="input-checkbox toggler">
+  <span>Yes</span>
+  <input type="checkbox"/>
+  <span>No</span>
+</label>
+
+
+<label class="input-checkbox toggler">
+  <input type="checkbox" disabled />
+  <span>Disabled</span>
+</label>
+```
+
+</DemoCard>

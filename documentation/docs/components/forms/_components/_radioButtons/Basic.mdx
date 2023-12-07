@@ -1,0 +1,54 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Básicos">
+
+<DemoCardDescription>
+Usa la clase `.input-radio` en una etiqueta `<label>` para darle estilo a los radio buttons.
+</DemoCardDescription>
+
+<div className="grid gap-x-8 gap-y-5 grid-cols-2 md:flex">
+	<label className="input-radio">
+		<input type="radio" name="options-1" />
+		<span>Option 1</span>
+	</label>
+	<label className="input-radio">
+		<input type="radio" name="options-1" />
+		<span>Option 2</span>
+	</label>
+	<label className="input-radio">
+		<input type="radio" name="options-1" />
+		<span>Option 3</span>
+	</label>
+	<label className="input-radio">
+		<input type="radio" name="options-1" disabled />
+		<span>Disabled</span>
+	</label>
+</div>
+
+
+```html
+<div class="space-x-8">
+
+  <label class="input-radio">
+    <input type="radio" name="options" />
+    <span>Option 1</span>
+  </label>
+
+  <label class="input-radio">
+    <input type="radio" name="options" />
+    <span>Option 2</span>
+  </label>
+
+  <label class="input-radio">
+    <input type="radio" name="options" />
+    <span>Option 3</span>
+  </label>
+
+  <label class="input-radio">
+    <input type="radio" name="options" disabled />
+    <span>Disabled</span>
+  </label>
+
+</div>
+```
+</DemoCard>

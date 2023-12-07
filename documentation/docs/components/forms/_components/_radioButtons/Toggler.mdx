@@ -1,0 +1,47 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Toggler">
+
+<div className="grid gap-x-10 gap-y-4 mt-6 md:flex">
+	<div className="flex items-center">
+		<label className="input-radio toggler">
+			<input type="radio" name="options-5" />
+			<span>Like</span>
+		</label>
+	</div>
+	<div className="flex items-center">
+		<label className="input-radio toggler">
+			<span>Yes</span>
+			<input type="radio" name="options-5" />
+			<span>No</span>
+		</label>
+	</div>
+	<div className="flex items-center">
+		<label className="input-radio toggler">
+			<input type="radio" name="options-5" disabled />
+			<span>Disabled</span>
+		</label>
+	</div>
+</div>
+
+```html
+<label class="input-radio toggler">
+  <input type="radio" name="options" />
+  <span>Like</span>
+</label>
+
+
+<label class="input-radio toggler">
+  <span>Yes</span>
+  <input type="radio" name="options" />
+  <span>No</span>
+</label>
+
+
+<label class="input-radio toggler">
+  <input type="radio" name="options" disabled />
+  <span>Disabled</span>
+</label>
+```
+
+</DemoCard>
