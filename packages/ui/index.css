@@ -351,22 +351,28 @@
   .collapsible [type=radio]:checked ~ .collapsible-head {
     @apply text-primary;
   }
-  table.table {
+  table.eolo-table {
     min-width: 640px;
   }
-  table.table tbody tr td {
+  table.eolo-table tbody tr {
+    @apply border-transparent;
+  }
+  table.eolo-table tbody tr td {
     @apply border-slate-100
-			dark:border-slate-800;
+				dark:border-slate-800;
   }
-  table.table.table-striped > tbody tr:nth-child(odd) td {
-    @apply bg-slate-50
-			dark:bg-slate-800;
+  table.eolo-table.eolo-table-bordered tbody tr {
+    @apply border-black/10 dark:border-white/10;
   }
-  table.table.hoverable > tbody tr > td {
+  table.eolo-table.eolo-table-striped > tbody tr:nth-child(odd) {
+    @apply bg-black/5
+			dark:bg-black/30;
+  }
+  table.eolo-table.eolo-table-hoverable > tbody tr > td {
     @apply transition-all;
   }
-  table.table.hoverable > tbody tr:hover > td {
-    @apply bg-primary-50 bg-opacity-70;
+  table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
+    @apply bg-primary/10;
   }
   .list-group .list-group-item {
     @apply border-slate-200

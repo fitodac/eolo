@@ -1,24 +1,16 @@
 import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
-import Table1 from './_tableContent/Table1.mdx'
+import { TableCompact } from './_tableContent/TableCompact.jsx'
 
 <DemoCard title="Compacta">
 
 <div className="mt-6">
-  <span className="text-slate-300 text-xs font-medium flex justify-end items-center mb-4 md:hidden">
-    scroll to see more...
-    <i className="ri-arrow-right-double-fill"></i>
-  </span>
-	<div className="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
-		<table className="table table-bordered table-compact">
-			<Table1 />
-		</table>
-	</div>
+  <TableCompact className="eolo-table-bordered eolo-table-compact" />
 </div>
 
 <DemoCardCode>
 ```html
 <div class="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
-  <table class="table table-bordered table-compact">
+  <table class="eolo-table eolo-table-bordered eolo-table-compact">
     <thead>
       <tr>
         <th>

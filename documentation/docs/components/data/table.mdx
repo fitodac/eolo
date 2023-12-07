@@ -11,6 +11,8 @@ import Striped from './_components/_table/Striped.mdx'
 
 # Tabla
 
+El componente de tabla es usado para organizar y mostrar datos de manera eficiente.
+
 
 <div className="space-y-8 use-h2-only-for-anchors">
 	## Básica
@@ -25,5 +27,35 @@ import Striped from './_components/_table/Striped.mdx'
 	<Compact />
 	## Contenido escroleable
 	<ScrollContent />
-	
 </div>
+
+
+
+## Uso básico
+
+### Scroll
+Siempre deberás envolver la tabla en un `<div>` tal como se muestra abajo:
+
+```html
+<div class="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+  <table class="eolo-table" />
+</div>
+```
+
+
+
+### Ancho de la tabla
+Se le ha asigando un mínimo de 640px a las tablas en **Eolo**.
+
+Cuando el ancho de la tabla supera el contenedor, se podrá escrolear horizontalmente, es por ello 
+que se ha agregado un elemento adicional para indicar al usaurio que puede continuar viendo la 
+tabla si se desplaza horizontalmente en su móvil.
+
+```html
+<span class="text-slate-300 text-xs font-medium flex justify-end items-center mb-4 md:hidden">
+  scroll to see more...
+  <i class="ri-arrow-right-double-fill"></i>
+</span>
+```
+
+Este elemento es ajeno al componente de tabla.

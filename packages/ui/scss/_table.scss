@@ -1,31 +1,41 @@
-table.table{
+table.eolo-table {
 	min-width: 640px;
 
-	tbody{
-		tr td{
-			@apply
-			border-slate-100
-			dark:border-slate-800;
+	tbody {
+		tr {
+			@apply border-transparent;
+
+			td {
+				@apply border-slate-100
+				dark:border-slate-800;
+			}
 		}
 	}
 
-
-
-	&.table-striped{
-		> tbody tr:nth-child(odd) td{
-			@apply
-			bg-slate-50
-			dark:bg-slate-800;
+	&.eolo-table-bordered {
+		tbody {
+			tr {
+				@apply border-black/10 dark:border-white/10;
+			}
 		}
 	}
 
-
-	&.hoverable{
-		> tbody tr{
-			> td{ @apply transition-all; }
-
-			&:hover > td{ @apply bg-primary-50 bg-opacity-70; }
+	&.eolo-table-striped {
+		> tbody tr:nth-child(odd) {
+			@apply bg-black/5
+			dark:bg-black/30;
 		}
 	}
 
+	&.eolo-table-hoverable {
+		> tbody tr {
+			> td {
+				@apply transition-all;
+			}
+
+			&:hover > td {
+				@apply bg-primary/10;
+			}
+		}
+	}
 }

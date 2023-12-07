@@ -1,24 +1,16 @@
 import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
-import Table1 from './_tableContent/Table1.mdx'
+import { Table } from './_tableContent/Table.jsx'
 
 <DemoCard title="Tabla con bordes">
 
 <div className="mt-6">
-  <span className="text-slate-300 text-xs font-medium flex justify-end items-center mb-4 md:hidden">
-    scroll to see more...
-    <i className="ri-arrow-right-double-fill"></i>
-  </span>
-	<div className="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
-		<table className="table table-bordered">
-			<Table1 />
-		</table>
-	</div>
+  <Table className="eolo-table-bordered" />
 </div>
 
 <DemoCardCode>
 ```html
 <div class="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
-  <table class="table table-bordered">
+  <table class="eolo-table eolo-table-bordered">
     <thead>
       <tr>
         <th>

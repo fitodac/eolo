@@ -2156,96 +2156,124 @@ select.input-error {
   mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMTAwIDBDMjAgMCAwIDIwIDAgMTAwczIwIDEwMCAxMDAgMTAwIDEwMC0yMCAxMDAtMTAwUzE4MCAwIDEwMCAwWicvPjwvc3ZnPg==);
 }
 
-table.table {
+table.eolo-table {
   width: 100%;
+  display: table;
 }
 
-table.table HEAD {
+table.eolo-table HEAD {
+  background-color: transparent;
   -webkit-user-select: none;
           user-select: none;
 }
 
-table.table HEAD TR {
+table.eolo-table HEAD TR {
+  background-color: transparent;
+  border: none;
 }
 
-table.table HEAD TH {
+table.eolo-table HEAD TH {
+  background-color: transparent;
+  border: none;
   font-weight: 500;
   text-align: left;
   padding: 0.75rem;
   vertical-align: top;
 }
 
-table.table BODY TD {
-  padding: 0.75rem;
+table.eolo-table BODY TR {
+  background-color: transparent;
+  border: none;
+}
+
+table.eolo-table BODY TD {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0.75rem;
   vertical-align: top;
 }
 
-table.table FOOTER {
+table.eolo-table FOOTER {
 }
 
-table.table BORDERED BODY TD {
+table.eolo-table BORDERED BODY TR {
   border-top-width: 1px;
+  border-top-style: solid;
 }
 
-table.table COMPACT THEAD TH {
+table.eolo-table COMPACT THEAD TH {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.375rem 0.75rem;
 }
 
-table.table COMPACT BODY TD {
+table.eolo-table COMPACT BODY TD {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.375rem 0.75rem;
 }
 
-table.table > thead {
+table.eolo-table > thead {
+  background-color: transparent;
   -webkit-user-select: none;
           user-select: none;
 }
 
-table.table > thead TR {
+table.eolo-table > thead TR {
+  background-color: transparent;
+  border: none;
 }
 
-table.table > thead TH {
+table.eolo-table > thead TH {
+  background-color: transparent;
+  border: none;
   font-weight: 500;
   text-align: left;
   padding: 0.75rem;
   vertical-align: top;
 }
 
-table.table > thead > tr {
+table.eolo-table > thead > tr {
+  background-color: transparent;
+  border: none;
 }
 
-table.table > thead > tr > th {
+table.eolo-table > thead > tr > th {
+  background-color: transparent;
+  border: none;
   font-weight: 500;
   text-align: left;
   padding: 0.75rem;
   vertical-align: top;
 }
 
-table.table > tbody > tr {
+table.eolo-table > tbody > tr {
+  background-color: transparent;
+  border: none;
 }
 
-table.table > tbody > tr > td {
-  padding: 0.75rem;
+table.eolo-table > tbody > tr > td {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0.75rem;
   vertical-align: top;
 }
 
-table.table > tfoot {
+table.eolo-table > tfoot {
 }
 
-table.table.table-bordered > tbody > tr > td {
+table.eolo-table.eolo-table-bordered > tbody > tr {
   border-top-width: 1px;
+  border-top-style: solid;
 }
 
-table.table.table-compact > thead > tr > th {
+table.eolo-table.eolo-table-compact > thead > tr > th {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.375rem 0.75rem;
 }
 
-table.table.table-compact > tbody > tr > td {
+table.eolo-table.eolo-table-compact > tbody > tr > td {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.375rem 0.75rem;
@@ -3133,39 +3161,48 @@ label {
   Collapsible
   **/
 
-table.table {
+table.eolo-table {
   min-width: 640px;
 }
 
-table.table tbody tr td {
+table.eolo-table tbody tr {
+  border-color: transparent;
+}
+
+table.eolo-table tbody tr td {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
-:is([data-theme="dark"] table.table tbody tr td) {
+:is([data-theme="dark"] table.eolo-table tbody tr td) {
   --tw-border-opacity: 1;
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
 }
 
-table.table.table-striped > tbody tr:nth-child(odd) td {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+table.eolo-table.eolo-table-bordered tbody tr {
+  border-color: rgb(0 0 0 / 0.1);
 }
 
-:is([data-theme="dark"] table.table.table-striped > tbody tr:nth-child(odd) td) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+:is([data-theme="dark"] table.eolo-table.eolo-table-bordered tbody tr) {
+  border-color: rgb(255 255 255 / 0.1);
 }
 
-table.table.hoverable > tbody tr > td {
+table.eolo-table.eolo-table-striped > tbody tr:nth-child(odd) {
+  background-color: rgb(0 0 0 / 0.05);
+}
+
+:is([data-theme="dark"] table.eolo-table.eolo-table-striped > tbody tr:nth-child(odd)) {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+table.eolo-table.eolo-table-hoverable > tbody tr > td {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-table.table.hoverable > tbody tr:hover > td {
-  background-color: rgb(209 235 255 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.7;
+table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
+  background-color: rgb(33 150 243 / 0.1);
 }
 
 .list-group .list-group-item {
@@ -3626,6 +3663,16 @@ table.table.hoverable > tbody tr:hover > td {
   top: -1px;
 }
 
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -3636,14 +3683,12 @@ table.table.hoverable > tbody tr:hover > td {
   margin-right: auto;
 }
 
-.-mx-5 {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
+.-mb-5 {
+  margin-bottom: -1.25rem;
 }
 
-.-mx-6 {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+.-mb-8 {
+  margin-bottom: -2rem;
 }
 
 .mb-4 {
@@ -3678,24 +3723,16 @@ table.table.hoverable > tbody tr:hover > td {
   margin-top: 0.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mb-5 {
-  margin-bottom: -1.25rem;
-}
-
-.-mb-8 {
-  margin-bottom: -2rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -3937,6 +3974,18 @@ table.table.hoverable > tbody tr:hover > td {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3991,14 +4040,14 @@ table.table.hoverable > tbody tr:hover > td {
   border-radius: 0.75rem;
 }
 
-.rounded-b-md {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-}
-
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-b-md {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
 }
 
 .rounded-b-xl {
@@ -4224,6 +4273,11 @@ table.table.hoverable > tbody tr:hover > td {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4232,11 +4286,6 @@ table.table.hoverable > tbody tr:hover > td {
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-slate-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10 {
@@ -4298,6 +4347,10 @@ table.table.hoverable > tbody tr:hover > td {
   padding-bottom: 0.25rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -4306,24 +4359,20 @@ table.table.hoverable > tbody tr:hover > td {
   padding-left: 0px;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
