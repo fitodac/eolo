@@ -29,10 +29,10 @@ export const DemoCardCode = ({ children }) => {
 	const [state, setState] = useState(false)
 
 	return (
-		<div className="bg-slate-950 px-6 pt-4 pb-5 -mx-6 mt-5 -mb-8 rounded-b-xl">
+		<div className="bg-slate-200/20 px-6 pt-4 pb-5 -mx-6 mt-5 last:-mb-8 last:rounded-b-xl dark:bg-slate-950">
 			<div className="flex justify-end">
 				<button
-					className="text-sm font-medium space-x-2 select-none"
+					className=" text-sm font-medium space-x-2 select-none dark:text-slate-400"
 					onClick={() => setState(!state)}
 				>
 					<span>{!state ? 'Show code' : 'Hide code'}</span>

@@ -89,7 +89,7 @@ const COMPONENTS = (addComponents, options) => {
 					...BASE.TABLE.HEAD.TR,
 					...options['.eolo-table > thead > tr'],
 				},
-				['> tr > th']: {
+				['> tr > th, > tr > td']: {
 					...BASE.TABLE.HEAD.TH,
 					...options['.eolo-table > thead > tr > th'],
 				},

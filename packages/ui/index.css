@@ -365,8 +365,7 @@
     @apply border-black/10 dark:border-white/10;
   }
   table.eolo-table.eolo-table-striped > tbody tr:nth-child(odd) {
-    @apply bg-black/5
-			dark:bg-black/30;
+    @apply bg-black/5 dark:bg-black/30;
   }
   table.eolo-table.eolo-table-hoverable > tbody tr > td {
     @apply transition-all;
@@ -374,21 +373,20 @@
   table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
     @apply bg-primary/10;
   }
-  .list-group .list-group-item {
-    @apply border-slate-200
-			dark:border-slate-500;
+  .eolo-list-group:not(.striped) .eolo-list-group-item {
+    @apply border-black/10 dark:border-white/20;
   }
-  .list-group .list-group-head {
-    @apply bg-slate-100
-			dark:bg-slate-800;
+  .eolo-list-group .eolo-list-group-head {
+    @apply bg-black/10 dark:bg-white/5;
   }
-  .list-group.striped .list-group-item:nth-child(even) {
-    @apply bg-slate-50
-				dark:bg-slate-600;
+  .eolo-list-group.striped .eolo-list-group-item:nth-child(even) {
+    @apply bg-black/5 dark:bg-black/20;
   }
-  .list-group.hoverable .list-group-item:hover, .list-group.striped.hoverable .list-group-item:hover {
-    @apply bg-primary-50 
-				dark:text-slate-800;
+  .eolo-list-group.striped .eolo-list-group-item {
+    @apply border-transparent dark:border-transparent;
+  }
+  .eolo-list-group.hoverable .eolo-list-group-item:hover, .eolo-list-group.striped.hoverable .eolo-list-group-item:hover {
+    @apply bg-primary/10;
   }
   .badge {
     @apply bg-slate-400

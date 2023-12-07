@@ -22,8 +22,7 @@ table.eolo-table {
 
 	&.eolo-table-striped {
 		> tbody tr:nth-child(odd) {
-			@apply bg-black/5
-			dark:bg-black/30;
+			@apply bg-black/5 dark:bg-black/30;
 		}
 	}
 
