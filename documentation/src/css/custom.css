@@ -1,6 +1,6 @@
 @import 'theme.css';
-@import 'eolo';
-/* @import '../../../packages/ui/'; */
+/* @import 'eolo'; */
+@import '../../../packages/ui/';
 
 @tailwind base;
 @tailwind components;
@@ -44,13 +44,12 @@
 	@apply bg-slate-100 text-slate-600 min-h-screen lg:pl-5 dark:bg-slate-900;
 }
 
-
 .markdown {
-	font-size: .94rem;
+	font-size: 0.94rem;
 	line-height: 1.6;
 	@apply font-light dark:text-slate-300;
 
-	> h1:first-child{
+	> h1:first-child {
 		@apply text-3xl font-semibold mt-6 dark:text-slate-200;
 	}
 
@@ -62,11 +61,12 @@
 		@apply text-xl font-bold dark:text-slate-200;
 	}
 
-	> strong{@apply font-semibold;}
+	> strong {
+		@apply font-semibold;
+	}
 
-	p code{
-		@apply
-		text-indigo-600
+	p code {
+		@apply text-indigo-600
 		text-xs
 		px-1
 		py-0.5
@@ -78,10 +78,10 @@
 		dark:text-sky-500;
 	}
 
-	> ul{
+	> ul {
 		@apply leading-tight space-y-2;
 
-		& li{
+		& li {
 			@apply ml-5 list-disc;
 		}
 	}

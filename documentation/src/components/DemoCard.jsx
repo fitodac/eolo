@@ -17,7 +17,7 @@ export const DemoCard = ({ title, children }) => {
 
 export const DemoCardDescription = ({ children }) => {
 	return (
-		<div className="text-sm font-light leading-relaxed mt-2 pb-8 dark:text-slate-300">
+		<div className="text-sm font-light leading-relaxed mt-2 pb-8 break-words dark:text-slate-300">
 			{children}
 		</div>
 	)
