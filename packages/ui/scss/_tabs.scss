@@ -1,34 +1,26 @@
-.tabs{
-
-	.tabs-nav{
+.eolo-tabs {
+	.eolo-tabs-nav {
 		@apply md:flex;
 
-
-		.tab-item{
-			@apply
-			border-slate-200
+		.eolo-tab-item {
+			@apply border-slate-200
 			space-x-2
 			dark:border-slate-500;
 		}
 	}
 
-
 	@for $i from 1 through 20 {
-		> input[type=radio]:checked:nth-child(#{$i}) ~ .tabs-nav .tab-item:nth-child(#{$i}){
-			@apply 
-			border-primary
-			text-primary;
+		> input[type='radio']:checked:nth-child(#{$i}) ~ .eolo-tabs-nav .eolo-tab-item:nth-child(#{$i}) {
+			@apply border-primary text-primary;
 		}
 	}
 
-
-	.tabs-content{
-		@apply 
-		border-slate-200
+	.eolo-tabs-content {
+		@apply border-slate-200
 		dark:border-slate-500;
 	}
 
-
-	&.tabs-vertical .tabs-nav{ @apply md:block; }
-
+	&.eolo-tabs-vertical .eolo-tabs-nav {
+		@apply md:block;
+	}
 }

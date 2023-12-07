@@ -1,8 +1,8 @@
 export const DemoCard = ({ title, children }) => {
 	return (
 		<div
-			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl shadow-slate-900 shadow-md
-			dark:bg-slate-700 dark:border-slate-600 dark:bg-opacity-60
+			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl
+			dark:bg-slate-900 dark:border-slate-800 dark:bg-opacity-60
 			lg:mx-0"
 		>
 			<div className="flex justify-between items-center px-6 pt-5">
@@ -17,7 +17,7 @@ export const DemoCard = ({ title, children }) => {
 
 export const DemoCardDescription = ({ children }) => {
 	return (
-		<div className="text-sm font-light leading-tight mt-2 pb-8 dark:text-slate-300">
+		<div className="text-sm font-light leading-relaxed mt-2 pb-8 break-words dark:text-slate-300">
 			{children}
 		</div>
 	)

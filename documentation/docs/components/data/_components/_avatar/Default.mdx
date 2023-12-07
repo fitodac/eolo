@@ -1,0 +1,54 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+
+<DemoCard title="Estilos por defecto">
+
+<DemoCardDescription>
+Usa la clase `.avatar` en el contenedor de una imagen para el componente.
+
+Puedes modificar el tamaño usando las clases `.w-{SIZE}` de Tailwind.
+
+Para el avatar circular puedes usar la clase `.rounded-full` de Tailwind.
+</DemoCardDescription>
+
+<div className="flex gap-10">
+	<div>
+		<div className="avatar w-10">
+			<img src="/img/users/user-8.png" alt="user" />
+		</div>
+	</div>
+	<div>
+		<div className="avatar w-16">
+			<img src="/img/users/user-8.png" alt="user" />
+		</div>
+	</div>
+	<div>
+		<div className="avatar w-10 rounded-full">
+			<img src="/img/users/user-8.png" alt="user" />
+		</div>
+	</div>
+	<div>
+		<div className="avatar w-16 rounded-full">
+			<img src="/img/users/user-8.png" alt="user" />
+		</div>
+	</div>
+</div>
+
+```html
+<div class="avatar w-10">
+  <img src="..." alt="..." />
+</div>
+
+<div class="avatar w-16">
+  <img src="..." alt="..." />
+</div>
+
+<div class="avatar w-10 rounded-full">
+  <img src="..." alt="..." />
+</div>
+
+<div class="avatar w-16 rounded-full">
+  <img src="..." alt="..." />
+</div>
+```
+
+</DemoCard>

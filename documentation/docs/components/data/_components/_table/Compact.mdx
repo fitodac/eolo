@@ -1,0 +1,111 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+import Table1 from './_tableContent/Table1.mdx'
+
+<DemoCard title="Compacta">
+
+<div className="mt-6">
+  <span className="text-slate-300 text-xs font-medium flex justify-end items-center mb-4 md:hidden">
+    scroll to see more...
+    <i className="ri-arrow-right-double-fill"></i>
+  </span>
+	<div className="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+		<table className="table table-bordered table-compact">
+			<Table1 />
+		</table>
+	</div>
+</div>
+
+```html
+<div class="w-full overflow-x-auto scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100">
+  <table class="table table-bordered table-compact">
+    <thead>
+      <tr>
+        <th>
+          <div>Package</div>
+        </th>
+        <th>
+          <div>Invoice date</div>
+        </th>
+        <th>
+          <div>Status</div>
+        </th>
+        <th>
+          <div class="text-end">Actions</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="font-semibold block">Free package</span>
+          <span>$287</span>
+        </td>
+        <td>Jan. 13, 2023</td>
+        <td>
+          <span class="badge bg-green-600 border-green-600">paid</span>
+        </td>
+        <td>
+          <div class="text-end">
+            <button class="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+              Edit
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="font-semibold block">Standard package</span>
+          <span>$530</span>
+        </td>
+        <td>Mar. 4, 2023</td>
+        <td>
+          <span class="badge bg-green-600 border-green-600">paid</span>
+        </td>
+        <td>
+          <div class="text-end">
+            <button class="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+              Edit
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="font-semibold block">Business package</span>
+          <span>$122</span>
+        </td>
+        <td>Jun. 22, 2023</td>
+        <td>
+          <span class="badge bg-red-700 border-red-700">unpaid</span>
+        </td>
+        <td>
+          <div class="text-end">
+            <button class="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+              Edit
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="font-semibold block">Basic package</span>
+          <span>$890</span>
+        </td>
+        <td>Nov. 28, 2023</td>
+        <td>
+          <span class="badge bg-yellow-600 border-yellow-600">pending</span>
+        </td>
+        <td>
+          <div class="text-end">
+            <button class="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+              Edit
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+</DemoCard>

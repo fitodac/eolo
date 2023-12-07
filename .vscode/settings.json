@@ -7,15 +7,10 @@
 		"editor.insertSpaces": false,
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
-	"[markdown, mdx]": {
-		"editor.tabSize": 2,
-		"editor.formatOnSaveMode": "file",
-		"editor.formatOnSave": false,
+	"[markdown]": {
 		"editor.insertSpaces": true
-		// "editor.tabCompletion": "on",
-		// "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
-	"indentRainbow.includedLanguages": [],
+	// "indentRainbow.includedLanguages": [],
 	"editor.tabSize": 2,
 	"editor.formatOnSaveMode": "file",
 	"editor.tabCompletion": "on",

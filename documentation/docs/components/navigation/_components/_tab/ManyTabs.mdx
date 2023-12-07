@@ -1,0 +1,83 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+import LargeContent from './_tabContent/LargeContent.mdx'
+
+<DemoCard title="Cantidad de tabs">
+
+<DemoCardDescription>
+Si en ancho de la barra de tabs supera el ancho de su contenedor, por ejemplo en dispositivos 
+móviles, este cuenta con un scroll horizontal. Ten en cuenta que no verás una barra de scroll.
+</DemoCardDescription>
+
+<div>
+  <div className="eolo-tabs">
+    <input id="tab2_1" type="radio" name="tabs-manyTabs" defaultChecked />
+    <input id="tab2_2" type="radio" name="tabs-manyTabs" />
+    <input id="tab2_3" type="radio" name="tabs-manyTabs" />
+    <input id="tab2_4" type="radio" name="tabs-manyTabs" />
+    <input id="tab2_5" type="radio" name="tabs-manyTabs" />
+    <input id="tab2_6" type="radio" name="tabs-manyTabs" />
+    <nav className="eolo-tabs-nav">
+      <label htmlFor="tab2_1" className="eolo-tab-item">Profile</label>
+      <label htmlFor="tab2_2" className="eolo-tab-item">Account</label>
+      <label htmlFor="tab2_3" className="eolo-tab-item">Notification</label>
+      <label htmlFor="tab2_4" className="eolo-tab-item">Settings</label>
+      <label htmlFor="tab2_5" className="eolo-tab-item">Cart</label>
+      <label htmlFor="tab2_6" className="eolo-tab-item">Messages</label>
+    </nav>
+    <LargeContent />
+  </div>
+</div>
+
+```html
+<div class="eolo-tabs">
+  <input id="tab1" type="radio" name="tabs" checked />
+  <input id="tab2" type="radio" name="tabs" />
+  <input id="tab3" type="radio" name="tabs" />
+  <input id="tab4" type="radio" name="tabs" />
+  <input id="tab5" type="radio" name="tabs" />
+  <input id="tab6" type="radio" name="tabs" />
+  
+  <nav class="eolo-tabs-nav">
+    <label for="tab1" class="eolo-tab-item">Profile</label>
+    <label for="tab2" class="eolo-tab-item">Account</label>
+    <label for="tab3" class="eolo-tab-item">Notifications</label>
+    <label for="tab4" class="eolo-tab-item">Settings</label>
+    <label for="tab5" class="eolo-tab-item">Cart</label>
+    <label for="tab6" class="eolo-tab-item">Messages</label>
+  </nav>
+  
+  <div class="eolo-tabs-content">
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Account</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Notifications</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Settings</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Cart</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Messages</h4>
+      ...
+    </div>
+  </div>
+</div>
+```
+
+</DemoCard>

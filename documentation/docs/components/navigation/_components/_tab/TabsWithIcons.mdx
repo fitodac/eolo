@@ -1,0 +1,85 @@
+import { DemoCard, DemoCardDescription } from '@site/src/components'
+import LargeContent from './_tabContent/LargeContent.mdx'
+
+<DemoCard title="Tabs con iconos">
+
+<div className="mt-6">
+  <div className="eolo-tabs">
+    <input id="tab5_1" type="radio" name="tabs-iconized" defaultChecked />
+    <input id="tab5_2" type="radio" name="tabs-iconized" />
+    <input id="tab5_3" type="radio" name="tabs-iconized" />
+    <input id="tab5_4" type="radio" name="tabs-iconized" />
+    <input id="tab5_5" type="radio" name="tabs-iconized" />
+    <nav className="eolo-tabs-nav">
+      <label for="tab5_1" className="eolo-tab-item" data-tab="tab1_1">
+        <i className="ri-user-3-line ri-lg" />
+        <span>Profile</span>
+      </label>
+      <label for="tab5_2" className="eolo-tab-item" data-tab="tab1_2">
+        <i className="ri-chat-smile-2-line ri-lg" />
+        <span>Account</span>
+      </label>
+      <label for="tab5_3" className="eolo-tab-item" data-tab="tab1_3">
+        <i className="ri-notification-2-line ri-lg" />
+        <span>Notifications</span>
+      </label>
+      <label for="tab5_4" className="eolo-tab-item" data-tab="tab1_3">
+        <i className="ri-settings-line ri-lg" />
+        <span>Settings</span>
+      </label>
+      <label for="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
+        <i className="ri-shopping-cart-2-line ri-lg" />
+        <span>Cart</span>
+      </label>
+      <label for="tab5_5" className="eolo-tab-item" data-tab="tab1_3">
+        <i className="ri-message-2-line ri-lg" />
+        <span>Messages</span>
+      </label>
+    </nav>
+    <LargeContent />
+  </div>
+</div>
+
+```html
+<div class="eolo-tabs">
+  <input id="tab1" type="radio" name="tabs" checked />
+  <input id="tab2" type="radio" name="tabs" />
+  <input id="tab3" type="radio" name="tabs" />
+  
+  <nav class="eolo-tabs-nav">
+    <label for="tab5_1" class="eolo-tab-item" data-tab="tab1_1">
+      <i class="ri-user-3-line ri-lg" />
+      <span>Profile</span>
+    </label>
+
+    <label for="tab5_2" class="eolo-tab-item" data-tab="tab1_2">
+      <i class="ri-chat-smile-2-line ri-lg" />
+      <span>Account</span>
+    </label>
+    
+    <label for="tab5_3" class="eolo-tab-item" data-tab="tab1_3">
+      <i class="ri-notification-2-line ri-lg" />
+      <span>Notifications</span>
+    </label>
+  </nav>
+  
+  <div class="eolo-tabs-content">
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Profile</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Account</h4>
+      ...
+    </div>
+    
+    <div class="eolo-tab-body">
+      <h4 class="text-xl font-medium">Notifications</h4>
+      ...
+    </div>
+  </div>
+</div>
+```
+
+</DemoCard>
