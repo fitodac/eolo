@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 export const DemoCard = ({ title, children }) => {
 	return (
 		<div
@@ -19,6 +21,26 @@ export const DemoCardDescription = ({ children }) => {
 	return (
 		<div className="text-sm font-light leading-relaxed mt-2 pb-8 break-words dark:text-slate-300">
 			{children}
+		</div>
+	)
+}
+
+export const DemoCardCode = ({ children }) => {
+	const [state, setState] = useState(false)
+
+	return (
+		<div className="bg-slate-950 px-6 pt-4 pb-5 -mx-6 mt-5 -mb-8 rounded-b-xl">
+			<div className="flex justify-end">
+				<button
+					className="text-sm font-medium space-x-2 select-none"
+					onClick={() => setState(!state)}
+				>
+					<span>{!state ? 'Show code' : 'Hide code'}</span>
+					<i className={!state ? 'ri-arrow-down-line' : 'ri-arrow-up-line'} />
+				</button>
+			</div>
+
+			{state && <div>{children}</div>}
 		</div>
 	)
 }
