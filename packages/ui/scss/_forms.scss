@@ -19,13 +19,13 @@ input[type=color]{
 	dark:border-[var(--tw-ui-dark-border-color)] 
 	dark:text-slate-200;
 
-	&.input-valid{
+	&.eolo-input-valid{
 		@apply 
 		border-[var(--tw-ui-input-valid-color)] 
 		text-[var(--tw-ui-input-valid-color)];
 	}
 
-	&.input-error{
+	&.eolo-input-error{
 		@apply 
 		border-[var(--tw-ui-input-error-color)] 
 		text-[var(--tw-ui-input-error-color)];
@@ -42,7 +42,7 @@ input[type=color]{
 
 
 /** Input groups */
-.input-group-inset{
+.eolo-input-group-inset{
 	@apply 
 	bg-white
 	border-[var(--tw-ui-input-border-color)] 

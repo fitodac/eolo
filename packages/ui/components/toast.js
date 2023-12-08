@@ -2,10 +2,10 @@ const theme = require('tailwindcss/defaultTheme')
 
 
 const OPTIONS = {
-	'.toast': {},
+	'.eolo-toast': {},
 	'&:not([class*=top-]):not([class*=left-]):not([class*=right-])': {},
-	'input[type=checkbox]:checked + .toast': {},
-	'input[type=radio]:checked + .toast': {}
+	'input[type=checkbox]:checked + .eolo-toast': {},
+	'input[type=radio]:checked + .eolo-toast': {}
 }
 
 
@@ -44,9 +44,9 @@ const BASE = {
 
 const COMPONENTS = (addComponents, options) => {
 	addComponents({
-		['.toast']: { 
+		['.eolo-toast']: { 
 			...BASE.TOAST,
-			...options['.toast'],
+			...options['.eolo-toast'],
 
 			['&:not([class*=top-]):not([class*=left-]):not([class*=right-])']: {
 				...BASE.TOAST.POSITION,
@@ -56,11 +56,11 @@ const COMPONENTS = (addComponents, options) => {
 	})
 
 	addComponents({
-		['input[type=checkbox]:checked + .toast']: { ...BASE.CHECKED.TOAST, ...options['input[type=checkbox]:checked + .toast'] }
+		['input[type=checkbox]:checked + .eolo-toast']: { ...BASE.CHECKED.TOAST, ...options['input[type=checkbox]:checked + .eolo-toast'] }
 	})
 
 	addComponents({
-		['input[type=radio]:checked + .toast']: { ...BASE.CHECKED.TOAST, ...options['input[type=radio]:checked + .toast'] }
+		['input[type=radio]:checked + .eolo-toast']: { ...BASE.CHECKED.TOAST, ...options['input[type=radio]:checked + .eolo-toast'] }
 	})
 }
 

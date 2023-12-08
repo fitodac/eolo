@@ -1,45 +1,43 @@
 const theme = require('tailwindcss/defaultTheme')
 
-
 const OPTIONS = {
-	'.spinner': {},
-	'.spinner::after': {},
-	'.spinner.w-3::after': {},
-	'.spinner.w-4::after': {},
-	'.spinner.w-5::after': {},
-	'.spinner.w-6::after': {},
-	
-	'.spinner2': {},
-	'.spinner2::after': {},
-}
+	'.eolo-spinner': {},
+	'.eolo-spinner::after': {},
+	'.eolo-spinner.w-3::after': {},
+	'.eolo-spinner.w-4::after': {},
+	'.eolo-spinner.w-5::after': {},
+	'.eolo-spinner.w-6::after': {},
 
+	'.eolo-spinner2': {},
+	'.eolo-spinner2::after': {},
+}
 
 const BASE = {
 	SPINNER: {
-	'font-weight': theme.fontWeight.medium,
-	'line-height': theme.fontSize.xs[1],
-	'width': theme.spacing[10],
-	'display': 'inline-grid',
-	'place-content': 'center',
-	'position': 'relative',
-	'aspect-ratio': theme.aspectRatio.square,
+		'font-weight': theme.fontWeight.medium,
+		'line-height': theme.fontSize.xs[1],
+		width: theme.spacing[10],
+		display: 'inline-grid',
+		'place-content': 'center',
+		position: 'relative',
+		'aspect-ratio': theme.aspectRatio.square,
 
 		AFTER: {
-			'content': '""',
+			content: '""',
 			'border-left-color': 'inherit !important',
 			'border-width': theme.borderWidth[4],
-			'width': '100%',
-			'position': 'absolute',
+			width: '100%',
+			position: 'absolute',
 			'aspect-ratio': theme.aspectRatio.square,
 			'user-select': 'none',
 			'border-radius': theme.borderRadius.full,
-			'animation': theme.animation.spin,
+			animation: theme.animation.spin,
 
 			W3: { 'border-width': theme.borderWidth[2] },
 			W4: { 'border-width': theme.borderWidth[2] },
 			W5: { 'border-width': theme.borderWidth[2] },
 			W6: { 'border-width': theme.borderWidth[2] },
-		}
+		},
 	},
 
 	SPINNER2: {
@@ -47,50 +45,60 @@ const BASE = {
 		'background-position': 'center',
 		'background-size': 'cover',
 		'background-repeat': 'no-repeat',
-		'display': 'inline-grid',
-		'position': 'relative',
+		display: 'inline-grid',
+		position: 'relative',
 
 		AFTER: {
-			'content': '""',
+			content: '""',
 			'background-image': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C12.5523 2 13 2.44772 13 3V6C13 6.55228 12.5523 7 12 7C11.4477 7 11 6.55228 11 6V3C11' fill='rgba(255,255,255,1)' %3E%3C/path%3E%3C/svg%3E")`,
-			'width': 'inherit',
-			'height': 'inherit',
-			'position': 'absolute',
-			'animation': 'spinner2Keyframe 1s infinite ease'
-		}
-	}
-
+			width: 'inherit',
+			height: 'inherit',
+			position: 'absolute',
+			animation: 'spinner2Keyframe 1s infinite ease',
+		},
+	},
 }
-
 
 const COMPONENTS = (addComponents, options) => {
 	addComponents({
-		['.spinner']: {
+		['.eolo-spinner']: {
 			...BASE.SPINNER,
 			...options['.spinner'],
 
-			['&::after']: { ...BASE.SPINNER.AFTER, ...options['.spinner::after'] },
-			['&.w-3::after']: { ...BASE.SPINNER.AFTER.W3, ...options['.spinner.w-3::after'] },
-			['&.w-4::after']: { ...BASE.SPINNER.AFTER.W4, ...options['.spinner.w-4::after'] },
-			['&.w-5::after']: { ...BASE.SPINNER.AFTER.W5, ...options['.spinner.w-5::after'] },
-			['&.w-6::after']: { ...BASE.SPINNER.AFTER.W6, ...options['.spinner.w-6::after'] }
-		}
+			['&::after']: {
+				...BASE.SPINNER.AFTER,
+				...options['.eolo-spinner::after'],
+			},
+			['&.w-3::after']: {
+				...BASE.SPINNER.AFTER.W3,
+				...options['.eolo-spinner.w-3::after'],
+			},
+			['&.w-4::after']: {
+				...BASE.SPINNER.AFTER.W4,
+				...options['.eolo-spinner.w-4::after'],
+			},
+			['&.w-5::after']: {
+				...BASE.SPINNER.AFTER.W5,
+				...options['.eolo-spinner.w-5::after'],
+			},
+			['&.w-6::after']: {
+				...BASE.SPINNER.AFTER.W6,
+				...options['.eolo-spinner.w-6::after'],
+			},
+		},
 	})
 
 	addComponents({
-		['.spinner2']: {
+		['.eolo-spinner2']: {
 			...BASE.SPINNER2,
-			...options['.spinner2'],
+			...options['.eolo-spinner2'],
 
-			['&::after']: { ...BASE.SPINNER2.AFTER, ...options['.spinner2::after'] },
-			// ['&.w-3::after']: { ...BASE.SPINNER2.AFTER.W3, ...options['.spinner.w-3::after'] },
-			// ['&.w-4::after']: { ...BASE.SPINNER2.AFTER.W4, ...options['.spinner.w-4::after'] },
-			// ['&.w-5::after']: { ...BASE.SPINNER2.AFTER.W5, ...options['.spinner.w-5::after'] },
-			// ['&.w-6::after']: { ...BASE.SPINNER2.AFTER.W6, ...options['.spinner.w-6::after'] }
-		}
+			['&::after']: {
+				...BASE.SPINNER2.AFTER,
+				...options['.eolo-spinner2::after'],
+			},
+		},
 	})
 }
-
-
 
 module.exports = { OPTIONS, COMPONENTS }

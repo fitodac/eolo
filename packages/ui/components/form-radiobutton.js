@@ -2,16 +2,16 @@ const theme = require('tailwindcss/defaultTheme')
 
 
 const OPTIONS = {
-	'.input-radio': {},
-	'.input-radio input': {},
-	'.input-radio input + span': {},
-	'.input-radio input + span::before': {},
-	'.input-radio.input-lg input + span::before': {},
-	'.input-radio input:disabled + span::before': {},
-	'.input-radio.toggler input + span::before': {},
-	'.input-radio.toggler input:checked + span::before': {},
-	'.input-radio.checked input + span::before': {},
-	'.input-radio.checked input:checked + span::before': {},
+	'.eolo-input-radio': {},
+	'.eolo-input-radio input': {},
+	'.eolo-input-radio input + span': {},
+	'.eolo-input-radio input + span::before': {},
+	'.eolo-input-radio.eolo-input-lg input + span::before': {},
+	'.eolo-input-radio input:disabled + span::before': {},
+	'.eolo-input-radio.eolo-toggler input + span::before': {},
+	'.eolo-input-radio.eolo-toggler input:checked + span::before': {},
+	'.eolo-input-radio.checked input + span::before': {},
+	'.eolo-input-radio.checked input:checked + span::before': {},
 }
 
 
@@ -106,28 +106,28 @@ const BASE = {
 
 const COMPONENTS = (addComponents, options) => {
 	addComponents({
-		['.input-radio']: {
+		['.eolo-input-radio']: {
 			...BASE.RADIO,
-			...options['.input-radio'],
+			...options['.eolo-input-radio'],
 
-			['input']: { ...BASE.RADIO.INPUT, ...options['.input-radio input'] },
+			['input']: { ...BASE.RADIO.INPUT, ...options['.eolo-input-radio input'] },
 			['input + span']: {
 				...BASE.RADIO.SPAN,
-				...options['.input-radio input + span'],
+				...options['.eolo-input-radio input + span'],
 
-				['&::before']: { ...BASE.RADIO.SPAN.BEFORE, ...options['.input-radio input + span::before'] }
+				['&::before']: { ...BASE.RADIO.SPAN.BEFORE, ...options['.eolo-input-radio input + span::before'] }
 			},
-			['&.input-lg input + span::before']: { ...BASE.RADIO.INPUT_LG.SPAN.BEFORE, ...options['.input-radio.input-lg input + span::before'] },
+			['&.eolo-input-lg input + span::before']: { ...BASE.RADIO.INPUT_LG.SPAN.BEFORE, ...options['.eolo-input-radio.eolo-input-lg input + span::before'] },
 
 			// Toggler
-			['&.toggler']: {
-				['input + span::before']: { ...BASE.RADIO.TOGGLER.SPAN.BEFORE, ...options['.input-radio.toggler input + span::before'] },
-				['input:checked + span::before']: { ...BASE.RADIO.TOGGLER.CHECKED.SPAN.BEFORE, ...options['.input-radio.toggler input:checked + span::before'] }
+			['&.eolo-toggler']: {
+				['input + span::before']: { ...BASE.RADIO.TOGGLER.SPAN.BEFORE, ...options['.eolo-input-radio.toggler input + span::before'] },
+				['input:checked + span::before']: { ...BASE.RADIO.TOGGLER.CHECKED.SPAN.BEFORE, ...options['.eolo-input-radio.toggler input:checked + span::before'] }
 			},
 
-			['&.check']: {
-				['input + span::before']: { ...BASE.RADIO.CHECKED.SPAN.BEFORE, ...options['.input-radio.checked input + span::before'] },
-				['input:checked + span::before']: { ...BASE.RADIO.CHECKED.CHECKED.SPAN.BEFORE, ...options['.input-radio.checked input:checked + span::before'] }
+			['&.eolo-check']: {
+				['input + span::before']: { ...BASE.RADIO.CHECKED.SPAN.BEFORE, ...options['.eolo-input-radio.checked input + span::before'] },
+				['input:checked + span::before']: { ...BASE.RADIO.CHECKED.CHECKED.SPAN.BEFORE, ...options['.eolo-input-radio.checked input:checked + span::before'] }
 			}
 		}
 	})

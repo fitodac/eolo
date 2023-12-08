@@ -2,16 +2,16 @@ const theme = require('tailwindcss/defaultTheme')
 
 
 const OPTIONS = {
-	'.input-checkbox': {},
-	'.input-checkbox input': {},
-	'.input-checkbox input + span': {},
-	'.input-checkbox input + span::before': {},
-	'.input-checkbox.input-lg input + span::before': {},
-	'.input-checkbox input:disabled + span::before': {},
-	'.input-checkbox.toggler input + span::before': {},
-	'.input-checkbox.toggler input:checked + span::before': {},
-	'.input-checkbox.checked input + span::before': {},
-	'.input-checkbox.checked input:checked + span::before': {},
+	'.eolo-input-checkbox': {},
+	'.eolo-input-checkbox input': {},
+	'.eolo-input-checkbox input + span': {},
+	'.eolo-input-checkbox input + span::before': {},
+	'.eolo-input-checkbox.input-lg input + span::before': {},
+	'.eolo-input-checkbox input:disabled + span::before': {},
+	'.eolo-input-checkbox.toggler input + span::before': {},
+	'.eolo-input-checkbox.toggler input:checked + span::before': {},
+	'.eolo-input-checkbox.checked input + span::before': {},
+	'.eolo-input-checkbox.checked input:checked + span::before': {},
 
 }
 
@@ -105,29 +105,29 @@ const BASE = {
 
 const COMPONENTS = (addComponents, options) => {
 	addComponents({
-		['.input-checkbox']: {
+		['.eolo-input-checkbox']: {
 			...BASE.CHECKBOX,
-			...options['.input-checkbox'],
+			...options['.eolo-input-checkbox'],
 
-			['input']: { ...BASE.CHECKBOX.INPUT, ...options['.input-checkbox input'] },
+			['input']: { ...BASE.CHECKBOX.INPUT, ...options['.eolo-input-checkbox input'] },
 			['input + span']: {
 				...BASE.CHECKBOX.SPAN,
-				...options['.input-checkbox input + span'],
+				...options['.eolo-input-checkbox input + span'],
 
-				['&::before']: { ...BASE.CHECKBOX.SPAN.BEFORE, ...options['.input-checkbox input + span::before'] }
+				['&::before']: { ...BASE.CHECKBOX.SPAN.BEFORE, ...options['.eolo-input-checkbox input + span::before'] }
 			},
-			['&.input-lg input + span::before']: { ...BASE.CHECKBOX.INPUT_LG.SPAN.BEFORE, ...options['.input-checkbox.input-lg input + span::before'] },
-			['input:disabled + span::before']: { ...BASE.CHECKBOX.INPUT.DISABLED.SPAN.BEFORE, ...options['.input-checkbox input:disabled + span::before'] },
+			['&.eolo-input-lg input + span::before']: { ...BASE.CHECKBOX.INPUT_LG.SPAN.BEFORE, ...options['.eolo-input-checkbox.eolo-input-lg input + span::before'] },
+			['input:disabled + span::before']: { ...BASE.CHECKBOX.INPUT.DISABLED.SPAN.BEFORE, ...options['.eolo-input-checkbox input:disabled + span::before'] },
 
 			// Toggler
-			['&.toggler']: {
-				['input + span::before']: { ...BASE.CHECKBOX.TOGGLER.SPAN.BEFORE, ...options['.input-checkbox.toggler input + span::before'] },
-				['input:checked + span::before']: { ...BASE.CHECKBOX.TOGGLER.CHECKED.SPAN.BEFORE, ...options['.input-checkbox.toggler input:checked + span::before'] }
+			['&.eolo-toggler']: {
+				['input + span::before']: { ...BASE.CHECKBOX.TOGGLER.SPAN.BEFORE, ...options['.eolo-input-checkbox.eolo-toggler input + span::before'] },
+				['input:checked + span::before']: { ...BASE.CHECKBOX.TOGGLER.CHECKED.SPAN.BEFORE, ...options['.eolo-input-checkbox.eolo-toggler input:checked + span::before'] }
 			},
 
 			['&.checked']: {
-				['input + span::before']: { ...BASE.CHECKBOX.CHECKED.SPAN.BEFORE, ...options['.input-checkbox.checked input + span::before'] },
-				['input:checked + span::before']: { ...BASE.CHECKBOX.CHECKED.CHECKED.SPAN.BEFORE, ...options['.input-checkbox.checked input:checked + span::before'] }
+				['input + span::before']: { ...BASE.CHECKBOX.CHECKED.SPAN.BEFORE, ...options['.eolo-input-checkbox.checked input + span::before'] },
+				['input:checked + span::before']: { ...BASE.CHECKBOX.CHECKED.CHECKED.SPAN.BEFORE, ...options['.eolo-input-checkbox.checked input:checked + span::before'] }
 			}
 		}
 	})

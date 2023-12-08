@@ -1692,36 +1692,36 @@ input[type=color]::placeholder {
   opacity: .4;
 }
 
-.input-group {
+.eolo-input-group {
   display: inline-flex;
   align-items: center;
   column-gap: 0.375rem;
   width: 100%;
 }
 
-.input-group BTN {
+.eolo-input-group BTN {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.input-group INPUT {
+.eolo-input-group INPUT {
   height: -moz-fit-content;
   height: fit-content;
   flex: 1;
 }
 
-.input-group > .btn {
+.eolo-input-group > .btn {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.input-group > input, .input-group > select {
+.eolo-input-group > input, .eolo-input-group > select {
   height: -moz-fit-content;
   height: fit-content;
   flex: 1;
 }
 
-.input-group-inset {
+.eolo-input-group-inset {
   border-width: 1px;
   width: 100%;
   padding: 0.5rem;
@@ -1731,11 +1731,11 @@ input[type=color]::placeholder {
   border-radius: 0.5rem;
 }
 
-.input-group-inset BTN {
+.eolo-input-group-inset BTN {
   padding: 0.25rem 0.75rem;
 }
 
-.input-group-inset INPUT {
+.eolo-input-group-inset INPUT {
   background: transparent;
   border: none;
   padding: 0;
@@ -1743,15 +1743,15 @@ input[type=color]::placeholder {
   border-radius: 0;
 }
 
-.input-group-inset INPUT FIRTST_CHILD {
+.eolo-input-group-inset INPUT FIRTST_CHILD {
   padding: 0 0 0 0.75rem;
 }
 
-.input-group-inset INPUT LAST_CHILD {
+.eolo-input-group-inset INPUT LAST_CHILD {
   padding: 0 0.75rem 0 0;
 }
 
-.input-group-inset > input {
+.eolo-input-group-inset > input {
   background: transparent;
   border: none;
   padding: 0;
@@ -1759,23 +1759,23 @@ input[type=color]::placeholder {
   border-radius: 0;
 }
 
-.input-group-inset > input FIRTST_CHILD {
+.eolo-input-group-inset > input FIRTST_CHILD {
   padding: 0 0 0 0.75rem;
 }
 
-.input-group-inset > input LAST_CHILD {
+.eolo-input-group-inset > input LAST_CHILD {
   padding: 0 0.75rem 0 0;
 }
 
-.input-group-inset > input:first-child {
+.eolo-input-group-inset > input:first-child {
   padding: 0 0 0 0.75rem;
 }
 
-.input-group-inset > input:last-child {
+.eolo-input-group-inset > input:last-child {
   padding: 0 0.75rem 0 0;
 }
 
-.input-group-inset > .btn {
+.eolo-input-group-inset > .eolo-btn {
   padding: 0.25rem 0.75rem;
 }
 
@@ -1825,7 +1825,7 @@ select.input-error {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(185 28 28)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
 
-.input-checkbox {
+.eolo-input-checkbox {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -1835,15 +1835,15 @@ select.input-error {
   cursor: pointer;
 }
 
-.input-checkbox INPUT {
+.eolo-input-checkbox INPUT {
   display: none;
 }
 
-.input-checkbox INPUT DISABLED SPAN BEFORE {
+.eolo-input-checkbox INPUT DISABLED SPAN BEFORE {
   cursor: auto;
 }
 
-.input-checkbox SPAN {
+.eolo-input-checkbox SPAN {
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -1853,7 +1853,7 @@ select.input-error {
           user-select: none;
 }
 
-.input-checkbox SPAN BEFORE {
+.eolo-input-checkbox SPAN BEFORE {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -1865,13 +1865,13 @@ select.input-error {
   border-radius: 0.375rem;
 }
 
-.input-checkbox INPUT_LG SPAN BEFORE {
+.eolo-input-checkbox INPUT_LG SPAN BEFORE {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 0.5rem;
 }
 
-.input-checkbox TOGGLER SPAN BEFORE {
+.eolo-input-checkbox TOGGLER SPAN BEFORE {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
   background-position: 3px center;
   background-size: 11px;
@@ -1880,29 +1880,29 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-checkbox TOGGLER CHECKED SPAN BEFORE {
+.eolo-input-checkbox TOGGLER CHECKED SPAN BEFORE {
   background-position: calc(100% - 2px) center;
 }
 
-.input-checkbox CHECKED SPAN BEFORE {
+.eolo-input-checkbox CHECKED SPAN BEFORE {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 9999px;
 }
 
-.input-checkbox CHECKED CHECKED SPAN BEFORE {
+.eolo-input-checkbox CHECKED CHECKED SPAN BEFORE {
   background-size: 70%;
 }
 
-.input-checkbox input {
+.eolo-input-checkbox input {
   display: none;
 }
 
-.input-checkbox input DISABLED SPAN BEFORE {
+.eolo-input-checkbox input DISABLED SPAN BEFORE {
   cursor: auto;
 }
 
-.input-checkbox input + span {
+.eolo-input-checkbox input + span {
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -1912,7 +1912,7 @@ select.input-error {
           user-select: none;
 }
 
-.input-checkbox input + span BEFORE {
+.eolo-input-checkbox input + span BEFORE {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -1924,7 +1924,7 @@ select.input-error {
   border-radius: 0.375rem;
 }
 
-.input-checkbox input + span::before {
+.eolo-input-checkbox input + span::before {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -1936,17 +1936,17 @@ select.input-error {
   border-radius: 0.375rem;
 }
 
-.input-checkbox.input-lg input + span::before {
+.eolo-input-checkbox.eolo-input-lg input + span::before {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 0.5rem;
 }
 
-.input-checkbox input:disabled + span::before {
+.eolo-input-checkbox input:disabled + span::before {
   cursor: auto;
 }
 
-.input-checkbox.toggler input + span::before {
+.eolo-input-checkbox.eolo-toggler input + span::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
   background-position: 3px center;
   background-size: 11px;
@@ -1955,21 +1955,21 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-checkbox.toggler input:checked + span::before {
+.eolo-input-checkbox.eolo-toggler input:checked + span::before {
   background-position: calc(100% - 2px) center;
 }
 
-.input-checkbox.checked input + span::before {
+.eolo-input-checkbox.checked input + span::before {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 9999px;
 }
 
-.input-checkbox.checked input:checked + span::before {
+.eolo-input-checkbox.checked input:checked + span::before {
   background-size: 70%;
 }
 
-.input-radio {
+.eolo-input-radio {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -1979,15 +1979,15 @@ select.input-error {
   cursor: pointer;
 }
 
-.input-radio INPUT {
+.eolo-input-radio INPUT {
   display: none;
 }
 
-.input-radio INPUT DISABLED SPAN BEFORE {
+.eolo-input-radio INPUT DISABLED SPAN BEFORE {
   cursor: auto;
 }
 
-.input-radio SPAN {
+.eolo-input-radio SPAN {
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -1997,7 +1997,7 @@ select.input-error {
           user-select: none;
 }
 
-.input-radio SPAN BEFORE {
+.eolo-input-radio SPAN BEFORE {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -2009,12 +2009,12 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-radio INPUT_LG SPAN BEFORE {
+.eolo-input-radio INPUT_LG SPAN BEFORE {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.input-radio TOGGLER SPAN BEFORE {
+.eolo-input-radio TOGGLER SPAN BEFORE {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
   background-position: 3px center;
   background-size: 11px;
@@ -2023,30 +2023,30 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-radio TOGGLER CHECKED SPAN BEFORE {
+.eolo-input-radio TOGGLER CHECKED SPAN BEFORE {
   background-position: calc(100% - 2px) center;
 }
 
-.input-radio CHECKED SPAN BEFORE {
+.eolo-input-radio CHECKED SPAN BEFORE {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 9999px;
 }
 
-.input-radio CHECKED CHECKED SPAN BEFORE {
+.eolo-input-radio CHECKED CHECKED SPAN BEFORE {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
   background-size: 74%;
 }
 
-.input-radio input {
+.eolo-input-radio input {
   display: none;
 }
 
-.input-radio input DISABLED SPAN BEFORE {
+.eolo-input-radio input DISABLED SPAN BEFORE {
   cursor: auto;
 }
 
-.input-radio input + span {
+.eolo-input-radio input + span {
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -2056,7 +2056,7 @@ select.input-error {
           user-select: none;
 }
 
-.input-radio input + span BEFORE {
+.eolo-input-radio input + span BEFORE {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -2068,7 +2068,7 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-radio input + span::before {
+.eolo-input-radio input + span::before {
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -2080,12 +2080,12 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-radio.input-lg input + span::before {
+.eolo-input-radio.eolo-input-lg input + span::before {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.input-radio.toggler input + span::before {
+.eolo-input-radio.eolo-toggler input + span::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
   background-position: 3px center;
   background-size: 11px;
@@ -2094,17 +2094,17 @@ select.input-error {
   border-radius: 9999px;
 }
 
-.input-radio.toggler input:checked + span::before {
+.eolo-input-radio.eolo-toggler input:checked + span::before {
   background-position: calc(100% - 2px) center;
 }
 
-.input-radio.check input + span::before {
+.eolo-input-radio.eolo-check input + span::before {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 9999px;
 }
 
-.input-radio.check input:checked + span::before {
+.eolo-input-radio.eolo-check input:checked + span::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
   background-size: 74%;
 }
@@ -2601,15 +2601,15 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   display: block;
 }
 
-.spinner {
+.eolo-spinner {
   font-weight: 500;
 }
 
-.spinner line-height {
+.eolo-spinner line-height {
   line-height: 1rem;
 }
 
-.spinner {
+.eolo-spinner {
   width: 2.5rem;
   display: inline-grid;
   place-content: center;
@@ -2617,7 +2617,7 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   aspect-ratio: 1 / 1;
 }
 
-.spinner AFTER {
+.eolo-spinner AFTER {
   content: "";
   border-left-color: inherit !important;
   border-width: 4px;
@@ -2630,23 +2630,23 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   animation: spin 1s linear infinite;
 }
 
-.spinner AFTER W3 {
+.eolo-spinner AFTER W3 {
   border-width: 2px;
 }
 
-.spinner AFTER W4 {
+.eolo-spinner AFTER W4 {
   border-width: 2px;
 }
 
-.spinner AFTER W5 {
+.eolo-spinner AFTER W5 {
   border-width: 2px;
 }
 
-.spinner AFTER W6 {
+.eolo-spinner AFTER W6 {
   border-width: 2px;
 }
 
-.spinner::after {
+.eolo-spinner::after {
   content: "";
   border-left-color: inherit !important;
   border-width: 4px;
@@ -2659,35 +2659,35 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   animation: spin 1s linear infinite;
 }
 
-.spinner::after W3 {
+.eolo-spinner::after W3 {
   border-width: 2px;
 }
 
-.spinner::after W4 {
+.eolo-spinner::after W4 {
   border-width: 2px;
 }
 
-.spinner::after W5 {
+.eolo-spinner::after W5 {
   border-width: 2px;
 }
 
-.spinner::after W6 {
+.eolo-spinner::after W6 {
   border-width: 2px;
 }
 
-.spinner.w-3::after {
+.eolo-spinner.w-3::after {
   border-width: 2px;
 }
 
-.spinner.w-4::after {
+.eolo-spinner.w-4::after {
   border-width: 2px;
 }
 
-.spinner.w-5::after {
+.eolo-spinner.w-5::after {
   border-width: 2px;
 }
 
-.spinner.w-6::after {
+.eolo-spinner.w-6::after {
   border-width: 2px;
 }
 

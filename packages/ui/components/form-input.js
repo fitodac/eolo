@@ -6,15 +6,15 @@ const OPTIONS = {
 	'input': {},
 	'input:focus': {},
 	'input:placeholder': {},
-	'.input-group': {},
-	'.input-group > .btn': {},
-	'.input-group > input': {},
-	'.input-group > select': {},
-	'.input-group-inset': {},
-	'.input-group-inset > input': {},
-	'.input-group-inset > input:first-child': {},
-	'.input-group-inset > input:last-child': {},
-	'.input-group-inset > .btn': {}
+	'.eolo-input-group': {},
+	'.eolo-input-group > .eolo-btn': {},
+	'.eolo-input-group > input': {},
+	'.eolo-input-group > select': {},
+	'.eolo-input-group-inset': {},
+	'.eolo-input-group-inset > input': {},
+	'.eolo-input-group-inset > input:first-child': {},
+	'.eolo-input-group-inset > input:last-child': {},
+	'.eolo-input-group-inset > .eolo-btn': {}
 }
 
 
@@ -103,13 +103,13 @@ const COMPONENTS = (addComponents, options) => {
 	})
 
 	addComponents({
-		['.input-group']: {
+		['.eolo-input-group']: {
 			...BASE.GROUP.DEFAULT,
 			...options['.input-group'],
 
 			['& > .btn']: {
 				...BASE.GROUP.DEFAULT.BTN,
-				...options['.input-group > .btn']
+				...options['.eolo-input-group > .btn']
 			},
 
 			['& > input, & > select']: {
@@ -121,19 +121,19 @@ const COMPONENTS = (addComponents, options) => {
 	})
 	
 	addComponents({
-		['.input-group-inset']: {
+		['.eolo-input-group-inset']: {
 			...BASE.GROUP.INSET,
-			...options['.input-group-inset'],
+			...options['.eolo-input-group-inset'],
 
 			['& > input']: {
 				...BASE.GROUP.INSET.INPUT, 
-				...options['.input-group-inset > input'],
+				...options['.eolo-input-group-inset > input'],
 				
-				['&:first-child']: {...BASE.GROUP.INSET.INPUT.FIRTST_CHILD, ...options['.input-group-inset > input:first-child']},
-				['&:last-child']: {...BASE.GROUP.INSET.INPUT.LAST_CHILD,  ...options['.input-group-inset > input:last-child']},
+				['&:first-child']: {...BASE.GROUP.INSET.INPUT.FIRTST_CHILD, ...options['.eolo-input-group-inset > input:first-child']},
+				['&:last-child']: {...BASE.GROUP.INSET.INPUT.LAST_CHILD,  ...options['.eolo-input-group-inset > input:last-child']},
 			},
 
-			['& > .btn']: {...BASE.GROUP.INSET.BTN, ...options['.input-group-inset > .btn']}
+			['& > .eolo-btn']: {...BASE.GROUP.INSET.BTN, ...options['.eolo-input-group-inset > .btn']}
 		}
 	})
 }
