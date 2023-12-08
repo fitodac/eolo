@@ -93,8 +93,14 @@
 	margin: 0;
 }
 
+.use-h3-only-for-anchors > h3 {
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+}
+
 .theme-code-block {
-	@apply mt-6;
+	@apply max-w-full mt-6;
 }
 
 .prism-code {

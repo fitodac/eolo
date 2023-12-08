@@ -2,10 +2,10 @@ const theme = require('tailwindcss/defaultTheme')
 
 
 const OPTIONS = {
-	'.avatar': {},
-	'.avatar > img': {},
-	'.avatar.rounded-full > img': {},
-	'.avatar.avatar-squircle': {}
+	'.eolo-avatar': {},
+	'.eolo-avatar > img': {},
+	'.eolo-avatar.rounded-full > img': {},
+	'.eolo-avatar.eolo-avatar-squircle': {}
 }
 
 
@@ -51,13 +51,13 @@ const BASE = {
 
 const COMPONENTS = (addComponents, options) => {
 	addComponents({
-		['.avatar']: {
+		['.eolo-avatar']: {
 			...BASE.AVATAR,
 			...options['.avatar'],
 
-			['> img']: { ...BASE.IMAGE, ...options['.avatar > img'] },
-			['&.rounded-full > img']: { ...BASE.AVATAR.ROUNDED.IMAGE, ...options['.avatar.rounded-full > img'] },
-			['&.avatar-squircle']: { ...BASE.SQUIRCLE, ...options['.avatar.avatar-squircle'] }
+			['> img']: { ...BASE.IMAGE, ...options['.eolo-avatar > img'] },
+			['&.rounded-full > img']: { ...BASE.AVATAR.ROUNDED.IMAGE, ...options['.eolo-avatar.rounded-full > img'] },
+			['&.eolo-avatar-squircle']: { ...BASE.SQUIRCLE, ...options['.eolo-avatar.eolo-avatar-squircle'] }
 		}
 	})
 }

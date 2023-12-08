@@ -1266,53 +1266,53 @@ video {
   display: none;
 }
 
-.content h1 {
+.eolo-content h1 {
   font-size: 3rem;
   font-size: [object Object];
   line-height: 1;
 }
 
-.content h2 {
+.eolo-content h2 {
   font-size: 2.25rem;
   font-size: [object Object];
   line-height: 1;
 }
 
-.content h3 {
+.eolo-content h3 {
   font-size: 1.875rem;
   font-size: [object Object];
   line-height: 1;
 }
 
-.content h4 {
+.eolo-content h4 {
   font-size: 1.5rem;
   font-size: [object Object];
   line-height: 1;
 }
 
-.content h5 {
+.eolo-content h5 {
   font-weight: 700;
 }
 
-.content p + p {
+.eolo-content p + p {
   margin-top: 2rem;
 }
 
-.content ul {
+.eolo-content ul {
   list-style-type: disc;
 }
 
-.content ol {
+.eolo-content ol {
   list-style-type: decimal;
 }
 
-.content code {
+.eolo-content code {
   font-size: 0.875rem;
   line-height: 1;
   letter-spacing: -0.025em;
 }
 
-.content pre {
+.eolo-content pre {
   font-size: 0.875rem;
   letter-spacing: -0.025em;
   white-space: pre;
@@ -2109,15 +2109,15 @@ select.input-error {
   background-size: 74%;
 }
 
-.avatar {
+.eolo-avatar {
   font-size: 0.75rem;
 }
 
-.avatar line-height {
+.eolo-avatar line-height {
   line-height: 1rem;
 }
 
-.avatar {
+.eolo-avatar {
   display: inline-grid;
   place-content: center;
   position: relative;
@@ -2129,11 +2129,11 @@ select.input-error {
   vertical-align: top;
 }
 
-.avatar ROUNDED IMAGE {
+.eolo-avatar ROUNDED IMAGE {
   border-radius: 9999px;
 }
 
-.avatar > img {
+.eolo-avatar > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2141,11 +2141,11 @@ select.input-error {
   border-radius: 0.375rem;
 }
 
-.avatar.rounded-full > img {
+.eolo-avatar.rounded-full > img {
   border-radius: 9999px;
 }
 
-.avatar.avatar-squircle {
+.eolo-avatar.eolo-avatar-squircle {
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -2343,21 +2343,34 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   border: none;
 }
 
-.badge {
+.eolo-badge {
   border-width: 1px;
   font-size: 0.75rem;
   font-weight: 500;
 }
 
-.badge line-height {
+.eolo-badge line-height {
   line-height: 1rem;
 }
 
-.badge {
-  padding: 0.125rem 0.5rem 0.25rem;
+.eolo-badge {
+  text-align: center;
+  padding: 1px 0.25rem 1px;
   border-radius: 0.25rem;
   -webkit-user-select: none;
           user-select: none;
+}
+
+.eolo-dot-badge {
+  color: transparent;
+  font-size: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  right: -0.125rem;
+  top: -0.125rem;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 9999px;
 }
 
 .eolo-tabs .eolo-tabs-nav {
@@ -3157,29 +3170,29 @@ label {
   color: var(--tw-ui-input-error-color);
 }
 
-.content code {
+.eolo-content code {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
-:is([data-theme="dark"] .content code) {
+:is([data-theme="dark"] .eolo-content code) {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
-.content pre {
+.eolo-content pre {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-:is([data-theme="dark"] .content pre) {
+:is([data-theme="dark"] .eolo-content pre) {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.content pre code {
+.eolo-content pre code {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
@@ -3357,13 +3370,19 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(33 150 243 / 0.1);
 }
 
-.badge {
+.eolo-badge {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.eolo-dot-badge {
+  font-size: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .spinner::after {
@@ -3767,12 +3786,92 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   position: relative;
 }
 
+.-bottom-0 {
+  bottom: -0px;
+}
+
+.-bottom-0\.5 {
+  bottom: -0.125rem;
+}
+
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
+.-bottom-2 {
+  bottom: -0.5rem;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.-left-0\.5 {
+  left: -0.125rem;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.-right-1 {
+  right: -0.25rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-right-3 {
+  right: -0.75rem;
+}
+
 .-top-1 {
   top: -0.25rem;
 }
 
 .-top-px {
   top: -1px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-0\.5 {
+  bottom: 0.125rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-0\.5 {
+  right: 0.125rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-auto {
+  top: auto;
 }
 
 .col-span-3 {
@@ -3805,6 +3904,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .-mb-8 {
   margin-bottom: -2rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
+.-mt-6 {
+  margin-top: -1.5rem;
 }
 
 .mb-4 {
@@ -3855,6 +3962,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
@@ -3883,8 +3994,20 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-12 {
   height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-6 {
@@ -3979,6 +4102,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   max-width: 64rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -4009,6 +4136,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -4252,6 +4389,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(33 150 243 / var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .border-red-700 {
   --tw-border-opacity: 1;
   border-color: rgb(185 28 28 / var(--tw-border-opacity));
@@ -4262,9 +4409,24 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(156 39 176 / var(--tw-border-opacity));
 }
 
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
+
 .border-slate-100 {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .border-yellow-600 {
@@ -4381,6 +4543,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(19.8 90 145.8 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -4436,6 +4608,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(93.6 23.4 105.6 / var(--tw-bg-opacity));
 }
 
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -4446,13 +4623,15 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-=======
 .bg-slate-200\/20 {
   background-color: rgb(226 232 240 / 0.2);
 }
 
->>>>>>> main
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -4466,6 +4645,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .bg-slate-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -4484,6 +4667,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-opacity-70 {
@@ -4568,6 +4755,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   padding-left: 0px;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -4582,6 +4773,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -4668,6 +4867,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-secondary {
@@ -4985,8 +5189,15 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin: 0;
 }
 
+.use-h3-only-for-anchors > h3 {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+
 .theme-code-block {
   margin-top: 1.5rem;
+  max-width: 100%;
 }
 
 .prism-code {
@@ -5184,12 +5395,24 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

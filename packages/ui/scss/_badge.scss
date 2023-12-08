@@ -1,11 +1,10 @@
-.badge{
-	@apply
-	bg-slate-400
+.eolo-badge {
+	@apply bg-slate-400
 	text-white
 	border-slate-400;
 }
 
-.dot-badge{
+.eolo-dot-badge {
 	font-size: 0;
 	@apply bg-red-600;
 }

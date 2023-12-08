@@ -291,16 +291,16 @@
   .input-helper.input-helper-error {
     @apply text-[var(--tw-ui-input-error-color)];
   }
-  .content code {
+  .eolo-content code {
     @apply text-blue-400
 		dark:text-blue-400;
   }
-  .content pre {
+  .eolo-content pre {
     @apply bg-slate-100
 		text-slate-400
 		dark:bg-slate-800;
   }
-  .content pre code {
+  .eolo-content pre code {
     @apply text-slate-400;
   }
   .dropdown {
@@ -402,12 +402,12 @@
   .eolo-list-group.hoverable .eolo-list-group-item:hover, .eolo-list-group.striped.hoverable .eolo-list-group-item:hover {
     @apply bg-primary/10;
   }
-  .badge {
+  .eolo-badge {
     @apply bg-slate-400
 	text-white
 	border-slate-400;
   }
-  .dot-badge {
+  .eolo-dot-badge {
     font-size: 0;
     @apply bg-red-600;
   }

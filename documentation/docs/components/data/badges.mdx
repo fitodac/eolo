@@ -2,4 +2,115 @@
 sidebar_position: 5
 ---
 
+import Default from './_components/_badge/Default.mdx'
+import Rounded from './_components/_badge/Rounded.mdx'
+import Outline from './_components/_badge/Outline.mdx'
+import Ghost from './_components/_badge/Ghost.mdx'
+import CustomColor from './_components/_badge/CustomColor.mdx'
+import Dot from './_components/_badge/Dot.mdx'
+
 # Badge
+
+<div className="space-y-8 use-h2-only-for-anchors">
+	## Estilos por defecto
+	<Default />
+	## Redondeados
+  <Rounded />
+  ## Outline
+	<Outline />
+	## Ghost
+	<Ghost />
+	## Colores personalizados
+	<CustomColor />
+	## Dots
+	<Dot />
+</div>
+
+
+<div className="h-10" />
+## Ejemplos de uso
+
+### Avatar badge
+<div className="-mt-5 md:grid md:grid-cols-4">
+  <div className="pl-3 pt-7">
+    <div className="relative w-14">
+      <div className="eolo-avatar eolo-avatar-squircle">
+        <img src="/img/users/user-8.png" alt="user" />
+      </div>
+      <span className="eolo-badge bg-red-500 border-red-500 top-auto -right-1 -bottom-1 absolute rounded-full">83</span>
+    </div>
+  </div>
+
+  <div className="md:col-span-3">
+  ```html
+  <div class="relative w-14">
+    <div class="eolo-avatar eolo-avatar-squircle">
+      <img src="..." alt="..." />
+    </div>
+    <span class="eolo-badge bg-red-500 border-red-500 top-auto -right-1 -bottom-1 absolute rounded-full">83</span>
+  </div>
+  ```
+  </div>
+</div>
+
+
+### Avatar con dot badge
+<div className="-mt-5 md:grid md:grid-cols-4">
+  <div className="pl-3 pt-7">
+    <div className="eolo-avatar w-14 rounded-full">
+      <img src="/img/users/user-8.png" alt="user" />
+      <span className="eolo-dot-badge top-auto bottom-0.5 right-0.5 animate-pulse" />
+    </div>
+  </div>
+
+  <div className="md:col-span-3">
+  ```html
+  <div class="eolo-avatar w-14 rounded-full">
+    <img src="..." alt="..." />
+    <span class="eolo-dot-badge top-auto bottom-0.5 right-0.5 animate-pulse" />
+  </div>
+  ```
+  </div>
+</div>
+
+
+### Acción requerida
+<div className="-mt-5 md:grid md:grid-cols-4">
+  <div className="pl-3 pt-7">
+    <div className="inline-flex relative">
+      <button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Action required</button>
+      <span className="eolo-dot-badge animate-pulse" />
+    </div>
+  </div>
+
+  <div className="md:col-span-3">
+  ```html
+  <div class="inline-flex relative">
+    <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+      Action required
+    </button>
+    <span class="eolo-dot-badge animate-pulse" />
+  </div>
+  ```
+  </div>
+</div>
+
+
+### Mensaje
+<div className="-mt-5 md:grid md:grid-cols-4">
+  <div className="pl-3 pt-7 space-x-2">
+    <span className="text-red-600 font-medium">Unread emails</span>
+    <span class="eolo-badge bg-red-600 border-red-600 rounded-full animate-pulse">+99</span>
+  </div>
+
+  <div className="md:col-span-3">
+  ```html
+  <div class="inline-flex relative">
+    <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+      Action required
+    </button>
+    <span class="eolo-dot-badge animate-pulse" />
+  </div>
+  ```
+  </div>
+</div>

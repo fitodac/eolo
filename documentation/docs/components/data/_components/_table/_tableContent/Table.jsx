@@ -34,7 +34,7 @@ export const Table = ({ className = '' }) => {
 							</td>
 							<td>
 								<div className="text-end">
-									<button className="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+									<button className="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
 										Edit
 									</button>
 								</div>
@@ -54,7 +54,7 @@ export const Table = ({ className = '' }) => {
 							</td>
 							<td>
 								<div className="text-end">
-									<button className="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+									<button className="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
 										Edit
 									</button>
 								</div>
@@ -72,7 +72,7 @@ export const Table = ({ className = '' }) => {
 							</td>
 							<td>
 								<div className="text-end">
-									<button className="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+									<button className="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
 										Edit
 									</button>
 								</div>
@@ -92,7 +92,7 @@ export const Table = ({ className = '' }) => {
 							</td>
 							<td>
 								<div className="text-end">
-									<button className="btn btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+									<button className="eolo-btn eolo-btn-sm bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
 										Edit
 									</button>
 								</div>

@@ -1,0 +1,64 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Dots">
+
+<DemoCardDescription>
+El badge dot tiene posición absoluta por lo que su contenedor deberá tener declarada una posición 
+también, ya sea absoluta o relativa.
+</DemoCardDescription>
+
+
+<div className="flex gap-x-10">
+  <div>
+    <div className="bg-slate-100 border border-slate-200 w-20 h-20 rounded-md relative dark:bg-slate-950 dark:border-slate-800">
+      <span className="eolo-dot-badge -left-0.5" />
+    </div>
+    <div className="text-xs font-medium text-center mt-3">Top left</div>
+  </div>
+  <div>
+    <div className="bg-slate-100 border border-slate-200 w-20 h-20 rounded-md relative dark:bg-slate-950 dark:border-slate-800">
+      <span className="eolo-dot-badge" />
+    </div>
+    <div className="text-xs font-medium text-center mt-3">Top right</div>
+  </div>
+  <div>
+    <div className="bg-slate-100 border border-slate-200 w-20 h-20 rounded-md relative dark:bg-slate-950 dark:border-slate-800">
+      <span className="eolo-dot-badge -left-0.5 top-auto -bottom-0.5" />
+    </div>
+    <div className="text-xs font-medium text-center mt-3">Bottom left</div>
+  </div>
+  <div>
+    <div className="bg-slate-100 border border-slate-200 w-20 h-20 rounded-md relative dark:bg-slate-950 dark:border-slate-800">
+      <span className="eolo-dot-badge top-auto -bottom-0.5" />
+    </div>
+    <div className="text-xs font-medium text-center mt-3">Bottom right</div>
+  </div>
+</div>
+
+<DemoCardCode>
+```html {2} title="Top left"
+<div class="relative">
+  <span class="eolo-dot-badge -left-0.5"></span>
+</div>
+```
+
+```html {2} title="Top right"
+<div class="relative">
+  <span class="eolo-dot-badg"></span>
+</div>
+```
+
+```html {2} title="Bottom left"
+<div class="relative">
+  <span class="eolo-dot-badge -left-0.5 top-auto -bottom-0.5"></span>
+</div>
+```
+
+```html {2} title="Bottom right"
+<div class="relative">
+  <span class="eolo-dot-badge top-auto -bottom-0.5"></span>
+</div>
+```
+</DemoCardCode>
+
+</DemoCard>
