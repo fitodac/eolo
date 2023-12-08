@@ -1,53 +1,55 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Checkbox grandes">
 
 <DemoCardDescription>
-Puedes usar la combinación de clases `.input-checkbox` y `.input-lg` para lograr checkboxes mas grandes.
+Puedes usar la combinación de clases `.eolo-input-checkbox` y `.eolo-input-lg` para lograr checkboxes mas grandes.
 </DemoCardDescription>
 
 <div className="grid gap-x-8 gap-y-5 grid-cols-2 md:flex">
-	<label className="input-checkbox input-lg">
+	<label className="eolo-input-checkbox eolo-input-lg">
 		<input type="checkbox" />
 		<span>Option 1</span>
 	</label>
-	<label className="input-checkbox input-lg">
+	<label className="eolo-input-checkbox eolo-input-lg">
 		<input type="checkbox" />
 		<span>Option 2</span>
 	</label>
-	<label className="input-checkbox input-lg">
-		<input type="checkbox" checked />
+	<label className="eolo-input-checkbox eolo-input-lg">
+		<input type="checkbox" defaultChecked />
 		<span>Option 3</span>
 	</label>
-	<label className="input-checkbox input-lg">
+	<label className="eolo-input-checkbox eolo-input-lg">
 		<input type="checkbox" disabled />
 		<span>Disabled</span>
 	</label>
 </div>
 
+<DemoCardCode>
 ```html
 <div class="space-x-8">
 
-  <label class="input-checkbox input-lg">
+  <label class="eolo-input-checkbox eolo-input-lg">
     <input type="checkbox" />
     <span>Option 1</span>
   </label>
 
-  <label class="input-checkbox input-lg">
+  <label class="eolo-input-checkbox eolo-input-lg">
     <input type="checkbox" />
     <span>Option 2</span>
   </label>
 
-  <label class="input-checkbox input-lg">
+  <label class="eolo-input-checkbox eolo-input-lg">
     <input type="checkbox" checked />
     <span>Option 3</span>
   </label>
 
-  <label class="input-checkbox input-lg">
+  <label class="eolo-input-checkbox eolo-input-lg">
     <input type="checkbox" disabled />
     <span>Disabled</span>
   </label>
 
 </div>
 ```
+</DemoCardCode>
 </DemoCard>

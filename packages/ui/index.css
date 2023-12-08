@@ -38,60 +38,6 @@
 	border-transparent
 	rounded-none;
   }
-  /** Checkboxes */
-  .eolo-input-checkbox input + span::before {
-    border-color: var(--tw-ui-input-border-color);
-    @apply bg-white dark:bg-slate-700;
-  }
-  .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
-    @apply bg-primary-50 dark:bg-slate-600;
-  }
-  .eolo-input-checkbox:not(.toggler) input:checked + span::before {
-    @apply bg-primary border-primary;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
-    background-size: 83%;
-  }
-  .eolo-input-checkbox input:disabled + span {
-    @apply text-slate-300;
-  }
-  .eolo-input-checkbox input:disabled + span::before {
-    @apply bg-slate-100 
-		border-slate-100;
-  }
-  /** Radio buttons */
-  .eolo-input-radio input + span::before {
-    content: "";
-    @apply bg-white dark:bg-slate-700;
-  }
-  .eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
-    @apply bg-primary border-primary;
-  }
-  .eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
-    box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
-    @apply shadow-primary;
-  }
-  .eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
-    box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
-    @apply shadow-primary;
-  }
-  .eolo-input-radio input:disabled + span {
-    @apply text-slate-300;
-  }
-  .eolo-input-radio input:disabled + span::before {
-    @apply bg-slate-100 border-slate-100;
-  }
-  .eolo-input-radio.check input:checked + span::before {
-    @apply bg-primary;
-  }
-  .eolo-input-checkbox.toggler input + span::before,
-  .eolo-input-radio.toggler input + span::before {
-    border-color: var(--tw-ui-input-border-color);
-    @apply bg-slate-300 transition-all;
-  }
-  .eolo-input-checkbox.toggler input:checked + span::before,
-  .eolo-input-radio.toggler input:checked + span::before {
-    @apply bg-primary;
-  }
   /** Label */
   label {
     @apply text-gray-500
@@ -232,6 +178,65 @@
   select.eolo-input:disabled {
     @apply opacity-60;
   }
+  .eolo-input-checkbox input + span::before {
+    border-color: var(--tw-ui-input-border-color);
+    @apply bg-white dark:bg-slate-700;
+  }
+  .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
+    @apply bg-primary-50 dark:bg-slate-600;
+  }
+  .eolo-input-checkbox:not(.toggler) input:checked + span::before {
+    @apply bg-primary border-primary;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
+    background-size: 83%;
+  }
+  .eolo-input-checkbox input:disabled + span {
+    @apply text-slate-300;
+  }
+  .eolo-input-checkbox input:disabled + span::before {
+    @apply bg-slate-100 
+		border-slate-100;
+  }
+  .eolo-input-radio input + span::before {
+    content: "";
+    @apply bg-white dark:bg-slate-700;
+  }
+  .eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
+    @apply bg-primary border-primary;
+  }
+  .eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
+    box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
+    @apply shadow-primary;
+  }
+  .eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
+    box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
+    @apply shadow-primary;
+  }
+  .eolo-input-radio input:disabled + span {
+    @apply text-slate-300;
+  }
+  .eolo-input-radio input:disabled + span::before {
+    @apply bg-slate-100 border-slate-100;
+  }
+  .eolo-input-radio.check input:checked + span::before {
+    @apply bg-primary;
+  }
+  .eolo-toggler > input[type=checkbox] + span,
+  .eolo-toggler > input[type=radio] + span {
+    @apply bg-slate-200 dark:bg-slate-800;
+  }
+  .eolo-toggler > input[type=checkbox] + span::before,
+  .eolo-toggler > input[type=radio] + span::before {
+    @apply bg-slate-400 dark:bg-slate-600;
+  }
+  .eolo-toggler > input[type=checkbox]:checked + span,
+  .eolo-toggler > input[type=radio]:checked + span {
+    @apply bg-primary border-primary dark:bg-primary dark:border-primary;
+  }
+  .eolo-toggler > input[type=checkbox]:checked + span::before,
+  .eolo-toggler > input[type=radio]:checked + span::before {
+    @apply bg-white/70;
+  }
   .eolo-input-group-inset {
     @apply bg-white
 	border-[var(--tw-ui-input-border-color)] 
@@ -264,6 +269,10 @@
   .eolo-input-group-inset .eolo-input[type=week],
   .eolo-input-group-inset input[type=color],
   .eolo-input-group-inset .eolo-input[type=color] {
+    @apply bg-transparent dark:bg-transparent;
+  }
+  .eolo-input-group-inset select,
+  .eolo-input-group-inset select.eolo-input {
     @apply bg-transparent dark:bg-transparent;
   }
   .eolo-content code {

@@ -2164,19 +2164,6 @@ select.eolo-input.eolo-input-error {
   border-radius: 0.5rem;
 }
 
-.eolo-input-checkbox TOGGLER SPAN BEFORE {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
-  background-position: 3px center;
-  background-size: 11px;
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 9999px;
-}
-
-.eolo-input-checkbox TOGGLER CHECKED SPAN BEFORE {
-  background-position: calc(100% - 2px) center;
-}
-
 .eolo-input-checkbox CHECKED SPAN BEFORE {
   width: 1.5rem;
   height: 1.5rem;
@@ -2239,19 +2226,6 @@ select.eolo-input.eolo-input-error {
   cursor: auto;
 }
 
-.eolo-input-checkbox.eolo-toggler input + span::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
-  background-position: 3px center;
-  background-size: 11px;
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 9999px;
-}
-
-.eolo-input-checkbox.eolo-toggler input:checked + span::before {
-  background-position: calc(100% - 2px) center;
-}
-
 .eolo-input-checkbox.checked input + span::before {
   width: 1.5rem;
   height: 1.5rem;
@@ -2305,19 +2279,6 @@ select.eolo-input.eolo-input-error {
 .eolo-input-radio INPUT_LG SPAN BEFORE {
   width: 1.75rem;
   height: 1.75rem;
-}
-
-.eolo-input-radio TOGGLER SPAN BEFORE {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
-  background-position: 3px center;
-  background-size: 11px;
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 9999px;
-}
-
-.eolo-input-radio TOGGLER CHECKED SPAN BEFORE {
-  background-position: calc(100% - 2px) center;
 }
 
 .eolo-input-radio CHECKED SPAN BEFORE {
@@ -2378,19 +2339,6 @@ select.eolo-input.eolo-input-error {
   height: 1.75rem;
 }
 
-.eolo-input-radio.eolo-toggler input + span::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='12' height='14'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm' fill='white'/%3E%3C/svg%3E");
-  background-position: 3px center;
-  background-size: 11px;
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 9999px;
-}
-
-.eolo-input-radio.eolo-toggler input:checked + span::before {
-  background-position: calc(100% - 2px) center;
-}
-
 .eolo-input-radio.eolo-check input + span::before {
   width: 1.5rem;
   height: 1.5rem;
@@ -2400,6 +2348,82 @@ select.eolo-input.eolo-input-error {
 .eolo-input-radio.eolo-check input:checked + span::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
   background-size: 74%;
+}
+
+.eolo-toggler {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.eolo-toggler INPUT {
+  display: none;
+}
+
+.eolo-toggler SPAN {
+  border: none;
+  width: 2.5rem;
+  height: 1.25rem;
+  position: relative;
+  transition: .3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.eolo-toggler SPAN BEFORE {
+  content: '';
+  width: .75rem;
+  height: .75rem;
+  left: 0.25rem;
+  top: 0.25rem;
+  position: absolute;
+  transition: .3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.eolo-toggler CHECKED SPAN BEFORE {
+  margin-left: calc(100% - 1.25rem);
+}
+
+.eolo-toggler > input[type=checkbox], .eolo-toggler > input[type=radio] {
+  display: none;
+}
+
+.eolo-toggler > input[type=checkbox] + span, .eolo-toggler > input[type=radio] + span {
+  border: none;
+  width: 2.5rem;
+  height: 1.25rem;
+  position: relative;
+  transition: .3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.eolo-toggler > input[type=checkbox] + span BEFORE, .eolo-toggler > input[type=radio] + span BEFORE {
+  content: '';
+  width: .75rem;
+  height: .75rem;
+  left: 0.25rem;
+  top: 0.25rem;
+  position: absolute;
+  transition: .3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.eolo-toggler > input[type=checkbox] + span::before, .eolo-toggler > input[type=radio] + span::before {
+  content: '';
+  width: .75rem;
+  height: .75rem;
+  left: 0.25rem;
+  top: 0.25rem;
+  position: absolute;
+  transition: .3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.eolo-toggler > input[type=checkbox]:checked + span BEFORE, .eolo-toggler > input[type=radio]:checked + span BEFORE {
+  margin-left: calc(100% - 1.25rem);
+}
+
+.eolo-toggler > input[type=checkbox]:checked + span::before, .eolo-toggler > input[type=radio]:checked + span::before {
+  margin-left: calc(100% - 1.25rem);
 }
 
 .eolo-avatar {
@@ -3206,115 +3230,6 @@ input[type=radio]:checked + .eolo-overlay {
   background-color: transparent;
 }
 
-/** Checkboxes */
-
-.eolo-input-checkbox input + span::before {
-  border-color: var(--tw-ui-input-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] .eolo-input-checkbox input + span)::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 235 255 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span)::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.eolo-input-checkbox:not(.toggler) input:checked + span::before {
-  --tw-border-opacity: 1;
-  border-color: rgb(33 150 243 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
-  background-size: 83%;
-}
-
-.eolo-input-checkbox input:disabled + span {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.eolo-input-checkbox input:disabled + span::before {
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-/** Radio buttons */
-
-.eolo-input-radio input + span::before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] .eolo-input-radio input + span)::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
-  --tw-border-opacity: 1;
-  border-color: rgb(33 150 243 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
-}
-
-.eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
-  box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
-  --tw-shadow-color: #2196F3;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
-  box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
-  --tw-shadow-color: #2196F3;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.eolo-input-radio input:disabled + span {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.eolo-input-radio input:disabled + span::before {
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.eolo-input-radio.check input:checked + span::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
-}
-
-.eolo-input-checkbox.toggler input + span::before,
-  .eolo-input-radio.toggler input + span::before {
-  border-color: var(--tw-ui-input-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.eolo-input-checkbox.toggler input:checked + span::before,
-  .eolo-input-radio.toggler input:checked + span::before {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
-}
-
 /** Label */
 
 label {
@@ -3553,6 +3468,140 @@ select.eolo-input:disabled {
   opacity: 0.6;
 }
 
+.eolo-input-checkbox input + span::before {
+  border-color: var(--tw-ui-input-border-color);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-input-checkbox input + span)::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 235 255 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span)::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.eolo-input-checkbox:not(.toggler) input:checked + span::before {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 150 243 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
+  background-size: 83%;
+}
+
+.eolo-input-checkbox input:disabled + span {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.eolo-input-checkbox input:disabled + span::before {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.eolo-input-radio input + span::before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-input-radio input + span)::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 150 243 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+.eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
+  box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
+  --tw-shadow-color: #2196F3;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
+  box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
+  --tw-shadow-color: #2196F3;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.eolo-input-radio input:disabled + span {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.eolo-input-radio input:disabled + span::before {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.eolo-input-radio.check input:checked + span::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+.eolo-toggler > input[type=checkbox] + span,
+  .eolo-toggler > input[type=radio] + span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-toggler > input[type=checkbox] + span),:is([data-theme="dark"] 
+  .eolo-toggler > input[type=radio] + span) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.eolo-toggler > input[type=checkbox] + span::before,
+  .eolo-toggler > input[type=radio] + span::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-toggler > input[type=checkbox] + span)::before,:is([data-theme="dark"] 
+  .eolo-toggler > input[type=radio] + span)::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.eolo-toggler > input[type=checkbox]:checked + span,
+  .eolo-toggler > input[type=radio]:checked + span {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 150 243 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-toggler > input[type=checkbox]:checked + span),:is([data-theme="dark"] 
+  .eolo-toggler > input[type=radio]:checked + span) {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 150 243 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+.eolo-toggler > input[type=checkbox]:checked + span::before,
+  .eolo-toggler > input[type=radio]:checked + span::before {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
 .eolo-input-group-inset {
   border-color: var(--tw-ui-input-border-color);
   --tw-bg-opacity: 1;
@@ -3618,6 +3667,16 @@ select.eolo-input:disabled {
   .eolo-input-group-inset .eolo-input[type=week]),:is([data-theme="dark"] 
   .eolo-input-group-inset input[type=color]),:is([data-theme="dark"] 
   .eolo-input-group-inset .eolo-input[type=color]) {
+  background-color: transparent;
+}
+
+.eolo-input-group-inset select,
+  .eolo-input-group-inset select.eolo-input {
+  background-color: transparent;
+}
+
+:is([data-theme="dark"] .eolo-input-group-inset select),:is([data-theme="dark"] 
+  .eolo-input-group-inset select.eolo-input) {
   background-color: transparent;
 }
 
@@ -4509,6 +4568,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   gap: 1.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-x-10 {
   column-gap: 2.5rem;
 }
@@ -4555,6 +4618,26 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-x-14 {
+  column-gap: 3.5rem;
+}
+
+.gap-x-16 {
+  column-gap: 4rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
 }
 
 .-space-x-3 > :not([hidden]) ~ :not([hidden]) {

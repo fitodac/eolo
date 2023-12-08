@@ -1,47 +1,62 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
-<DemoCard title="Toggler">
+<DemoCard title="Toggler checkbox">
 
-<div className="grid gap-x-10 gap-y-4 mt-6 md:flex">
-	<div className="flex items-center">
-		<label className="input-checkbox toggler">
-			<input type="checkbox" />
-			<span>Like</span>
+<div className="grid gap-x-16 gap-y-10 mt-6 md:flex">
+	<div className="flex items-center gap-x-2">
+		<label className="eolo-toggler">
+			<input type="checkbox" id="checkboxToggler1" />
+      <span />
 		</label>
+    <label htmlFor="checkboxToggler1">Like</label>
 	</div>
-	<div className="flex items-center">
-		<label className="input-checkbox toggler">
-			<span>Yes</span>
+	
+  <div className="flex items-center gap-x-2">
+    <label>Yes</label>
+		<label className="eolo-toggler">
 			<input type="checkbox" />
-			<span>No</span>
+      <span />
 		</label>
+    <label>No</label>
 	</div>
-	<div className="flex items-center">
-		<label className="input-checkbox toggler">
+	
+  <div className="flex items-center gap-x-2">
+		<label className="eolo-toggler">
 			<input type="checkbox" disabled />
-			<span>Disabled</span>
+      <span />
 		</label>
+    <label>Disabled</label>
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
-<label class="input-checkbox toggler">
-  <input type="checkbox"/>
+<div class="flex items-center gap-x-2">
+  <label class="eolotoggler">
+    <input type="checkbox"/>
+    <span></span>
+  </label>
   <span>Like</span>
-</label>
+</div>
 
 
-<label class="input-checkbox toggler">
+<div class="flex items-center gap-x-2">
   <span>Yes</span>
-  <input type="checkbox"/>
+  <label class="eolo-toggler">
+    <input type="checkbox"/>
+    <span></span>
+  </label>
   <span>No</span>
-</label>
+</div>
 
 
-<label class="input-checkbox toggler">
-  <input type="checkbox" disabled />
+<div class="flex items-center gap-x-2">
+  <label class="eolo-toggler">
+    <input type="checkbox" disabled />
+    <span></span>
+  </label>
   <span>Disabled</span>
-</label>
+</div>
 ```
-
+</DemoCardCode>
 </DemoCard>

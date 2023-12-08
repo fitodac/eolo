@@ -1,54 +1,55 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Básicos">
 
 <DemoCardDescription>
-Usa la clase `.input-checkbox` en una etiqueta `<label>` para darle estilo a los chackboxes.
+Usa la clase `.eolo-input-checkbox` en una etiqueta `<label>` para darle estilo a los chackboxes.
 </DemoCardDescription>
 
 <div className="grid gap-x-8 gap-y-5 grid-cols-2 md:flex">
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="checkbox" />
 		<span>Option 1</span>
 	</label>
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="checkbox" />
 		<span>Option 2</span>
 	</label>
-	<label className="input-checkbox">
-		<input type="checkbox" checked />
+	<label className="eolo-input-checkbox">
+		<input type="checkbox" defaultChecked />
 		<span>Option 3</span>
 	</label>
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="checkbox" disabled />
 		<span>Disabled</span>
 	</label>
 </div>
 
-
+<DemoCardCode>
 ```html
 <div class="space-x-8">
 
-  <label class="input-checkbox">
+  <label class="eolo-input-checkbox">
     <input type="checkbox" />
     <span>Option 1</span>
   </label>
 
-  <label class="input-checkbox">
+  <label class="eolo-input-checkbox">
     <input type="checkbox" />
     <span>Option 2</span>
   </label>
 
-  <label class="input-checkbox">
+  <label class="eolo-input-checkbox">
     <input type="checkbox" checked />
     <span>Option 3</span>
   </label>
 
-  <label class="input-checkbox">
+  <label class="eolo-input-checkbox">
     <input type="checkbox" disabled />
     <span>Disabled</span>
   </label>
 
 </div>
 ```
+</DemoCardCode>
 </DemoCard>

@@ -32,4 +32,9 @@
 	.eolo-input[type='color'] {
 		@apply bg-transparent dark:bg-transparent;
 	}
+
+	select,
+	select.eolo-input {
+		@apply bg-transparent dark:bg-transparent;
+	}
 }

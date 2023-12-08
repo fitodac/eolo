@@ -1,60 +1,61 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Vertical">
 
 <div className="space-y-4 mt-6">
 	<div>
-		<label className="input-checkbox">
+		<label className="eolo-input-checkbox">
 			<input type="checkbox" />
 			<span>Option 1</span>
 		</label>
 	</div>
 	<div>
-		<label className="input-checkbox">
+		<label className="eolo-input-checkbox">
 			<input type="checkbox" />
 			<span>Option 2</span>
 		</label>
 	</div>
 	<div>
-		<label className="input-checkbox">
-			<input type="checkbox" checked />
+		<label className="eolo-input-checkbox">
+			<input type="checkbox" defaultChecked />
 			<span>Option 3</span>
 		</label>
 	</div>
 	<div>
-		<label className="input-checkbox">
+		<label className="eolo-input-checkbox">
 			<input type="checkbox" disabled />
 			<span>Disabled</span>
 		</label>
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
 <div class="space-y-4">
 
   <div>
-    <label class="input-checkbox">
+    <label class="eolo-input-checkbox">
       <input type="checkbox" />
       <span>Option 1</span>
     </label>
   </div>
 
   <div>
-    <label class="input-checkbox">
+    <label class="eolo-input-checkbox">
       <input type="checkbox" />
       <span>Option 2</span>
     </label>
   </div>
 
   <div>
-    <label class="input-checkbox">
+    <label class="eolo-input-checkbox">
       <input type="checkbox" />
       <span>Option 3</span>
     </label>
   </div>
 
   <div>
-    <label class="input-checkbox">
+    <label class="eolo-input-checkbox">
       <input type="checkbox" disabled />
       <span>Disabled</span>
     </label>
@@ -62,5 +63,5 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 
 </div>
 ```
-
+</DemoCardCode>
 </DemoCard>

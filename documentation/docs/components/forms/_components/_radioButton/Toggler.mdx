@@ -1,47 +1,66 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
-<DemoCard title="Toggler">
+<DemoCard title="Radio button toggler">
 
-<div className="grid gap-x-10 gap-y-4 mt-6 md:flex">
-	<div className="flex items-center">
-		<label className="input-radio toggler">
-			<input type="radio" name="options-5" />
-			<span>Like</span>
-		</label>
-	</div>
-	<div className="flex items-center">
-		<label className="input-radio toggler">
-			<span>Yes</span>
-			<input type="radio" name="options-5" />
-			<span>No</span>
-		</label>
-	</div>
-	<div className="flex items-center">
-		<label className="input-radio toggler">
-			<input type="radio" name="options-5" disabled />
-			<span>Disabled</span>
-		</label>
-	</div>
+<div className="grid gap-7 mt-6 md:flex">
+  <div className="flex items-center gap-x-2">
+    <label className="eolo-toggler">
+      <input type="radio" name="radioToggler1" id="radioToggler1_1" />
+      <span />
+    </label>
+    <label htmlFor="radioToggler1_1">New York</label>
+  </div>
+  
+  <div className="flex items-center gap-x-2">
+    <label className="eolo-toggler">
+      <input type="radio" name="radioToggler1" id="radioToggler1_2" />
+      <span />
+    </label>
+    <label htmlFor="radioToggler1_2">Paris</label>
+  </div>
+  
+  <div className="flex items-center gap-x-2">
+    <label className="eolo-toggler">
+      <input type="radio" name="radioToggler1" id="radioToggler1_3" />
+      <span />
+    </label>
+    <label htmlFor="radioToggler1_3">Tokyo</label>
+  </div>
+  
+  <div className="flex items-center gap-x-2">
+    <label className="eolo-toggler">
+      <input type="radio" name="radioToggler1" id="radioToggler1_4" />
+      <span />
+    </label>
+    <label htmlFor="radioToggler1_4">Barcelona</label>
+  </div>
 </div>
 
+<DemoCardCode>
 ```html
-<label class="input-radio toggler">
-  <input type="radio" name="options" />
-  <span>Like</span>
-</label>
+<div class="flex items-center gap-x-2">
+  <label class="eolo-toggler">
+    <input type="radio" name="radioToggler1" id="radioToggler1_1" />
+    <span />
+  </label>
+  <label htmlFor="radioToggler1_1">New York</label>
+</div>
 
+<div class="flex items-center gap-x-2">
+  <label class="eolo-toggler">
+    <input type="radio" name="radioToggler1" id="radioToggler1_2" />
+    <span />
+  </label>
+  <label htmlFor="radioToggler1_2">Paris</label>
+</div>
 
-<label class="input-radio toggler">
-  <span>Yes</span>
-  <input type="radio" name="options" />
-  <span>No</span>
-</label>
-
-
-<label class="input-radio toggler">
-  <input type="radio" name="options" disabled />
-  <span>Disabled</span>
-</label>
+<div class="flex items-center gap-x-2">
+  <label class="eolo-toggler">
+    <input type="radio" name="radioToggler1" id="radioToggler1_3" />
+    <span />
+  </label>
+  <label htmlFor="radioToggler1_3">Tokyo</label>
+</div>
 ```
-
+</DemoCardCode>
 </DemoCard>

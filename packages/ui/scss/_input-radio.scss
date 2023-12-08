@@ -1,0 +1,33 @@
+.eolo-input-radio {
+	input + span::before {
+		content: '';
+
+		@apply bg-white dark:bg-slate-700;
+	}
+
+	&:hover input:not(:disabled):not(:checked) + span::before {
+		@apply bg-primary border-primary;
+	}
+
+	&:not(.toggler):not(.check) input:checked + span::before {
+		box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
+		@apply shadow-primary;
+	}
+
+	&.eolo-input-lg:not(.toggler) input:checked + span::before {
+		box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
+		@apply shadow-primary;
+	}
+
+	input:disabled + span {
+		@apply text-slate-300;
+	}
+
+	input:disabled + span::before {
+		@apply bg-slate-100 border-slate-100;
+	}
+
+	&.check input:checked + span::before {
+		@apply bg-primary;
+	}
+}
