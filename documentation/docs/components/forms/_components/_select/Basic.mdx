@@ -1,11 +1,11 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Básicos">
 
-<div className="grid gap-y-4 gap-x-10 mt-6 xl:grid-cols-3">
+<div className="max-w-sm mt-6">
 	<div className="space-y-1">
 		<label>Basic</label>
-		<select>
+		<select className="eolo-input">
 			<option selected>Select one city</option>
 			<option value="new york">New York</option>
 			<option value="london">London</option>
@@ -15,17 +15,12 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 			<option value="tokyo">Tokyo</option>
 		</select>
 	</div>
-	<div className="space-y-1">
-		<label>Disabled</label>
-		<select disabled>
-			<option selected>Select one city</option>
-		</select>
-	</div>
 </div>
 
+
+<DemoCardCode>
 ```html
-<!-- Basic -->
-<select>
+<select className="eolo-input">
   <option selected>Select one city</option>
   <option value="new york">New York</option>
   <option value="london">London</option>
@@ -34,11 +29,25 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
   <option value="dubai">Dubai</option>
   <option value="tokyo">Tokyo</option>
 </select>
+```
+</DemoCardCode>
 
 
-<!-- Disabled -->
-<select disabled>
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Disabled</label>
+		<select className="eolo-input" disabled>
+			<option selected>Select one city</option>
+		</select>
+	</div>
+</div>
+
+
+<DemoCardCode>
+```html
+<select className="eolo-input" disabled>
   <option selected>Select one city</option>
 </select>
 ```
+</DemoCardCode>
 </DemoCard>

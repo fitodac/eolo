@@ -1,0 +1,57 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Optgroup">
+
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Basic</label>
+		<select className="eolo-input">
+			<option selected>Select one city</option>
+      <optgroup label="America">
+			  <option value="new york">New York</option>
+			  <option value="mexico city">Mexico City</option>
+			  <option value="sao paulo">São Paulo</option>
+			  <option value="buenos aires">Buenos Aires</option>
+      </optgroup>
+      <optgroup label="Europe">
+			  <option value="london">London</option>
+			  <option value="paris">Paris</option>
+			  <option value="berlin">Berlin</option>
+      </optgroup>
+      <optgroup label="Asia">
+			  <option value="tokio">Tokio</option>
+			  <option value="beijing">Beijin</option>
+			  <option value="mumbai">Mumbai</option>
+      </optgroup>
+		</select>
+	</div>
+</div>
+
+
+<DemoCardCode>
+```html
+<select class="eolo-input">
+  <option selected>Select one city</option>
+  <optgroup label="America">
+    <option value="new york">New York</option>
+    <option value="mexico city">Mexico City</option>
+    <option value="sao paulo">São Paulo</option>
+    <option value="buenos aires">Buenos Aires</option>
+  </optgroup>
+  <optgroup label="Europe">
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="berlin">Berlin</option>
+  </optgroup>
+  <optgroup label="Asia">
+    <option value="tokio">Tokio</option>
+    <option value="beijing">Beijin</option>
+    <option value="mumbai">Mumbai</option>
+  </optgroup>
+</select>
+```
+</DemoCardCode>
+
+
+
+</DemoCard>

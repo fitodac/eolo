@@ -36,6 +36,7 @@ const BASE = {
 		'line-height': theme.lineHeight.none,
 		'font-weight': theme.fontWeight.medium,
 		'max-height': theme.spacing[10],
+		height: '2.4rem',
 		padding: `${theme.spacing[2.5]} ${theme.spacing[5]}`,
 		display: 'inline-flex',
 		'justify-content': 'center',
@@ -205,7 +206,7 @@ const COMPONENTS = (addComponents, options) => {
 					...options['.eolo-btn-group > .eolo-btn:last-child'],
 				},
 			},
-			
+
 			['> .eolo-dropdown > .eolo-btn-toggler > .eolo-btn']: {
 				...BASE.GROUP.CHILDREN,
 				...options['.eolo-btn-group > .eolo-btn'],

@@ -38,172 +38,58 @@
 	border-transparent
 	rounded-none;
   }
-  /** Form */
-  input[type=text],
-  input[type=password],
-  input[type=email],
-  input[type=number],
-  input[type=tel],
-  input[type=search],
-  input[type=url],
-  input[type=date],
-  input[type=time],
-  input[type=datetime-local],
-  input[type=week],
-  input[type=color] {
-    @apply bg-white
-	border-[var(--tw-ui-input-border-color)] 
-	font-[var(--tw-ui-text-color)]
-	dark:bg-slate-800
-	dark:border-[var(--tw-ui-dark-border-color)] 
-	dark:text-slate-200;
-  }
-  input[type=text].eolo-input-valid,
-  input[type=password].eolo-input-valid,
-  input[type=email].eolo-input-valid,
-  input[type=number].eolo-input-valid,
-  input[type=tel].eolo-input-valid,
-  input[type=search].eolo-input-valid,
-  input[type=url].eolo-input-valid,
-  input[type=date].eolo-input-valid,
-  input[type=time].eolo-input-valid,
-  input[type=datetime-local].eolo-input-valid,
-  input[type=week].eolo-input-valid,
-  input[type=color].eolo-input-valid {
-    @apply border-[var(--tw-ui-input-valid-color)] 
-		text-[var(--tw-ui-input-valid-color)];
-  }
-  input[type=text].eolo-input-error,
-  input[type=password].eolo-input-error,
-  input[type=email].eolo-input-error,
-  input[type=number].eolo-input-error,
-  input[type=tel].eolo-input-error,
-  input[type=search].eolo-input-error,
-  input[type=url].eolo-input-error,
-  input[type=date].eolo-input-error,
-  input[type=time].eolo-input-error,
-  input[type=datetime-local].eolo-input-error,
-  input[type=week].eolo-input-error,
-  input[type=color].eolo-input-error {
-    @apply border-[var(--tw-ui-input-error-color)] 
-		text-[var(--tw-ui-input-error-color)];
-  }
-  input[type=text]:disabled,
-  input[type=password]:disabled,
-  input[type=email]:disabled,
-  input[type=number]:disabled,
-  input[type=tel]:disabled,
-  input[type=search]:disabled,
-  input[type=url]:disabled,
-  input[type=date]:disabled,
-  input[type=time]:disabled,
-  input[type=datetime-local]:disabled,
-  input[type=week]:disabled,
-  input[type=color]:disabled {
-    @apply bg-slate-50
-		cursor-not-allowed
-		dark:bg-slate-800
-		dark:border-slate-600;
-  }
-  /** Input groups */
-  .eolo-input-group-inset {
-    @apply bg-white
-	border-[var(--tw-ui-input-border-color)] 
-	font-[var(--tw-ui-text-color)]
-	dark:bg-slate-800
-	dark:border-[var(--tw-ui-dark-border-color)] 
-	dark:text-slate-200;
-  }
-  .eolo-input-group-inset input[type=text],
-  .eolo-input-group-inset input[type=password],
-  .eolo-input-group-inset input[type=email],
-  .eolo-input-group-inset input[type=number],
-  .eolo-input-group-inset input[type=tel],
-  .eolo-input-group-inset input[type=search],
-  .eolo-input-group-inset input[type=url],
-  .eolo-input-group-inset input[type=date],
-  .eolo-input-group-inset input[type=time],
-  .eolo-input-group-inset input[type=datetime-local],
-  .eolo-input-group-inset input[type=week],
-  .eolo-input-group-inset input[type=color] {
-    @apply bg-transparent;
-  }
-  /** Select */
-  select {
-    @apply bg-white
-	border-[var(--tw-ui-input-border-color)] 
-	font-[var(--tw-ui-text-color)]
-	dark:bg-slate-800
-	dark:border-[var(--tw-ui-dark-border-color)] 
-	dark:text-slate-200;
-  }
-  select.input-valid {
-    @apply border-[var(--tw-ui-input-valid-color)] 
-		text-[var(--tw-ui-input-valid-color)];
-  }
-  select.input-error {
-    @apply border-[var(--tw-ui-input-error-color)] 
-		text-[var(--tw-ui-input-error-color)];
-  }
   /** Checkboxes */
-  .input-checkbox input + span::before {
+  .eolo-input-checkbox input + span::before {
     border-color: var(--tw-ui-input-border-color);
-    @apply bg-white 
-		dark:bg-slate-700;
+    @apply bg-white dark:bg-slate-700;
   }
-  .input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
-    @apply bg-primary-50 
-		dark:bg-slate-600;
+  .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
+    @apply bg-primary-50 dark:bg-slate-600;
   }
-  .input-checkbox:not(.toggler) input:checked + span::before {
-    @apply bg-primary 
-		border-primary;
+  .eolo-input-checkbox:not(.toggler) input:checked + span::before {
+    @apply bg-primary border-primary;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='white' d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z' stroke='white' stroke-width='1' stroke-linecap='round' /%3E%3C/svg%3E");
     background-size: 83%;
   }
-  .input-checkbox input:disabled + span {
+  .eolo-input-checkbox input:disabled + span {
     @apply text-slate-300;
   }
-  .input-checkbox input:disabled + span::before {
+  .eolo-input-checkbox input:disabled + span::before {
     @apply bg-slate-100 
 		border-slate-100;
   }
   /** Radio buttons */
-  .input-radio input + span::before {
+  .eolo-input-radio input + span::before {
     content: "";
-    @apply bg-white 
-		dark:bg-slate-700;
+    @apply bg-white dark:bg-slate-700;
   }
-  .input-radio:hover input:not(:disabled):not(:checked) + span::before {
-    @apply bg-primary 
-		border-primary;
+  .eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
+    @apply bg-primary border-primary;
   }
-  .input-radio:not(.toggler):not(.check) input:checked + span::before {
+  .eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
     box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
     @apply shadow-primary;
   }
-  .input-radio.input-lg:not(.toggler) input:checked + span::before {
+  .eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
     box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
     @apply shadow-primary;
   }
-  .input-radio input:disabled + span {
+  .eolo-input-radio input:disabled + span {
     @apply text-slate-300;
   }
-  .input-radio input:disabled + span::before {
-    @apply bg-slate-100 
-		border-slate-100;
+  .eolo-input-radio input:disabled + span::before {
+    @apply bg-slate-100 border-slate-100;
   }
-  .input-radio.check input:checked + span::before {
+  .eolo-input-radio.check input:checked + span::before {
     @apply bg-primary;
   }
-  .input-checkbox.toggler input + span::before,
-  .input-radio.toggler input + span::before {
+  .eolo-input-checkbox.toggler input + span::before,
+  .eolo-input-radio.toggler input + span::before {
     border-color: var(--tw-ui-input-border-color);
-    @apply bg-slate-300
-	transition-all;
+    @apply bg-slate-300 transition-all;
   }
-  .input-checkbox.toggler input:checked + span::before,
-  .input-radio.toggler input:checked + span::before {
+  .eolo-input-checkbox.toggler input:checked + span::before,
+  .eolo-input-radio.toggler input:checked + span::before {
     @apply bg-primary;
   }
   /** Label */
@@ -216,20 +102,169 @@
 	dark:text-slate-300;
   }
   /** Helpers */
-  .input-helper {
-    @apply text-gray-400
-	text-xs
-	leading-tight
-	px-0.5;
+  .eolo-input-helper {
+    @apply text-slate-400 dark:text-slate-200;
   }
-  .input-helper [class*=ri-] {
+  .eolo-input-helper [class*=ri-] {
     @apply text-base;
   }
-  .input-helper.input-helper-valid {
+  .eolo-input-helper.eolo-input-helper-valid {
     @apply text-[var(--tw-ui-input-valid-color)];
   }
-  .input-helper.input-helper-error {
+  .eolo-input-helper.eolo-input-helper-error {
     @apply text-[var(--tw-ui-input-error-color)];
+  }
+  /**
+  Input types
+  **/
+  .eolo-input[type=text],
+  .eolo-input[type=password],
+  .eolo-input[type=email],
+  .eolo-input[type=number],
+  .eolo-input[type=tel],
+  .eolo-input[type=search],
+  .eolo-input[type=url],
+  .eolo-input[type=date],
+  .eolo-input[type=time],
+  .eolo-input[type=datetime-local],
+  .eolo-input[type=week] {
+    @apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+  }
+  .eolo-input[type=text].eolo-input-valid,
+  .eolo-input[type=password].eolo-input-valid,
+  .eolo-input[type=email].eolo-input-valid,
+  .eolo-input[type=number].eolo-input-valid,
+  .eolo-input[type=tel].eolo-input-valid,
+  .eolo-input[type=search].eolo-input-valid,
+  .eolo-input[type=url].eolo-input-valid,
+  .eolo-input[type=date].eolo-input-valid,
+  .eolo-input[type=time].eolo-input-valid,
+  .eolo-input[type=datetime-local].eolo-input-valid,
+  .eolo-input[type=week].eolo-input-valid {
+    @apply border-[var(--tw-ui-input-valid-color)] 
+		text-[var(--tw-ui-input-valid-color)];
+  }
+  .eolo-input[type=text].eolo-input-error,
+  .eolo-input[type=password].eolo-input-error,
+  .eolo-input[type=email].eolo-input-error,
+  .eolo-input[type=number].eolo-input-error,
+  .eolo-input[type=tel].eolo-input-error,
+  .eolo-input[type=search].eolo-input-error,
+  .eolo-input[type=url].eolo-input-error,
+  .eolo-input[type=date].eolo-input-error,
+  .eolo-input[type=time].eolo-input-error,
+  .eolo-input[type=datetime-local].eolo-input-error,
+  .eolo-input[type=week].eolo-input-error {
+    @apply border-[var(--tw-ui-input-error-color)] 
+		text-[var(--tw-ui-input-error-color)];
+  }
+  .eolo-input[type=text]:disabled,
+  .eolo-input[type=password]:disabled,
+  .eolo-input[type=email]:disabled,
+  .eolo-input[type=number]:disabled,
+  .eolo-input[type=tel]:disabled,
+  .eolo-input[type=search]:disabled,
+  .eolo-input[type=url]:disabled,
+  .eolo-input[type=date]:disabled,
+  .eolo-input[type=time]:disabled,
+  .eolo-input[type=datetime-local]:disabled,
+  .eolo-input[type=week]:disabled {
+    @apply opacity-60;
+  }
+  /**
+  Date
+  **/
+  .eolo-input[type=date].eolo-calendar-on-focus,
+  .eolo-input[type=datetime-local].eolo-calendar-on-focus,
+  .eolo-input[type=time].eolo-calendar-on-focus {
+    @apply relative overflow-hidden;
+  }
+  .eolo-input[type=date].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,
+  .eolo-input[type=datetime-local].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,
+  .eolo-input[type=time].eolo-calendar-on-focus::-webkit-calendar-picker-indicator {
+    @apply w-full h-full block left-0 top-0 absolute opacity-0;
+  }
+  /**
+  Color
+  **/
+  .eolo-input[type=color] {
+    @apply bg-transparent border-none rounded-none;
+  }
+  /**
+  Range
+  **/
+  input[type=range]::-webkit-slider-runnable-track {
+    @apply bg-gray-300 dark:bg-black/30;
+  }
+  input[type=range]::-moz-range-track {
+    @apply bg-gray-300 dark:bg-black/30;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    @apply bg-gray-500 dark:bg-slate-600;
+  }
+  input[type=range]::-moz-range-thumb {
+    @apply bg-gray-500 dark:bg-slate-600;
+  }
+  select.eolo-input {
+    @apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+  }
+  select.eolo-input option {
+    @apply text-primary;
+  }
+  select.eolo-input.eolo-input-valid {
+    @apply border-[var(--tw-ui-input-valid-color)] 
+		text-[var(--tw-ui-input-valid-color)];
+  }
+  select.eolo-input.eolo-input-error {
+    @apply border-[var(--tw-ui-input-error-color)] 
+		text-[var(--tw-ui-input-error-color)];
+  }
+  select.eolo-input:disabled {
+    @apply opacity-60;
+  }
+  .eolo-input-group-inset {
+    @apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+  }
+  .eolo-input-group-inset input[type=text],
+  .eolo-input-group-inset .eolo-input[type=text],
+  .eolo-input-group-inset input[type=password],
+  .eolo-input-group-inset .eolo-input[type=password],
+  .eolo-input-group-inset input[type=email],
+  .eolo-input-group-inset .eolo-input[type=email],
+  .eolo-input-group-inset input[type=number],
+  .eolo-input-group-inset .eolo-input[type=number],
+  .eolo-input-group-inset input[type=tel],
+  .eolo-input-group-inset .eolo-input[type=tel],
+  .eolo-input-group-inset input[type=search],
+  .eolo-input-group-inset .eolo-input[type=search],
+  .eolo-input-group-inset input[type=url],
+  .eolo-input-group-inset .eolo-input[type=url],
+  .eolo-input-group-inset input[type=date],
+  .eolo-input-group-inset .eolo-input[type=date],
+  .eolo-input-group-inset input[type=time],
+  .eolo-input-group-inset .eolo-input[type=time],
+  .eolo-input-group-inset input[type=datetime-local],
+  .eolo-input-group-inset .eolo-input[type=datetime-local],
+  .eolo-input-group-inset input[type=week],
+  .eolo-input-group-inset .eolo-input[type=week],
+  .eolo-input-group-inset input[type=color],
+  .eolo-input-group-inset .eolo-input[type=color] {
+    @apply bg-transparent dark:bg-transparent;
   }
   .eolo-content code {
     @apply text-blue-400

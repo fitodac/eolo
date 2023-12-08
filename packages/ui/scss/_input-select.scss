@@ -1,0 +1,26 @@
+select.eolo-input {
+	@apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+
+	option {
+		@apply text-primary;
+	}
+
+	&.eolo-input-valid {
+		@apply border-[var(--tw-ui-input-valid-color)] 
+		text-[var(--tw-ui-input-valid-color)];
+	}
+
+	&.eolo-input-error {
+		@apply border-[var(--tw-ui-input-error-color)] 
+		text-[var(--tw-ui-input-error-color)];
+	}
+
+	&:disabled {
+		@apply opacity-60;
+	}
+}

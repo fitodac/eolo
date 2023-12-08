@@ -897,8 +897,8 @@ video {
   --tw-ui-font-weight: 300;
   --tw-ui-line-height: 1.4;
   --tw-ui-input-border-color: rgb(203 213 225);
-  --tw-ui-input-valid-color: rgb(22 163 74);
-  --tw-ui-input-error-color: rgb(185 28 28);
+  --tw-ui-input-valid-color: rgb(22,163,74);
+  --tw-ui-input-error-color: rgb(185,28,28);
   --tw-ui-dark-text-color: rgb(241 245 249);
   --tw-ui-dark-border-color: rgb(100 116 139);
 }
@@ -1048,6 +1048,7 @@ video {
   line-height: 1;
   font-weight: 500;
   max-height: 2.5rem;
+  height: 2.4rem;
   padding: 0.625rem 1.25rem;
   display: inline-flex;
   justify-content: center;
@@ -1421,7 +1422,7 @@ video {
   border-radius: 0.5rem;
 }
 
-input[type=text] {
+.eolo-input[type=text] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1432,27 +1433,40 @@ input[type=text] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=text] FOCUS {
+.eolo-input[type=text] FOCUS {
   outline-style: none;
 }
 
-input[type=text] PLACEHOLDER {
+.eolo-input[type=text] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=text]:focus, input[type=text]:focus-visible {
+.eolo-input[type=text] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=text]:focus, .eolo-input[type=text]:focus-visible {
   outline-style: none;
 }
 
-input[type=text]::placeholder {
+.eolo-input[type=text]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=password] {
+.eolo-input[type=text]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=password] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1463,27 +1477,40 @@ input[type=password] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=password] FOCUS {
+.eolo-input[type=password] FOCUS {
   outline-style: none;
 }
 
-input[type=password] PLACEHOLDER {
+.eolo-input[type=password] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=password]:focus, input[type=password]:focus-visible {
+.eolo-input[type=password] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=password]:focus, .eolo-input[type=password]:focus-visible {
   outline-style: none;
 }
 
-input[type=password]::placeholder {
+.eolo-input[type=password]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=email] {
+.eolo-input[type=password]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=email] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1494,27 +1521,40 @@ input[type=email] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=email] FOCUS {
+.eolo-input[type=email] FOCUS {
   outline-style: none;
 }
 
-input[type=email] PLACEHOLDER {
+.eolo-input[type=email] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=email]:focus, input[type=email]:focus-visible {
+.eolo-input[type=email] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=email]:focus, .eolo-input[type=email]:focus-visible {
   outline-style: none;
 }
 
-input[type=email]::placeholder {
+.eolo-input[type=email]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=number] {
+.eolo-input[type=email]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=number] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1525,27 +1565,40 @@ input[type=number] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=number] FOCUS {
+.eolo-input[type=number] FOCUS {
   outline-style: none;
 }
 
-input[type=number] PLACEHOLDER {
+.eolo-input[type=number] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=number]:focus, input[type=number]:focus-visible {
+.eolo-input[type=number] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=number]:focus, .eolo-input[type=number]:focus-visible {
   outline-style: none;
 }
 
-input[type=number]::placeholder {
+.eolo-input[type=number]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=tel] {
+.eolo-input[type=number]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=tel] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1556,27 +1609,40 @@ input[type=tel] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=tel] FOCUS {
+.eolo-input[type=tel] FOCUS {
   outline-style: none;
 }
 
-input[type=tel] PLACEHOLDER {
+.eolo-input[type=tel] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=tel]:focus, input[type=tel]:focus-visible {
+.eolo-input[type=tel] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=tel]:focus, .eolo-input[type=tel]:focus-visible {
   outline-style: none;
 }
 
-input[type=tel]::placeholder {
+.eolo-input[type=tel]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=search] {
+.eolo-input[type=tel]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=search] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1587,27 +1653,40 @@ input[type=search] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=search] FOCUS {
+.eolo-input[type=search] FOCUS {
   outline-style: none;
 }
 
-input[type=search] PLACEHOLDER {
+.eolo-input[type=search] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=search]:focus, input[type=search]:focus-visible {
+.eolo-input[type=search] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=search]:focus, .eolo-input[type=search]:focus-visible {
   outline-style: none;
 }
 
-input[type=search]::placeholder {
+.eolo-input[type=search]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=url] {
+.eolo-input[type=search]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=url] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1618,27 +1697,40 @@ input[type=url] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=url] FOCUS {
+.eolo-input[type=url] FOCUS {
   outline-style: none;
 }
 
-input[type=url] PLACEHOLDER {
+.eolo-input[type=url] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=url]:focus, input[type=url]:focus-visible {
+.eolo-input[type=url] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=url]:focus, .eolo-input[type=url]:focus-visible {
   outline-style: none;
 }
 
-input[type=url]::placeholder {
+.eolo-input[type=url]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=date] {
+.eolo-input[type=url]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=date] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1649,27 +1741,40 @@ input[type=date] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=date] FOCUS {
+.eolo-input[type=date] FOCUS {
   outline-style: none;
 }
 
-input[type=date] PLACEHOLDER {
+.eolo-input[type=date] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=date]:focus, input[type=date]:focus-visible {
+.eolo-input[type=date] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=date]:focus, .eolo-input[type=date]:focus-visible {
   outline-style: none;
 }
 
-input[type=date]::placeholder {
+.eolo-input[type=date]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=time] {
+.eolo-input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=time] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1680,27 +1785,40 @@ input[type=time] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=time] FOCUS {
+.eolo-input[type=time] FOCUS {
   outline-style: none;
 }
 
-input[type=time] PLACEHOLDER {
+.eolo-input[type=time] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=time]:focus, input[type=time]:focus-visible {
+.eolo-input[type=time] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=time]:focus, .eolo-input[type=time]:focus-visible {
   outline-style: none;
 }
 
-input[type=time]::placeholder {
+.eolo-input[type=time]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=datetime-local] {
+.eolo-input[type=time]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=datetime-local] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1711,27 +1829,40 @@ input[type=datetime-local] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=datetime-local] FOCUS {
+.eolo-input[type=datetime-local] FOCUS {
   outline-style: none;
 }
 
-input[type=datetime-local] PLACEHOLDER {
+.eolo-input[type=datetime-local] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=datetime-local]:focus, input[type=datetime-local]:focus-visible {
+.eolo-input[type=datetime-local] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=datetime-local]:focus, .eolo-input[type=datetime-local]:focus-visible {
   outline-style: none;
 }
 
-input[type=datetime-local]::placeholder {
+.eolo-input[type=datetime-local]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=week] {
+.eolo-input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=week] {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1742,55 +1873,37 @@ input[type=week] {
   border-radius: 0.375rem;
   -webkit-user-select: none;
           user-select: none;
+  height: 2.5rem;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-input[type=week] FOCUS {
+.eolo-input[type=week] FOCUS {
   outline-style: none;
 }
 
-input[type=week] PLACEHOLDER {
+.eolo-input[type=week] PLACEHOLDER {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=week]:focus, input[type=week]:focus-visible {
+.eolo-input[type=week] CALENDAR_PICKER_INDICATOR {
+  display: none;
+  opacity: 0;
+}
+
+.eolo-input[type=week]:focus, .eolo-input[type=week]:focus-visible {
   outline-style: none;
 }
 
-input[type=week]::placeholder {
+.eolo-input[type=week]::placeholder {
   color: var(--tw-global-text-color);
   opacity: .4;
 }
 
-input[type=color] {
-  border-width: 1px;
-  border-style: solid;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 100%;
-  max-height: 2.5rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.375rem;
-  -webkit-user-select: none;
-          user-select: none;
-}
-
-input[type=color] FOCUS {
-  outline-style: none;
-}
-
-input[type=color] PLACEHOLDER {
-  color: var(--tw-global-text-color);
-  opacity: .4;
-}
-
-input[type=color]:focus, input[type=color]:focus-visible {
-  outline-style: none;
-}
-
-input[type=color]::placeholder {
-  color: var(--tw-global-text-color);
-  opacity: .4;
+.eolo-input[type=week]::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
 }
 
 .eolo-input-group {
@@ -1825,15 +1938,18 @@ input[type=color]::placeholder {
 .eolo-input-group-inset {
   border-width: 1px;
   width: 100%;
+  height: 2.5rem;
   padding: 0.5rem;
   display: inline-flex;
   align-items: center;
   column-gap: 0.375rem;
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
 }
 
 .eolo-input-group-inset BTN {
+  height: 1.6rem;
   padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
 }
 
 .eolo-input-group-inset INPUT {
@@ -1852,7 +1968,7 @@ input[type=color]::placeholder {
   padding: 0 0.75rem 0 0;
 }
 
-.eolo-input-group-inset > input {
+.eolo-input-group-inset > input, .eolo-input-group-inset > .eolo-input {
   background: transparent;
   border: none;
   padding: 0;
@@ -1860,27 +1976,102 @@ input[type=color]::placeholder {
   border-radius: 0;
 }
 
-.eolo-input-group-inset > input FIRTST_CHILD {
+.eolo-input-group-inset > input FIRTST_CHILD, .eolo-input-group-inset > .eolo-input FIRTST_CHILD {
   padding: 0 0 0 0.75rem;
 }
 
-.eolo-input-group-inset > input LAST_CHILD {
+.eolo-input-group-inset > input LAST_CHILD, .eolo-input-group-inset > .eolo-input LAST_CHILD {
   padding: 0 0.75rem 0 0;
 }
 
-.eolo-input-group-inset > input:first-child {
+.eolo-input-group-inset > input:first-child, .eolo-input-group-inset > .eolo-input:first-child {
   padding: 0 0 0 0.75rem;
 }
 
-.eolo-input-group-inset > input:last-child {
+.eolo-input-group-inset > input:last-child, .eolo-input-group-inset > .eolo-input:last-child {
   padding: 0 0.75rem 0 0;
 }
 
 .eolo-input-group-inset > .eolo-btn {
+  height: 1.6rem;
   padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
 }
 
-select {
+.eolo-input[type=color] {
+  padding: 0;
+}
+
+.eolo-input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.eolo-input[type=color]::-webkit-color-swatch {
+  border: none;
+}
+
+.eolo-input-helper {
+  font-size: 0.75rem;
+  font-size: [object Object];
+  font-weight: 500;
+  line-height: 1.25;
+  padding: 0.125rem 0.125rem;
+}
+
+.eolo-input[type=range] {
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.eolo-input[type=range] TRACK {
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+.eolo-input[type=range] BALL {
+  border: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -.3rem;
+  border-radius: 9999px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.eolo-input[type=range]::-webkit-slider-runnable-track {
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+.eolo-input[type=range]::-moz-range-track {
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+.eolo-input[type=range]::-webkit-slider-thumb {
+  border: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -.3rem;
+  border-radius: 9999px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.eolo-input[type=range]::-moz-range-thumb {
+  border: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -.3rem;
+  border-radius: 9999px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+select.eolo-input {
   border-width: 1px;
   border-style: solid;
   font-size: 0.875rem;
@@ -1895,6 +2086,7 @@ select {
   background-position: right 0.5rem center;
   background-repeat: no-repeat;
   background-size: 1.5em;
+  height: 2.5rem;
   cursor: pointer;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -1902,28 +2094,28 @@ select {
   appearance: none;
 }
 
-select FOCUS {
+select.eolo-input FOCUS {
   outline-style: none;
 }
 
-select VALID {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(22 163 74)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+select.eolo-input VALID {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(22,163,74)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
 
-select ERROR {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(185 28 28)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+select.eolo-input ERROR {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(185,28,28)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
 
-select:focus, select:focus-visible {
+select.eolo-input:focus, select.eolo-input:focus-visible {
   outline-style: none;
 }
 
-select.input-valid {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(22 163 74)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+select.eolo-input.eolo-input-valid {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(22,163,74)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
 
-select.input-error {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(185 28 28)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+select.eolo-input.eolo-input-error {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='rgb(185,28,28)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
 }
 
 .eolo-input-checkbox {
@@ -3014,163 +3206,30 @@ input[type=radio]:checked + .eolo-overlay {
   background-color: transparent;
 }
 
-/** Form */
-
-input[type=text],
-  input[type=password],
-  input[type=email],
-  input[type=number],
-  input[type=tel],
-  input[type=search],
-  input[type=url],
-  input[type=date],
-  input[type=time],
-  input[type=datetime-local],
-  input[type=week],
-  input[type=color] {
-  border-color: var(--tw-ui-input-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  font-weight: var(--tw-ui-text-color);
-}
-
-:is([data-theme="dark"] input[type=text]),:is([data-theme="dark"] 
-  input[type=password]),:is([data-theme="dark"] 
-  input[type=email]),:is([data-theme="dark"] 
-  input[type=number]),:is([data-theme="dark"] 
-  input[type=tel]),:is([data-theme="dark"] 
-  input[type=search]),:is([data-theme="dark"] 
-  input[type=url]),:is([data-theme="dark"] 
-  input[type=date]),:is([data-theme="dark"] 
-  input[type=time]),:is([data-theme="dark"] 
-  input[type=datetime-local]),:is([data-theme="dark"] 
-  input[type=week]),:is([data-theme="dark"] 
-  input[type=color]) {
-  border-color: var(--tw-ui-dark-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-input[type=text]:disabled,
-  input[type=password]:disabled,
-  input[type=email]:disabled,
-  input[type=number]:disabled,
-  input[type=tel]:disabled,
-  input[type=search]:disabled,
-  input[type=url]:disabled,
-  input[type=date]:disabled,
-  input[type=time]:disabled,
-  input[type=datetime-local]:disabled,
-  input[type=week]:disabled,
-  input[type=color]:disabled {
-  cursor: not-allowed;
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] input[type=text]:disabled),:is([data-theme="dark"] 
-  input[type=password]:disabled),:is([data-theme="dark"] 
-  input[type=email]:disabled),:is([data-theme="dark"] 
-  input[type=number]:disabled),:is([data-theme="dark"] 
-  input[type=tel]:disabled),:is([data-theme="dark"] 
-  input[type=search]:disabled),:is([data-theme="dark"] 
-  input[type=url]:disabled),:is([data-theme="dark"] 
-  input[type=date]:disabled),:is([data-theme="dark"] 
-  input[type=time]:disabled),:is([data-theme="dark"] 
-  input[type=datetime-local]:disabled),:is([data-theme="dark"] 
-  input[type=week]:disabled),:is([data-theme="dark"] 
-  input[type=color]:disabled) {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-/** Input groups */
-
-.eolo-input-group-inset {
-  border-color: var(--tw-ui-input-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  font-weight: var(--tw-ui-text-color);
-}
-
-:is([data-theme="dark"] .eolo-input-group-inset) {
-  border-color: var(--tw-ui-dark-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.eolo-input-group-inset input[type=text],
-  .eolo-input-group-inset input[type=password],
-  .eolo-input-group-inset input[type=email],
-  .eolo-input-group-inset input[type=number],
-  .eolo-input-group-inset input[type=tel],
-  .eolo-input-group-inset input[type=search],
-  .eolo-input-group-inset input[type=url],
-  .eolo-input-group-inset input[type=date],
-  .eolo-input-group-inset input[type=time],
-  .eolo-input-group-inset input[type=datetime-local],
-  .eolo-input-group-inset input[type=week],
-  .eolo-input-group-inset input[type=color] {
-  background-color: transparent;
-}
-
-/** Select */
-
-select {
-  border-color: var(--tw-ui-input-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  font-weight: var(--tw-ui-text-color);
-}
-
-:is([data-theme="dark"] select) {
-  border-color: var(--tw-ui-dark-border-color);
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-select.input-valid {
-  border-color: var(--tw-ui-input-valid-color);
-  color: var(--tw-ui-input-valid-color);
-}
-
-select.input-error {
-  border-color: var(--tw-ui-input-error-color);
-  color: var(--tw-ui-input-error-color);
-}
-
 /** Checkboxes */
 
-.input-checkbox input + span::before {
+.eolo-input-checkbox input + span::before {
   border-color: var(--tw-ui-input-border-color);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .input-checkbox input + span)::before {
+:is([data-theme="dark"] .eolo-input-checkbox input + span)::before {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
+.eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span::before {
   --tw-bg-opacity: 1;
   background-color: rgb(209 235 255 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span)::before {
+:is([data-theme="dark"] .eolo-input-checkbox:hover:not(.toggler) input:not(:disabled):not(:checked) + span)::before {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.input-checkbox:not(.toggler) input:checked + span::before {
+.eolo-input-checkbox:not(.toggler) input:checked + span::before {
   --tw-border-opacity: 1;
   border-color: rgb(33 150 243 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -3179,12 +3238,12 @@ select.input-error {
   background-size: 83%;
 }
 
-.input-checkbox input:disabled + span {
+.eolo-input-checkbox input:disabled + span {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
-.input-checkbox input:disabled + span::before {
+.eolo-input-checkbox input:disabled + span::before {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -3193,55 +3252,55 @@ select.input-error {
 
 /** Radio buttons */
 
-.input-radio input + span::before {
+.eolo-input-radio input + span::before {
   content: "";
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .input-radio input + span)::before {
+:is([data-theme="dark"] .eolo-input-radio input + span)::before {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.input-radio:hover input:not(:disabled):not(:checked) + span::before {
+.eolo-input-radio:hover input:not(:disabled):not(:checked) + span::before {
   --tw-border-opacity: 1;
   border-color: rgb(33 150 243 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
 }
 
-.input-radio:not(.toggler):not(.check) input:checked + span::before {
+.eolo-input-radio:not(.toggler):not(.check) input:checked + span::before {
   box-shadow: 0 0 0 4.2px var(--tw-shadow-color) inset;
   --tw-shadow-color: #2196F3;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.input-radio.input-lg:not(.toggler) input:checked + span::before {
+.eolo-input-radio.eolo-input-lg:not(.toggler) input:checked + span::before {
   box-shadow: 0 0 0 7px var(--tw-shadow-color) inset;
   --tw-shadow-color: #2196F3;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.input-radio input:disabled + span {
+.eolo-input-radio input:disabled + span {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
-.input-radio input:disabled + span::before {
+.eolo-input-radio input:disabled + span::before {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.input-radio.check input:checked + span::before {
+.eolo-input-radio.check input:checked + span::before {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
 }
 
-.input-checkbox.toggler input + span::before,
-  .input-radio.toggler input + span::before {
+.eolo-input-checkbox.toggler input + span::before,
+  .eolo-input-radio.toggler input + span::before {
   border-color: var(--tw-ui-input-border-color);
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -3250,8 +3309,8 @@ select.input-error {
   transition-duration: 150ms;
 }
 
-.input-checkbox.toggler input:checked + span::before,
-  .input-radio.toggler input:checked + span::before {
+.eolo-input-checkbox.toggler input:checked + span::before,
+  .eolo-input-radio.toggler input:checked + span::before {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
 }
@@ -3275,27 +3334,291 @@ label {
 
 /** Helpers */
 
-.input-helper {
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  line-height: 1.25;
+.eolo-input-helper {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
-.input-helper [class*=ri-] {
+:is([data-theme="dark"] .eolo-input-helper) {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.eolo-input-helper [class*=ri-] {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.input-helper.input-helper-valid {
+.eolo-input-helper.eolo-input-helper-valid {
   color: var(--tw-ui-input-valid-color);
 }
 
-.input-helper.input-helper-error {
+.eolo-input-helper.eolo-input-helper-error {
   color: var(--tw-ui-input-error-color);
+}
+
+/**
+  Input types
+  **/
+
+.eolo-input[type=text],
+  .eolo-input[type=password],
+  .eolo-input[type=email],
+  .eolo-input[type=number],
+  .eolo-input[type=tel],
+  .eolo-input[type=search],
+  .eolo-input[type=url],
+  .eolo-input[type=date],
+  .eolo-input[type=time],
+  .eolo-input[type=datetime-local],
+  .eolo-input[type=week] {
+  border-color: var(--tw-ui-input-border-color);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: var(--tw-ui-text-color);
+}
+
+:is([data-theme="dark"] .eolo-input[type=text]),:is([data-theme="dark"] 
+  .eolo-input[type=password]),:is([data-theme="dark"] 
+  .eolo-input[type=email]),:is([data-theme="dark"] 
+  .eolo-input[type=number]),:is([data-theme="dark"] 
+  .eolo-input[type=tel]),:is([data-theme="dark"] 
+  .eolo-input[type=search]),:is([data-theme="dark"] 
+  .eolo-input[type=url]),:is([data-theme="dark"] 
+  .eolo-input[type=date]),:is([data-theme="dark"] 
+  .eolo-input[type=time]),:is([data-theme="dark"] 
+  .eolo-input[type=datetime-local]),:is([data-theme="dark"] 
+  .eolo-input[type=week]) {
+  border-color: rgb(255 255 255 / 0.2);
+  background-color: rgb(0 0 0 / 0.2);
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.eolo-input[type=text].eolo-input-valid,
+  .eolo-input[type=password].eolo-input-valid,
+  .eolo-input[type=email].eolo-input-valid,
+  .eolo-input[type=number].eolo-input-valid,
+  .eolo-input[type=tel].eolo-input-valid,
+  .eolo-input[type=search].eolo-input-valid,
+  .eolo-input[type=url].eolo-input-valid,
+  .eolo-input[type=date].eolo-input-valid,
+  .eolo-input[type=time].eolo-input-valid,
+  .eolo-input[type=datetime-local].eolo-input-valid,
+  .eolo-input[type=week].eolo-input-valid {
+  border-color: var(--tw-ui-input-valid-color);
+  color: var(--tw-ui-input-valid-color);
+}
+
+.eolo-input[type=text].eolo-input-error,
+  .eolo-input[type=password].eolo-input-error,
+  .eolo-input[type=email].eolo-input-error,
+  .eolo-input[type=number].eolo-input-error,
+  .eolo-input[type=tel].eolo-input-error,
+  .eolo-input[type=search].eolo-input-error,
+  .eolo-input[type=url].eolo-input-error,
+  .eolo-input[type=date].eolo-input-error,
+  .eolo-input[type=time].eolo-input-error,
+  .eolo-input[type=datetime-local].eolo-input-error,
+  .eolo-input[type=week].eolo-input-error {
+  border-color: var(--tw-ui-input-error-color);
+  color: var(--tw-ui-input-error-color);
+}
+
+.eolo-input[type=text]:disabled,
+  .eolo-input[type=password]:disabled,
+  .eolo-input[type=email]:disabled,
+  .eolo-input[type=number]:disabled,
+  .eolo-input[type=tel]:disabled,
+  .eolo-input[type=search]:disabled,
+  .eolo-input[type=url]:disabled,
+  .eolo-input[type=date]:disabled,
+  .eolo-input[type=time]:disabled,
+  .eolo-input[type=datetime-local]:disabled,
+  .eolo-input[type=week]:disabled {
+  opacity: 0.6;
+}
+
+/**
+  Date
+  **/
+
+.eolo-input[type=date].eolo-calendar-on-focus,
+  .eolo-input[type=datetime-local].eolo-calendar-on-focus,
+  .eolo-input[type=time].eolo-calendar-on-focus {
+  position: relative;
+  overflow: hidden;
+}
+
+.eolo-btn.eolo-input[type=date].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,.eolo-btn
+  .eolo-input[type=datetime-local].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,.eolo-btn
+  .eolo-input[type=time].eolo-calendar-on-focus::-webkit-calendar-picker-indicator {
+  text-align: center;
+}
+
+.eolo-input[type=date].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,
+  .eolo-input[type=datetime-local].eolo-calendar-on-focus::-webkit-calendar-picker-indicator,
+  .eolo-input[type=time].eolo-calendar-on-focus::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+/**
+  Color
+  **/
+
+.eolo-input[type=color] {
+  border-radius: 0px;
+  border-style: none;
+  background-color: transparent;
+}
+
+/**
+  Range
+  **/
+
+input[type=range]::-webkit-slider-runnable-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] input[type=range])::-webkit-slider-runnable-track {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+input[type=range]::-moz-range-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] input[type=range])::-moz-range-track {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] input[type=range])::-webkit-slider-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+input[type=range]::-moz-range-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] input[type=range])::-moz-range-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+select.eolo-input {
+  border-color: var(--tw-ui-input-border-color);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: var(--tw-ui-text-color);
+}
+
+:is([data-theme="dark"] select.eolo-input) {
+  border-color: rgb(255 255 255 / 0.2);
+  background-color: rgb(0 0 0 / 0.2);
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+select.eolo-input option {
+  --tw-text-opacity: 1;
+  color: rgb(33 150 243 / var(--tw-text-opacity));
+}
+
+select.eolo-input.eolo-input-valid {
+  border-color: var(--tw-ui-input-valid-color);
+  color: var(--tw-ui-input-valid-color);
+}
+
+select.eolo-input.eolo-input-error {
+  border-color: var(--tw-ui-input-error-color);
+  color: var(--tw-ui-input-error-color);
+}
+
+select.eolo-input:disabled {
+  opacity: 0.6;
+}
+
+.eolo-input-group-inset {
+  border-color: var(--tw-ui-input-border-color);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: var(--tw-ui-text-color);
+}
+
+:is([data-theme="dark"] .eolo-input-group-inset) {
+  border-color: rgb(255 255 255 / 0.2);
+  background-color: rgb(0 0 0 / 0.2);
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.eolo-input-group-inset input[type=text],
+  .eolo-input-group-inset .eolo-input[type=text],
+  .eolo-input-group-inset input[type=password],
+  .eolo-input-group-inset .eolo-input[type=password],
+  .eolo-input-group-inset input[type=email],
+  .eolo-input-group-inset .eolo-input[type=email],
+  .eolo-input-group-inset input[type=number],
+  .eolo-input-group-inset .eolo-input[type=number],
+  .eolo-input-group-inset input[type=tel],
+  .eolo-input-group-inset .eolo-input[type=tel],
+  .eolo-input-group-inset input[type=search],
+  .eolo-input-group-inset .eolo-input[type=search],
+  .eolo-input-group-inset input[type=url],
+  .eolo-input-group-inset .eolo-input[type=url],
+  .eolo-input-group-inset input[type=date],
+  .eolo-input-group-inset .eolo-input[type=date],
+  .eolo-input-group-inset input[type=time],
+  .eolo-input-group-inset .eolo-input[type=time],
+  .eolo-input-group-inset input[type=datetime-local],
+  .eolo-input-group-inset .eolo-input[type=datetime-local],
+  .eolo-input-group-inset input[type=week],
+  .eolo-input-group-inset .eolo-input[type=week],
+  .eolo-input-group-inset input[type=color],
+  .eolo-input-group-inset .eolo-input[type=color] {
+  background-color: transparent;
+}
+
+:is([data-theme="dark"] .eolo-input-group-inset input[type=text]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=text]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=password]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=password]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=email]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=email]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=number]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=number]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=tel]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=tel]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=search]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=search]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=url]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=url]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=date]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=date]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=time]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=time]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=datetime-local]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=datetime-local]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=week]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=week]),:is([data-theme="dark"] 
+  .eolo-input-group-inset input[type=color]),:is([data-theme="dark"] 
+  .eolo-input-group-inset .eolo-input[type=color]) {
+  background-color: transparent;
 }
 
 .eolo-content code {
@@ -3774,6 +4097,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   bottom: 0.25rem;
 }
 
+.bottom-full {
+  bottom: 100%;
+}
+
 .left-auto {
   left: auto;
 }
@@ -3800,10 +4127,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .top-auto {
   top: auto;
-}
-
-.bottom-full {
-  bottom: 100%;
 }
 
 .col-span-3 {
@@ -3836,6 +4159,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .-mb-8 {
   margin-bottom: -2rem;
+}
+
+.-mt-0 {
+  margin-top: -0px;
+}
+
+.-mt-1 {
+  margin-top: -0.25rem;
 }
 
 .-mt-5 {
@@ -3938,24 +4269,36 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   height: 3.5rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-60 {
   height: 15rem;
 }
 
-.h-44 {
-  height: 11rem;
+.h-72 {
+  height: 18rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -4109,6 +4452,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   list-style-position: inside;
 }
 
+.appearance-none {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
 .grid-cols-10 {
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
@@ -4173,6 +4521,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   column-gap: 0.5rem;
 }
 
+.gap-x-3 {
+  column-gap: 0.75rem;
+}
+
 .gap-x-4 {
   column-gap: 1rem;
 }
@@ -4187,6 +4539,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .gap-x-8 {
   column-gap: 2rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .gap-y-3 {
@@ -4285,6 +4641,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -4339,6 +4699,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-alt {
@@ -4467,6 +4831,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .bg-alt-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(153 115.8 4.2 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-green-600 {
@@ -4618,6 +4987,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -4689,6 +5063,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   padding-right: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -4724,13 +5103,12 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   padding-bottom: 2rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pb-8 {
@@ -4789,6 +5167,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -4898,6 +5281,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   opacity: 0.5;
 }
 
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -4926,6 +5313,26 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {
@@ -5436,20 +5843,12 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
     display: flex;
   }
 
-  .xl\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .xl\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:gap-3 {
@@ -5460,10 +5859,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 @media (min-width: 1536px) {
   .\32xl\:flex {
     display: flex;
-  }
-
-  .\32xl\:w-1\/2 {
-    width: 50%;
   }
 }
 

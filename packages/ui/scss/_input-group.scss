@@ -1,0 +1,35 @@
+.eolo-input-group-inset {
+	@apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+
+	input[type='text'],
+	.eolo-input[type='text'],
+	input[type='password'],
+	.eolo-input[type='password'],
+	input[type='email'],
+	.eolo-input[type='email'],
+	input[type='number'],
+	.eolo-input[type='number'],
+	input[type='tel'],
+	.eolo-input[type='tel'],
+	input[type='search'],
+	.eolo-input[type='search'],
+	input[type='url'],
+	.eolo-input[type='url'],
+	input[type='date'],
+	.eolo-input[type='date'],
+	input[type='time'],
+	.eolo-input[type='time'],
+	input[type='datetime-local'],
+	.eolo-input[type='datetime-local'],
+	input[type='week'],
+	.eolo-input[type='week'],
+	input[type='color'],
+	.eolo-input[type='color'] {
+		@apply bg-transparent dark:bg-transparent;
+	}
+}

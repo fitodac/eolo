@@ -1,0 +1,70 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Tipos de inputs">
+
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Email</label>
+		<input type="email" placeholder="email@gmail.com" className="eolo-input" />
+	</div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Email</label>
+  <input type="email" placeholder="email@gmail.com" class="eolo-input" />
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Puedes usar un componente `Input Group Inset` para crear inputs con iconos.
+</DemoCardDescription>
+
+<div className="max-w-sm">
+  <div className="space-y-1">
+    <label>Email</label>
+    <div className="eolo-input-group-inset">
+      <i className="ri-at-line ri-xl" />
+      <input type="email" placeholder="somebody@gmail.com" className="eolo-input" />
+    </div>
+  </div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Email</label>
+  <div class="eolo-input-group-inset">
+    <i class="ri-at-line ri-xl" />
+    <input type="email" placeholder="somebody@gmail.com" class="eolo-input" />
+  </div>
+</div>
+```
+</DemoCardCode>
+
+<div className="max-w-sm mt-6">
+  <div className="space-y-1">
+    <label>Password</label>
+    <div className="eolo-input-group-inset">
+      <i className="ri-lock-line ri-xl" />
+      <input type="password" placeholder="Insert password here" defaultValue="this is a secret" className="eolo-input" />
+    </div>
+  </div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Password</label>
+  <div class="eolo-input-group-inset">
+    <i class="ri-lock-line ri-xl" />
+    <input type="password" placeholder="Insert password here" class="eolo-input" />
+  </div>
+</div>
+```
+</DemoCardCode>
+</DemoCard>

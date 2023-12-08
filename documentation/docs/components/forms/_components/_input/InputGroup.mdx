@@ -1,19 +1,43 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Input groups">
 
-<div className="grid gap-x-6 gap-y-4 mt-6 xl:grid-cols-2">
+<DemoCardDescription>
+Usa la clase `.eolo-input-group` para agrupar elementos de formulario.
+</DemoCardDescription>
+
+<div className="max-w-sm">
 	<div className="space-y-1">
 		<label>Basic</label>
-		<div className="input-group">
-			<input type="text" placeholder="Find your product..." defaultValue="" />
+		<div className="eolo-input-group">
+			<input type="text" placeholder="Find your product..." className="eolo-input" />
 			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Search</button>
 		</div>
 	</div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="eolo-input-group">
+  <input type="text" placeholder="Find your product..." class="eolo-input" />
+  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Search
+  </button>
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Usa la clase `.eolo-input-group-inset` para enmarcar uno o más inputs junto con otros componentes.
+</DemoCardDescription>
+
+<div className="max-w-sm">
 	<div className="space-y-1">
 		<label>Inset</label>
-		<div className="input-group-inset">
-			<input type="text" placeholder="somebody@gmail.com" defaultValue="" />
+		<div className="eolo-input-group-inset">
+			<input type="text" placeholder="somebody@gmail.com" className="eolo-input" />
 			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Ok</button>
 			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Cancel</button>
 		</div>
@@ -21,29 +45,17 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 </div>
 
 
+<DemoCardCode>
 ```html
-<div class="input-group">
-  <input type="text" placeholder="Find your product..." />
-  <button
-    class="eolo-btn bg-primary border-primary text-white 
-           dark:bg-primary dark:border-primary dark:text-white">
-    Search
-  </button>
-</div>
-
-
-<div class="input-group-inset">
-  <input type="text" placeholder="somebody@gmail.com" />
-  <button
-    class="eolo-btn bg-primary border-primary text-white 
-           dark:bg-primary dark:border-primary dark:text-white">
+<div class="eolo-input-group-inset">
+  <input type="text" placeholder="somebody@gmail.com" class="eolo-input" />
+  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
     Ok
   </button>
-  <button
-    class="eolo-btn bg-primary border-primary text-white 
-           dark:bg-primary dark:border-primary dark:text-white">
+  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
     Cancel
   </button>
 </div>
 ```
+</DemoCardCode>
 </DemoCard>

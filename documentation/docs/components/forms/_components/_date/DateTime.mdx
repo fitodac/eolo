@@ -1,0 +1,49 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Fecha / Hora">
+
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Fecha</label>
+		<input type="datetime-local" />
+	</div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Fecha</label>
+  <input type="datetime-local" />
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Usando la clase `.eolo-calendar-on-focus` para personalizar la apariencia del campo.
+</DemoCardDescription>
+
+<div className="max-w-sm">
+  <div className="space-y-1">
+    <label>Fecha / hora</label>
+    <div className="eolo-input-group-inset">
+      <i className="ri-calendar-schedule-line ri-xl" />
+      <input type="datetime-local" className="eolo-calendar-on-focus" />
+    </div>
+  </div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Fecha</label>
+
+  <div class="eolo-input-group-inset">
+    <i class="ri-calendar-schedule-line ri-xl" />
+    <input type="datetime-local" class="eolo-calendar-on-focus" />
+  </div>
+</div>
+```
+</DemoCardCode>
+</DemoCard>

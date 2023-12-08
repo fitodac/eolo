@@ -1,0 +1,38 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Datalist">
+
+<DemoCardDescription>
+La etiqueta `<datalist>` en HTML se utiliza para proporcionar una lista de opciones sugeridas 
+para un elemento `<input>` de tipo texto. Esta lista de opciones sugeridas ayuda a los usuarios 
+al ofrecer autocompletado basado en las entradas previas o predefinidas.
+</DemoCardDescription>
+
+<div className="max-w-sm">
+  <input list="cities" type="text" className="eolo-input" />
+  
+  <datalist id="cities">
+    <option value="new york" />
+    <option value="london" />
+    <option value="paris" />
+    <option value="hong kong" />
+    <option value="dubai" />
+    <option value="tokyo" />
+  </datalist>
+</div>
+
+<DemoCardCode>
+```html
+<input list="cities" type="text" class="eolo-input" />
+  
+<datalist id="cities">
+  <option value="new york" />
+  <option value="london" />
+  <option value="paris" />
+  <option value="hong kong" />
+  <option value="dubai" />
+  <option value="tokyo" />
+</datalist>
+```
+</DemoCardCode>
+</DemoCard>

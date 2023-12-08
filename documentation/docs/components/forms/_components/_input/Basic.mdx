@@ -1,42 +1,52 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Básicos">
 
-<div className="grid gap-x-6 gap-y-4 mt-6 xl:grid-cols-3">
+<div className="max-w-sm mt-6">
 	<div className="space-y-1">
-		<label>Basic</label>
-		<input type="text" placeholder="Insert text here..." defaultValue="" />
-	</div>
-	<div className="space-y-1">
-		<label>Disabled</label>
-		<input type="text" placeholder="This is not allowed" defaultValue="" disabled />
-	</div>
-	<div className="space-y-1">
-		<label>Read only</label>
-		<input type="text" defaultValue="This is only FYI" readOnly />
+		<label>Basic (input text)</label>
+		<input type="text" placeholder="Insert text here..." className="eolo-input" />
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
-<!-- Basic -->
 <div class="space-y-1">
   <label>Basic</label>
-  <input type="text" placeholder="Insert text here..." />
-</div>
-
-
-<!-- Disabled -->
-<div class="space-y-1">
-  <label>Disabled</label>
-  <input type="text" placeholder="Insert text here..." disabled />
-</div>
-
-
-<!-- Read only -->
-<div class="space-y-1">
-  <label>Read only</label>
-  <input type="text" placeholder="Insert text here..." readonly />
+  <input type="text" placeholder="Insert text here..." class="eolo-input" />
 </div>
 ```
+</DemoCardCode>
 
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Read only</label>
+		<input type="text" defaultValue="This is only FYI" className="eolo-input" readOnly />
+	</div>
+</div>
+
+<DemoCardCode>
+```html title="Readonly"
+<div class="space-y-1">
+  <label>Read only</label>
+  <input type="text" placeholder="This is only FYI" class="eolo-input" readonly />
+</div>
+```
+</DemoCardCode>
+
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Disabled</label>
+		<input type="text" placeholder="This field is disabled" className="eolo-input" disabled />
+	</div>
+</div>
+
+<DemoCardCode>
+```html title="Disabled"
+<div class="space-y-1">
+  <label>Disabled</label>
+  <input type="text" placeholder="This field is disabled" class="eolo-input" disabled />
+</div>
+```
+</DemoCardCode>
 </DemoCard>

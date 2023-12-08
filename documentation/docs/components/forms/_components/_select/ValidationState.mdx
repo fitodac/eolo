@@ -1,9 +1,11 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Estados de validación">
-<div className="grid gap-y-4 gap-x-10 mt-6 xl:grid-cols-3">
+
+
+<div className="grid gap-y-4 gap-x-10 mt-6 xl:grid-cols-2">
 	<div className="space-y-1">
-		<select className="input-valid">
+		<select className="eolo-input eolo-input-valid">
 			<option selected>Select one city</option>
 			<option value="new york">New York</option>
 			<option value="london">London</option>
@@ -12,12 +14,13 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 			<option value="dubai">Dubai</option>
 			<option value="tokyo">Tokyo</option>
 		</select>
-		<div className="input-helper input-helper-valid">
+		<div className="eolo-input-helper eolo-input-helper-valid">
 			<i className="ri-thumb-up-line"></i> Your request was approved
 		</div>
 	</div>
+
 	<div>
-		<select className="input-error">
+		<select className="eolo-input eolo-input-error">
 			<option selected>Select one city</option>
 			<option value="new york">New York</option>
 			<option value="london">London</option>
@@ -26,17 +29,16 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 			<option value="dubai">Dubai</option>
 			<option value="tokyo">Tokyo</option>
 		</select>
-		<div className="input-helper input-helper-error">
+		<div className="eolo-input-helper eolo-input-helper-error">
 			<i className="ri-alert-line"></i> We're sorry, your request wasn't approved
 		</div>
 	</div>
 </div>
 
-
-```html
-<!-- Valid -->
+<DemoCardCode>
+```html title="Success"
 <div class="space-y-1">
-  <select className="input-valid">
+  <select class="eolo-input eolo-input-valid">
     <option selected>Select one city</option>
     <option value="new york">New York</option>
     <option value="london">London</option>
@@ -45,22 +47,23 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
     <option value="dubai">Dubai</option>
     <option value="tokyo">Tokyo</option>
   </select>
-  <div class="input-helper input-helper-valid">Your request was approved</div>
-</div>
-
-
-<!-- Error -->
-<div class="space-y-1">
-  <select className="input-error">
-    <option selected>Select one city</option>
-    <option value="new york">New York</option>
-    <option value="london">London</option>
-    <option value="paris">Paris</option>
-    <option value="hong kong">Hong Kong</option>
-    <option value="dubai">Dubai</option>
-    <option value="tokyo">Tokyo</option>
-  </select>
-  <div class="input-helper input-helper-error">We're sorry, your request wasn't approved</div>
+  <div class="eolo-input-helper eolo-input-helper-valid">Your request was approved</div>
 </div>
 ```
+
+```html title="Error"
+<div class="space-y-1">
+  <select class="eolo-input-error">
+    <option selected>Select one city</option>
+    <option value="new york">New York</option>
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="hong kong">Hong Kong</option>
+    <option value="dubai">Dubai</option>
+    <option value="tokyo">Tokyo</option>
+  </select>
+  <div class="eolo-input-helper eolo-input-helper-error">We're sorry, your request wasn't approved</div>
+</div>
+```
+</DemoCardCode>
 </DemoCard>

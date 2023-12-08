@@ -1,0 +1,49 @@
+---
+sidebar_position: 9
+---
+
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+# Color
+
+
+<div className="space-y-8 use-h2-only-for-anchors">
+  <DemoCard title="Selector de color">
+    
+    <div className="mt-6">
+      <div className="space-y-1">
+        <label>Color selector</label>
+        <div className="w-14 h-14 overflow-hidden rounded-md">
+          <input type="color" defaultValue="#ffcc00" className="eolo-input w-full h-full" />
+        </div>
+      </div>
+    </div>
+
+    <DemoCardCode>
+    ```html
+    <div class="w-14 h-14 overflow-hidden rounded-md">
+      <input type="color" value="#ffcc00" class="eolo-input w-full h-full" />
+    </div>
+    ```
+    </DemoCardCode>
+
+
+    <div className="mt-6">
+      <div className="space-y-1">
+        <label>Rounded color selector</label>
+        <div className="w-14 h-14 overflow-hidden rounded-full">
+          <input type="color" defaultValue="#1499D2" className="eolo-input w-full h-full" />
+        </div>
+      </div>
+    </div>
+
+    <DemoCardCode>
+    ```html
+    <div class="w-14 h-14 overflow-hidden rounded-full">
+      <input type="color" value="#1499D2" class="eolo-input w-full h-full" />
+    </div>
+    ```
+    </DemoCardCode>
+
+  </DemoCard>
+</div>

@@ -1,0 +1,53 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Fecha">
+
+<div className="max-w-sm mt-6">
+	<div className="space-y-1">
+		<label>Fecha</label>
+		<input type="date" />
+	</div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Fecha</label>
+  <input type="date" />
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Puedes usar la clase `.eolo-calendar-on-focus` para personalizar la apariencia del campo.
+
+No hay mucho que hacer con CSS para controlar el input o modificar el estilo del datepicker, 
+así que esta clase es un `helper` que solo te permitirá ocultar el icono de calendario que 
+trae por defecto el navegador y que al hacer click en el campo puedas habilitar este.
+</DemoCardDescription>
+
+<div className="max-w-sm">
+  <div className="space-y-1">
+    <label>Fecha (personalizada)</label>
+    <div className="eolo-input-group-inset">
+      <i className="ri-calendar-line ri-xl" />
+      <input type="date" className="eolo-calendar-on-focus" />
+    </div>
+  </div>
+</div>
+
+<DemoCardCode>
+```html
+<div class="space-y-1">
+  <label>Fecha</label>
+
+  <div class="eolo-input-group-inset">
+    <i class="ri-calendar-line ri-xl" />
+    <input type="date" class="eolo-calendar-on-focus" />
+  </div>
+</div>
+```
+</DemoCardCode>
+</DemoCard>

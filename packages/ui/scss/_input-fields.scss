@@ -1,0 +1,78 @@
+/**
+Input types
+**/
+.eolo-input[type='text'],
+.eolo-input[type='password'],
+.eolo-input[type='email'],
+.eolo-input[type='number'],
+.eolo-input[type='tel'],
+.eolo-input[type='search'],
+.eolo-input[type='url'],
+.eolo-input[type='date'],
+.eolo-input[type='time'],
+.eolo-input[type='datetime-local'],
+.eolo-input[type='week'] {
+	@apply bg-white
+	border-[var(--tw-ui-input-border-color)] 
+	font-[var(--tw-ui-text-color)]
+	dark:bg-black/20
+	dark:border-white/20
+	dark:text-slate-200;
+
+	&.eolo-input-valid {
+		@apply border-[var(--tw-ui-input-valid-color)] 
+		text-[var(--tw-ui-input-valid-color)];
+	}
+
+	&.eolo-input-error {
+		@apply border-[var(--tw-ui-input-error-color)] 
+		text-[var(--tw-ui-input-error-color)];
+	}
+
+	&:disabled {
+		@apply opacity-60;
+	}
+}
+
+/**
+Date
+**/
+.eolo-input[type='date'],
+.eolo-input[type='datetime-local'],
+.eolo-input[type='time'] {
+	&.eolo-calendar-on-focus {
+		@apply relative overflow-hidden;
+	}
+
+	&.eolo-calendar-on-focus::-webkit-calendar-picker-indicator {
+		@apply w-full h-full block left-0 top-0 absolute opacity-0;
+	}
+}
+
+/**
+Color
+**/
+.eolo-input[type='color'] {
+	@apply bg-transparent border-none rounded-none;
+}
+
+/**
+Range
+**/
+input[type='range'] {
+	&::-webkit-slider-runnable-track {
+		@apply bg-gray-300 dark:bg-black/30;
+	}
+
+	&::-moz-range-track {
+		@apply bg-gray-300 dark:bg-black/30;
+	}
+
+	&::-webkit-slider-thumb {
+		@apply bg-gray-500 dark:bg-slate-600;
+	}
+
+	&::-moz-range-thumb {
+		@apply bg-gray-500 dark:bg-slate-600;
+	}
+}

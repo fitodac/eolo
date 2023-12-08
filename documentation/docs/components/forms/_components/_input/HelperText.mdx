@@ -1,30 +1,33 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Textos de ayuda">
 
-<div className="grid gap-x-6 gap-y-4 mt-6 xl:grid-cols-3">
+<div className="grid gap-x-6 gap-y-4 mt-6 xl:grid-cols-2">
 	<div className="space-y-1">
 		<label>Basic helper text</label>
-		<input type="text" placeholder="..." defaultValue="" />
-		<div className="input-helper">Please, write a cool username above</div>
+		<input type="text" placeholder="..." className="eolo-input" />
+		<div className="eolo-input-helper">Please, write a cool username above</div>
 	</div>
 	<div className="space-y-1">
 		<label>Helper text at right</label>
-		<input type="text" placeholder="..." defaultValue="" />
-		<div className="input-helper text-right">The helper text could be at right too</div>
+		<input type="text" placeholder="..." className="eolo-input" />
+		<div className="eolo-input-helper text-right">The helper text could be at right too</div>
 	</div>
 </div>
 
-```html
+<DemoCardCode>
+```html title="Basic helper text"
 <div class="space-y-1">
-  <input type="text" placeholder="Insert text here..." />
-  <div class="input-helper">Please, write a cool username above</div>
-</div>
-
-
-<div class="space-y-1">
-  <input type="text" placeholder="Insert text here..." />
-  <div class="input-helper text-right">The helper text could be at right too</div>
+  <input type="text" placeholder="Insert text here..." class="eolo-input" />
+  <div class="eolo-input-helper">Please, write a cool username above</div>
 </div>
 ```
+
+```html title="Helper text at right"
+<div class="space-y-1">
+  <input type="text" placeholder="Insert text here..." class="eolo-input" />
+  <div class="eolo-input-helper text-right">The helper text could be at right too</div>
+</div>
+```
+</DemoCardCode>
 </DemoCard>
