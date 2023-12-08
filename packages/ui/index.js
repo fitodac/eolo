@@ -6,6 +6,7 @@ const plugin = require('tailwindcss/plugin')
 const base = require('./base/base')
 const content = require('./components/content')
 const button = require('./components/button')
+const dropdown = require('./components/dropdown')
 const form_input = require('./components/form-input')
 const form_select = require('./components/form-select')
 const form_checkbox = require('./components/form-checkbox')
@@ -28,6 +29,7 @@ const collapsible = require('./components/collapsible')
 module.exports = plugin.withOptions((options = {
 	...content.OPTIONS,
 	...button.OPTIONS,
+	...dropdown.OPTIONS,
 	...form_input.OPTIONS,
 	...form_select.OPTIONS,
 	...form_checkbox.OPTIONS,
@@ -47,6 +49,7 @@ module.exports = plugin.withOptions((options = {
 	return function ({addComponents, addBase, addUtilities, matchUtilities, theme}) {
 		base.BASE(addBase)
 		button.COMPONENTS(addComponents, options)
+		dropdown.COMPONENTS(addComponents, options)
 		content.COMPONENTS(addComponents, options)
 		form_input.COMPONENTS(addComponents, options)
 		form_select.COMPONENTS(addComponents, options)

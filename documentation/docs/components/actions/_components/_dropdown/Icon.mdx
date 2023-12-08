@@ -1,0 +1,51 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+import { DropdownNav } from './DropdownNav.jsx'
+
+<DemoCard title="Icono">
+
+<div className="mt-6">
+	<div className="eolo-dropdown">
+    <input type="checkbox" className="eolo-dropdown-toggler" id="iconDropdown" />
+    
+    <div className="eolo-btn-toggler">
+      <label className="eolo-btn eolo-btn-icon bg-primary border-primary text-white rounded-full dark:bg-primary dark:border-primary dark:text-white" htmlFor="iconDropdown">
+        <i className="ri-more-2-fill" />
+      </label>
+      <DropdownNav />
+    </div>
+
+    <label className="eolo-overlay" htmlFor="iconDropdown" />
+	</div>
+</div>
+
+
+<DemoCardCode>
+```html
+<div class="eolo-dropdown">
+  <input type="checkbox" class="eolo-dropdown-toggler" id="iconDropdown" />
+  
+  <div class="eolo-btn-toggler">
+    <label class="eolo-btn eolo-btn-icon bg-primary border-primary text-white rounded-full dark:bg-primary dark:border-primary dark:text-white" for="iconDropdown">
+      <i class="ri-more-2-fill" />
+    </label>
+    
+    <div class="eolo-dropdown-nav w-40">
+      <ul class="text-sm">
+        <li>
+          <a href="#">View</a>
+        </li>
+        <li>
+          <a href="#">Details</a>
+        </li>
+        <li>
+          <a href="#">Share</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <label class="eolo-overlay" for="iconDropdown" />
+</div>
+```
+</DemoCardCode>
+</DemoCard>

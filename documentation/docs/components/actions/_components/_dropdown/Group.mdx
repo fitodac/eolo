@@ -1,0 +1,160 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+import { DropdownNav } from './DropdownNav.jsx'
+
+<DemoCard title="Grupo de botones">
+
+<div className="mt-6">
+  <div className="eolo-btn-group">
+    <button className="eolo-btn bg-primary border-primary text-white space-x-2 dark:bg-primary dark:border-primary dark:text-white">
+      <i className="ri-user-line" />
+      Profile
+    </button>
+    <button className="eolo-btn bg-primary border-primary text-white space-x-2 dark:bg-primary dark:border-primary dark:text-white">
+      <i className="ri-gamepad-line" />
+      Games
+    </button>
+
+    <div className="eolo-dropdown">
+      <input type="checkbox" className="eolo-dropdown-toggler" id="settingsDropdown" />
+
+      <div className="eolo-btn-toggler">
+        <label className="eolo-btn bg-primary border-primary text-white space-x-2 rounded-none dark:bg-primary dark:border-primary dark:text-white" htmlFor="settingsDropdown">
+          <i className="ri-list-settings-line" />
+          <span>Settings</span>
+          <i className="ri-arrow-down-s-line" />
+        </label>
+
+        <div className="eolo-dropdown-nav w-40">
+          <ul className="text-sm">
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1">Edit account</a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1">Preferences</a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1">Go Pro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <label className="eolo-overlay" htmlFor="settingsDropdown" />
+    </div>
+
+    <button className="eolo-btn bg-primary border-primary space-x-2 text-white dark:bg-primary dark:border-primary dark:text-white">
+      <i className="ri-message-2-line"></i>
+      Messages
+    </button>
+
+    <div className="eolo-dropdown">
+      <input type="checkbox" className="eolo-dropdown-toggler" id="extendNavbarDropdown" />
+
+      <div className="eolo-btn-toggler">
+        <label className="eolo-btn bg-primary border-primary text-white rounded-l-none dark:bg-primary dark:border-primary dark:text-white" htmlFor="extendNavbarDropdown">
+          <i className="ri-more-2-fill" />
+        </label>
+
+        <div className="eolo-dropdown-nav w-40">
+          <ul className="text-sm">
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1 hover:bg-primary hover:text-white hover:no-underline">
+                <i className="ri-shopping-cart-2-line" />
+                Cart
+              </a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1 hover:bg-primary hover:text-white hover:no-underline">
+                <i className="ri-file-4-line" />
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center gap-x-2 px-4 py-1 hover:bg-primary hover:text-white hover:no-underline">
+                <i className="ri-mail-send-line" />
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <label className="eolo-overlay" htmlFor="extendNavbarDropdown" />
+    </div>
+  </div>
+</div>
+
+
+<DemoCardCode>
+```html
+<div class="eolo-btn-group">
+  <button class="eolo-btn bg-primary border-primary text-white space-x-2 dark:bg-primary dark:border-primary dark:text-white">
+    <i class="ri-user-line"></i>
+    Profile
+  </button>
+  <button class="eolo-btn bg-primary border-primary text-white space-x-2 dark:bg-primary dark:border-primary dark:text-white">
+    <i class="ri-gamepad-line"></i>
+    Account
+  </button>
+
+  <div class="eolo-dropdown">
+    <input type="checkbox" class="eolo-dropdown-toggler" id="settingsDropdown" />
+    
+    <div class="eolo-btn-toggler">
+      <label class="eolo-btn bg-primary border-primary text-white rounded-none dark:bg-primary dark:border-primary dark:text-white" htmlFor="settingsDropdown">
+        <i class="ri-list-settings-line"></i>
+        <span>Settings</span>
+        <i class="ri-arrow-down-s-line" />
+      </label>
+
+      <div class="eolo-dropdown-nav w-40">
+        <ul class="text-sm">
+          <li>
+            <a href="#">Edit account</a>
+          </li>
+          <li>
+            <a href="#">Prefferences</a>
+          </li>
+          <li>
+            <a href="#">Go Pro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <label class="eolo-overlay" for="settingsDropdown" />
+  </div>
+
+  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Messages
+  </button>
+
+  <div class="eolo-dropdown">
+    <input type="checkbox" class="eolo-dropdown-toggler" id="extendNavbarDropdown" />
+
+    <div class="eolo-btn-toggler">
+      <label class="eolo-btn bg-primary border-primary text-white rounded-l-none dark:bg-primary dark:border-primary dark:text-white" htmlFor="extendNavbarDropdown">
+        <i class="ri-more-2-fill" />
+      </label>
+
+      <div class="eolo-dropdown-nav w-40">
+        <ul class="text-sm">
+          <li>
+            <a href="#">Cart</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <label class="eolo-overlay" for="extendNavbarDropdown" />
+  </div>
+</div>
+```
+</DemoCardCode>
+</DemoCard>

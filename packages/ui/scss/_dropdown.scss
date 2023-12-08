@@ -1,57 +1,10 @@
-.dropdown{
-	@apply 
-	inline-flex
-	relative;
-
-
-	.dropdown-nav{
-		@apply
-		bg-white
-		top-full
-		absolute
-		transition-all
-		opacity-0 
-		invisible
-		rounded-lg
-		translate-y-2
-		shadow-lg
-		pointer-events-none
-		z-0;
-
-		> ul{
-			@apply py-3;
-
-			> li{
-				@apply
-				font-normal
-				px-4 
-				py-1;
-			}
-		}
+.eolo-dropdown {
+	.eolo-dropdown-nav {
+		@apply bg-white border-black/5 shadow-black/10 shadow-lg
+		dark:bg-slate-900 dark:border-black/10 dark:shadow-black/40;
 	}
 
-	.ri-arrow-down-s-line{
-		@apply
-		transition-all;
+	.eolo-overlay {
+		@apply bg-transparent;
 	}
-
-
-	.dropdown-toggler{
-		&:checked + .btn{
-			.ri-arrow-down-s-line{
-				@apply
-				rotate-180;
-			}
-		}
-
-		&:checked + .btn + .dropdown-nav{
-			@apply 
-			translate-y-0
-			opacity-100
-			visible
-			pointer-events-auto
-			z-30;
-		}
-	}
-
 }
