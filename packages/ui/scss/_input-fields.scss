@@ -8,6 +8,7 @@ Input types
 .eolo-input[type='tel'],
 .eolo-input[type='search'],
 .eolo-input[type='url'],
+.eolo-input[type='file'],
 .eolo-input[type='date'],
 .eolo-input[type='time'],
 .eolo-input[type='datetime-local'],
@@ -74,5 +75,14 @@ Range
 
 	&::-moz-range-thumb {
 		@apply bg-gray-500 dark:bg-slate-600;
+	}
+}
+
+/**
+File
+**/
+.eolo-input[type='file'] {
+	&::file-selector-button {
+		@apply bg-primary hover:bg-primary-600;
 	}
 }

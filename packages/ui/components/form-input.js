@@ -102,6 +102,21 @@ const BASE = {
 		},
 	},
 
+	FILE: {
+		padding: `${theme.spacing[1]} ${theme.spacing[1]}`,
+		cursor: 'pointer',
+		BUTTON: {
+			border: 'none',
+			'font-size': theme.fontSize.xs,
+			'font-weight': theme.fontWeight['medium'],
+			padding: `.3rem ${GLOBALS.spacing.sm.x}`,
+			'margin-right': '.75rem',
+			'border-radius': '.24rem',
+			cursor: 'pointer',
+			transition: '.3s',
+		},
+	},
+
 	HELPER: {
 		'font-size': theme.fontSize.xs,
 		'font-weight': theme.fontWeight['medium'],
@@ -122,6 +137,7 @@ const TYPES = [
 	'[type=time]',
 	'[type=datetime-local]',
 	'[type=week]',
+	'[type=file]',
 ]
 
 const COMPONENTS = (addComponents, options) => {
@@ -216,6 +232,16 @@ const COMPONENTS = (addComponents, options) => {
 			['&::-moz-range-track']: { ...BASE.RANGE.TRACK },
 			['&::-webkit-slider-thumb']: { ...BASE.RANGE.BALL },
 			['&::-moz-range-thumb']: { ...BASE.RANGE.BALL },
+		},
+	})
+
+	addComponents({
+		['.eolo-input[type=file]']: {
+			...BASE.FILE,
+
+			['&::file-selector-button']: {
+				...BASE.FILE.BUTTON,
+			},
 		},
 	})
 }

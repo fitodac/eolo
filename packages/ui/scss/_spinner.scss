@@ -1,15 +1,15 @@
-.eolo-spinner{
-
-	&::after{
-		@apply
-		border-slate-100
-		dark:border-slate-600;
+.eolo-spinner {
+	&::after {
+		@apply border-slate-100 dark:border-slate-600;
 	}
 
-	&:not([class*=border-l-]){
-		@apply 
-		border-l-primary 
-		dark:border-l-primary;
+	&:not([class*='border-l-']) {
+		@apply border-l-primary  dark:border-l-primary;
 	}
+}
 
+.eolo-spinner3 {
+	.dot {
+		@apply bg-gray-300 dark:bg-white/80;
+	}
 }

@@ -1,0 +1,52 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Spinner 3">
+
+<DemoCardDescription>
+Este spinner usa la clase `eolo-spinner3` y requiere que definas el color con 2 clases de Tailwind 
+en cada elemento `.dot`: `.bg-[color]` y `.shadow-[color]`.
+
+Si bien cuenta con un tamaño por defecto, puedes alterarlo con la clase `.scale-[size]`.
+</DemoCardDescription>
+
+<div className="grid gap-y-10 gap-x-20 mb-14 md:flex">
+  <div className="h-14">
+    <div className="eolo-spinner3 scale-50 origin-top-left">
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+    </div>
+  </div>
+  
+  <div className="h-14">
+    <div className="eolo-spinner3 scale-75 origin-top-left">
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+    </div>
+  </div>
+
+  <div className="h-14">
+    <div className="eolo-spinner3">
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+      <div className="dot bg-primary shadow-primary" />
+    </div>
+  </div>
+</div>
+
+
+<DemoCardCode>
+```html
+<div className="eolo-spinner3 scale-75">
+  <div className="dot bg-primary shadow-primary" />
+  <div className="dot bg-primary shadow-primary" />
+  <div className="dot bg-primary shadow-primary" />
+  <div className="dot bg-primary shadow-primary" />
+</div>
+```
+</DemoCardCode>
+</DemoCard> 

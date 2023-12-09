@@ -57,6 +57,28 @@ const BASE = {
 			animation: 'spinner2Keyframe 1s infinite ease',
 		},
 	},
+
+	SPINNER3: {
+		display: 'flex',
+
+		DOT: {
+			width: '.4rem',
+			height: '.4rem',
+			'margin-bottom': '3rem',
+			display: 'block',
+			position: 'relative',
+			'border-radius': '.2rem',
+			'box-sizing': 'border-box',
+			'box-shadow':
+				'0 1rem 0 var(--tw-shadow-color), 0 2rem 0 var(--tw-shadow-color), 0 3rem 0 var(--tw-shadow-color)',
+		},
+
+		DOT_DOT: {
+			'margin-left': '.4rem',
+		},
+
+		ANIMATION: 'eolo-spinner3-animation',
+	},
 }
 
 const COMPONENTS = (addComponents, options) => {
@@ -96,6 +118,44 @@ const COMPONENTS = (addComponents, options) => {
 			['&::after']: {
 				...BASE.SPINNER2.AFTER,
 				...options['.eolo-spinner2::after'],
+			},
+		},
+	})
+
+	addComponents({
+		['.eolo-spinner3']: {
+			...BASE.SPINNER3,
+
+			['.dot']: {
+				...BASE.SPINNER3.DOT,
+			},
+			['.dot + .dot']: { ...BASE.SPINNER3.DOT_DOT },
+			['.dot:nth-child(4n + 1)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease 0s infinite`,
+			},
+			['.dot:nth-child(4n + 2)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .1s infinite`,
+			},
+			['.dot:nth-child(4n + 3)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .2s infinite`,
+			},
+			['.dot:nth-child(4n + 4)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .3s infinite`,
+			},
+			['.dot:nth-child(4n + 5)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .4s infinite`,
+			},
+			['.dot:nth-child(4n + 6)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .5s infinite`,
+			},
+			['.dot:nth-child(4n + 7)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .6s infinite`,
+			},
+			['.dot:nth-child(4n + 8)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .7s infinite`,
+			},
+			['.dot:nth-child(4n + 9)']: {
+				animation: `${BASE.SPINNER3.ANIMATION} 2s ease .8s infinite`,
 			},
 		},
 	})

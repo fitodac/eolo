@@ -1,5 +1,5 @@
 .eolo-btn {
-	@apply hover:opacity-80;
+	@apply text-white hover:opacity-80;
 
 	&:not([class*='bg-']) {
 		@apply bg-slate-200 dark:bg-slate-800;

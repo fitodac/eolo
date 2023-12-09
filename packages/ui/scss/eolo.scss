@@ -83,3 +83,18 @@
 		transform: rotate(315deg);
 	}
 }
+
+@keyframes eolo-spinner3-animation {
+	0% {
+		top: 0;
+		opacity: 1;
+	}
+	50% {
+		top: 20px;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
