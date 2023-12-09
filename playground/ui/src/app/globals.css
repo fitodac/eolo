@@ -1,0 +1,10 @@
+@import 'remixicon/fonts/remixicon.css';
+@import '../../../../packages/ui';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+	background: url('/blueprint-bg.svg');
+	background-size: .5rem;
+}
