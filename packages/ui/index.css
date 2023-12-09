@@ -303,9 +303,6 @@
     @apply bg-white border-black/5 shadow-black/10 shadow-lg
 		dark:bg-slate-900 dark:border-black/10 dark:shadow-black/40;
   }
-  .eolo-dropdown .eolo-overlay {
-    @apply bg-transparent;
-  }
   /**
   Collapsible
   **/
@@ -381,6 +378,9 @@
   }
   .eolo-spinner:not([class*=border-l-]) {
     @apply border-l-primary  dark:border-l-primary;
+  }
+  .eolo-spinner3 .dot {
+    @apply bg-gray-300 dark:bg-white/80;
   }
   .eolo-tabs .eolo-tabs-nav {
     @apply md:flex;
@@ -475,9 +475,6 @@
 	border-transparent 
 	dark:bg-opacity-20 
 	dark:border-transparent;
-  }
-  .eolo-overlay {
-    @apply bg-black bg-opacity-70;
   }
 }
 @keyframes spin {

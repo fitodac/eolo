@@ -1,6 +1,4 @@
 const theme = require('tailwindcss/defaultTheme')
-const { GLOBALS } = require('../utilities/utils')
-const MEDIA = require('./mediaqueries')
 
 const OPTIONS = {
 	'.eolo-dropdown': {},

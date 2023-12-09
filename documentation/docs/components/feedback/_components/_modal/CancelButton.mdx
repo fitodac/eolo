@@ -1,0 +1,89 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Modal con botón de cancelación">
+
+<div className="mt-6">
+  <label className="eolo-btn bg-primary border-primary text-white 
+                  dark:bg-primary dark:border-primary dark:text-white
+                  hover:bg-primary-700 hover:border-primary-700 hover:text-white 
+                  dark:hover:bg-primary-700 dark:hover:border-primary-700 dark:hover:text-white"
+  htmlFor="modal2">
+  Open modal
+  </label>
+
+  <input type="checkbox" id="modal2" className="eolo-modal-toggler" />
+
+  <div className="eolo-modal-wrapper">
+    <label className="eolo-overlay bg-black/70" htmlFor="modal2" />
+    
+    <div className="eolo-modal max-w-md space-y-3 p-5 md:w-96">
+      <div className="font-semibold flex justify-between">
+        <div className="text-primary text-lg">Subscribe now</div>
+        <label htmlFor="modal2" className="eolo-btn eolo-btn-icon -mt-1.5">
+          <i class="ri-close-line"/>
+        </label>
+      </div>
+
+      <div className="space-y-3">
+        <div className="text-sm font-medium">Enter your email to subscribe our newsletter</div>
+
+        <div className="eolo-input-group-inset">
+          <i className="ri-at-line ri-xl" />
+          <input type="email" placeholder="email here!" className="eolo-input" />
+        </div>
+        
+        <div className="text-slate-400 text-sm font-medium dark:text-slate-500">...or <span className="text-black dark:text-white">click CANCEL to close this modal box</span></div>
+      </div>
+
+      <div className="mt-5 flex flex-col gap-3 md:flex-row">
+        <div className="flex-1 md:order-2">
+          <button className="eolo-btn bg-primary border-primary text-white w-full dark:bg-primary dark:border-primary dark:text-white
+                      hover:bg-primary-700 hover:border-primary-700 hover:text-white dark:hover:bg-primary-700 dark:hover:border-primary-700 dark:hover:text-white">Submit</button>
+        </div>
+
+        <div className="flex-1">
+          <label className="eolo-btn w-full" htmlFor="modal2">Cancel</label>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<DemoCardCode>
+```html {10}
+<label class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white hover:bg-primary-700 hover:border-primary-700 hover:text-white dark:hover:bg-primary-700 dark:hover:border-primary-700 dark:hover:text-white" for="modalWindow">
+  Open modal
+</label>
+
+
+<input type="checkbox" id="modalWindow" class="eolo-modal-toggler" />
+
+
+<div class="eolo-modal-wrapper">
+  <div class="eolo-overlay bg-black/70" />
+  
+  <div class="eolo-modal max-w-md space-y-3 p-5 md:w-96">
+    <div class="font-semibold flex justify-between">
+      <div class="text-primary text-lg">Subscribe now</div>
+      <label for="modalWindow" class="eolo-btn eolo-btn-icon -mt-1.5">
+        <i class="ri-close-line"/>
+      </label>
+    </div>
+
+    <div class="mt-5 flex flex-col gap-3 md:flex-row">
+      <div class="flex-1 md:order-2">
+        <button class="eolo-btn bg-primary border-primary text-white w-full dark:bg-primary dark:border-primary dark:text-white hover:bg-primary-700 hover:border-primary-700 hover:text-white dark:hover:bg-primary-700 dark:hover:border-primary-700 dark:hover:text-white">Submit</button>
+      </div>
+
+      <div class="flex-1">
+        <label class="eolo-btn w-full" for="modalWindow">Cancel</label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
+</DemoCardCode>
+</DemoCard> 

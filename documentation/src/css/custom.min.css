@@ -3202,62 +3202,82 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
 .eolo-modal {
   top: 2rem;
   position: relative;
-  opacity: 0;
   border-radius: 0.75rem;
-  transition: .2s ease-in-out;
+  z-index: 30;
 }
 
-input[type=checkbox]:checked + .eolo-overlay > .eolo-modal {
-  top: 0;
-  opacity: 1;
-  transition-delay: 75ms;
+.eolo-modal-toggler {
+  display: none;
 }
 
-input[type=radio]:checked + .eolo-overlay > .eolo-modal {
+.eolo-modal-wrapper {
+  display: grid;
+  place-content: center;
+  left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.eolo-modal-wrapper OVERLAY {
+  z-index: 1;
+}
+
+.eolo-modal-wrapper ACTIVE {
+  pointer-events: initial;
+  visibility: visible;
   opacity: 1;
-  transition-delay: 75ms;
+  z-index: 999;
+}
+
+.eolo-modal-wrapper ACTIVE OVERLAY {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.eolo-modal-wrapper .eolo-overlay {
+  z-index: 1;
+}
+
+.eolo-modal-toggler[type=checkbox]:checked + .eolo-modal-wrapper {
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+}
+
+.eolo-modal-toggler[type=checkbox]:checked + .eolo-modal-wrapper OVERLAY {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.eolo-modal-toggler[type=checkbox]:checked + .eolo-modal-wrapper .eolo-overlay {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
 }
 
 .eolo-overlay {
-  padding: 1.5rem;
-  display: grid;
-  place-content: center;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s ease-in-out;
-  pointer-events: none;
   will-change: opacity;
+  visibility: hidden;
+  pointer-events: none;
   z-index: 99;
 }
 
-@media (min-width: 1280px) {
-  .eolo-overlay {
-    padding: 0;
-  }
-}
-
 .eolo-overlay ACTIVE {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-input[type=checkbox]:checked + .eolo-overlay {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-input[type=radio]:checked + .eolo-overlay {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 
 .eolo-collapsible {
@@ -3945,10 +3965,6 @@ select.eolo-input:disabled {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.eolo-dropdown .eolo-overlay {
-  background-color: transparent;
-}
-
 /**
   Collapsible
   **/
@@ -4097,6 +4113,15 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 :is([data-theme="dark"] .eolo-spinner:not([class*=border-l-])) {
   --tw-border-opacity: 1;
   border-left-color: rgb(33 150 243 / var(--tw-border-opacity));
+}
+
+.eolo-spinner3 .dot {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .eolo-spinner3 .dot) {
+  background-color: rgb(255 255 255 / 0.8);
 }
 
 @media (min-width: 768px) {
@@ -4452,6 +4477,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   z-index: 30;
 }
 
+.order-2 {
+  order: 2;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -4592,6 +4621,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-1\.5 {
+  margin-top: -0.375rem;
 }
 
 .block {
@@ -4786,6 +4823,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -4906,6 +4947,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .place-content-center {
@@ -5354,6 +5403,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -5786,6 +5839,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   font-weight: 600;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -5858,8 +5915,23 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 .opacity-0 {
@@ -6062,11 +6134,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   .eolo-btn.eolo-ghost:not(:hover):not(:active):not(:focus):not(:active:focus)) {
   border-color: transparent;
   --tw-bg-opacity: 0.2;
-}
-
-.eolo-overlay {
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.7;
 }
 
 /**
@@ -6591,6 +6658,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.hover\:border-primary-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
+}
+
 .hover\:bg-alt:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 193 7 / var(--tw-bg-opacity));
@@ -6599,6 +6671,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26.4 120 194.4 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
@@ -6747,6 +6824,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+:is([data-theme="dark"] .dark\:text-slate-500) {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
 :is([data-theme="dark"] .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -6761,6 +6843,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   --tw-ring-color: rgb(15 23 42 / var(--tw-ring-opacity));
 }
 
+:is([data-theme="dark"] .dark\:hover\:border-primary-700:hover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
+}
+
 :is([data-theme="dark"] .dark\:hover\:bg-alt:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 193 7 / var(--tw-bg-opacity));
@@ -6769,6 +6856,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 :is([data-theme="dark"] .dark\:hover\:bg-primary:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .dark\:hover\:bg-primary-700:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26.4 120 194.4 / var(--tw-bg-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:bg-secondary:hover) {
@@ -6792,6 +6884,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -6808,8 +6904,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
     display: none;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:items-end {

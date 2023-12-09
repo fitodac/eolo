@@ -2,4 +2,85 @@
 sidebar_position: 7
 ---
 
+import Basic from './_components/_modal/Basic.mdx'
+import CancelButton from './_components/_modal/CancelButton.mdx'
+import ClickOverlayDisabled from './_components/_modal/ClickOverlayDisabled.mdx'
+
 # Modal
+
+Las ventanas modales son elementos que se superponen en la interfaz de usuario para mostrar 
+información adicional o solicitar una acción específica sin necesidad de cambiar de página. <br/>
+Se utilizan para captar la atención del usuario y se suelen emplear para mensajes de confirmación, 
+formularios rápidos o contenido emergente.
+
+
+<div className="space-y-8 use-h2-only-for-anchors">
+  ## Básico
+  <Basic />
+  ## Modal con botón de cancelación
+  <CancelButton />
+  ## Overlay deshabilitado
+  <ClickOverlayDisabled />
+</div>
+
+## Uso básico
+Este componente en un poco mas complejo en su estructura HTML ya que cuenta con varias etiquetas 
+que deberás implementar para su correcto funcionamiento.
+
+<span className="font-bold">Acción</span><br/>
+Primero cuentas con un elemento poveerá la interacción con el usuario para lanzar la ventana modal. 
+Para dicho cometido se usará un `<label>` con la clase `.eolo-btn` para darle el estilo de un botón.
+
+
+```html
+<label 
+  className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white hover:bg-primary-700 hover:border-primary-700 hover:text-white dark:hover:bg-primary-700 dark:hover:border-primary-700 dark:hover:text-white" 
+  html="modalWindow">
+  Open modal
+</label>
+```
+<br/>
+
+<span className="font-bold">Toggler</span><br/>
+Luego tienes un `input[type=checkbox]` que se encuentra oculto. Este, al cambiar su estado a 
+`checked` será usado para mostrar la ventana modal usando CSS.
+
+Si usas la clase `.eolo-modal-toggler` te olvidarás de agregar atributos extra para ocultarlo.
+
+```html
+<input 
+  type="checkbox" 
+  id="modalWindow" 
+  class="eolo-modal-toggler" />
+```
+
+<br/>
+
+<span className="font-bold">Contenedor</span><br/>
+Finalmente tienes un contenedor que ocupará toda la pantalla para que si clickeas en el, se 
+vuelva a cerrar el modal, y dentro de este irá la caja "modal".
+
+En este punto es importante que `.eolo-modal-wrapper` vaya exactamente después del `input[type=chackbox]`.
+
+```html
+<div class="eolo-modal-wrapper">
+
+  <!--
+    Si quieres cerrar el modal al hacer click en el overlay, usa 
+    un <label> para .eolo-overlay.
+    Si no necesitas esta funcionalidad puedes usar un <div> en 
+    su lugar.
+  -->
+  <label class="eolo-overlay bg-black/70" for="modalWindow" />
+
+  
+  <div class="eolo-modal">
+    <!--
+      Dentro de .eolo-modal puede escribir todo el cuerpo de la 
+      ventana modal.
+    -->
+  </div>
+
+</div>
+```
+
