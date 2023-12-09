@@ -3397,40 +3397,40 @@ label {
   Range
   **/
 
-input[type=range]::-webkit-slider-runnable-track {
+.eolo-input[type=range]::-webkit-slider-runnable-track {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] input[type=range])::-webkit-slider-runnable-track {
+:is([data-theme="dark"] .eolo-input[type=range])::-webkit-slider-runnable-track {
   background-color: rgb(0 0 0 / 0.3);
 }
 
-input[type=range]::-moz-range-track {
+.eolo-input[type=range]::-moz-range-track {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] input[type=range])::-moz-range-track {
+:is([data-theme="dark"] .eolo-input[type=range])::-moz-range-track {
   background-color: rgb(0 0 0 / 0.3);
 }
 
-input[type=range]::-webkit-slider-thumb {
+.eolo-input[type=range]::-webkit-slider-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] input[type=range])::-webkit-slider-thumb {
+:is([data-theme="dark"] .eolo-input[type=range])::-webkit-slider-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-input[type=range]::-moz-range-thumb {
+.eolo-input[type=range]::-moz-range-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] input[type=range])::-moz-range-thumb {
+:is([data-theme="dark"] .eolo-input[type=range])::-moz-range-thumb {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
@@ -4207,6 +4207,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin-right: 0px;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -4316,6 +4326,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   display: none;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -4354,6 +4368,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .h-72 {
   height: 18rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-full {
@@ -4548,6 +4566,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -4580,6 +4602,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   column-gap: 3rem;
 }
 
+.gap-x-14 {
+  column-gap: 3.5rem;
+}
+
+.gap-x-16 {
+  column-gap: 4rem;
+}
+
 .gap-x-2 {
   column-gap: 0.5rem;
 }
@@ -4604,6 +4634,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   column-gap: 2rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
 }
@@ -4622,18 +4656,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .gap-y-6 {
   row-gap: 1.5rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
-.gap-x-14 {
-  column-gap: 3.5rem;
-}
-
-.gap-x-16 {
-  column-gap: 4rem;
 }
 
 .gap-y-7 {
@@ -5115,6 +5137,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   --tw-bg-opacity: 0.7;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .fill-primary {
   fill: #2196F3;
 }
@@ -5139,6 +5165,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3 {
@@ -5690,6 +5721,53 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   font-size: 0.875rem;
   line-height: 1.25rem;
   line-height: 1.25;
+}
+
+.before\:block.eolo-btn::before {
+  content: var(--tw-content);
+  text-align: center;
+}
+
+.before\:mx-1::before {
+  content: var(--tw-content);
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.before\:mx-2::before {
+  content: var(--tw-content);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.before\:mb-1::before {
+  content: var(--tw-content);
+  margin-bottom: 0.25rem;
+}
+
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:h-1::before {
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+
+.before\:h-1\.5::before {
+  content: var(--tw-content);
+  height: 0.375rem;
+}
+
+.before\:w-px::before {
+  content: var(--tw-content);
+  width: 1px;
+}
+
+.before\:bg-white\/50::before {
+  content: var(--tw-content);
+  background-color: rgb(255 255 255 / 0.5);
 }
 
 .last\:-mb-8:last-child {

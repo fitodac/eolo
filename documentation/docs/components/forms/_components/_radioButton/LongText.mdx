@@ -1,24 +1,24 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Radio buttons con textos largos">
 
 <div className="max-w-md space-y-6 mt-6">
 	<div className="flex gap-6 items-start">
-		<label className="input-radio">
+		<label className="eolo-input-radio">
 			<input type="radio" name="options-4" />
 			<span></span>
 		</label>
 		<div className="-top-1 relative">In "Star Wars: The Force Awakens," the Millennium Falcon briefly appears in the background of a junkyard scene, paying homage to its iconic status in the series.</div>
 	</div>
 	<div className="flex gap-6 items-start">
-		<label className="input-radio">
+		<label className="eolo-input-radio">
 			<input type="radio" name="options-4" />
 			<span></span>
 		</label>
 		<div className="-top-1 relative">In "Star Wars: The Last Jedi," the ancient Jedi texts seen in the movie's final scenes are written in Aurebesh, the fictional writing system used in the Star Wars universe.</div>
 	</div>
 	<div className="flex gap-6 items-start">
-		<label className="input-radio">
+		<label className="eolo-input-radio">
 			<input type="radio" name="options-4" />
 			<span></span>
 		</label>
@@ -26,43 +26,40 @@ import { DemoCard, DemoCardDescription } from '@site/src/components'
 	</div>
 </div>
 
+<DemoCardCode>
 ```html
-<div class="space-y-6">
+<div class="flex gap-6 items-start">
+  <label class="eolo-input-radio">
+    <input type="radio" name="options" />
+    <span />
+  </label>
 
   <div class="flex gap-6 items-start">
-    <label class="input-radio">
-      <input type="radio" name="options" />
-      <span />
-    </label>
-
-    <div class="flex gap-6 items-start">
-      In "Star Wars: The Force Awakens," the Millennium Falcon briefly...
-    </div>
+    In "Star Wars: The Force Awakens," the Millennium Falcon briefly...
   </div>
+</div>
+
+<div class="flex gap-6 items-start">
+  <label class="eolo-input-radio">
+    <input type="radio" name="options" />
+    <span />
+  </label>
 
   <div class="flex gap-6 items-start">
-    <label class="input-radio">
-      <input type="radio" name="options" />
-      <span />
-    </label>
-
-    <div class="flex gap-6 items-start">
-      In "Star Wars: The Last Jedi," the ancient Jedi texts seen...
-    </div>
+    In "Star Wars: The Last Jedi," the ancient Jedi texts seen...
   </div>
+</div>
+
+<div class="flex gap-6 items-start">
+  <label class="eolo-input-radio">
+    <input type="radio" name="options" />
+    <span />
+  </label>
 
   <div class="flex gap-6 items-start">
-    <label class="input-radio">
-      <input type="radio" name="options" />
-      <span />
-    </label>
-
-    <div class="flex gap-6 items-start">
-      In "Star Wars: Rogue One," the droid character, Chopper...
-    </div>
+    In "Star Wars: Rogue One," the droid character, Chopper...
   </div>
-
 </div>
 ```
-
+</DemoCardCode>
 </DemoCard>

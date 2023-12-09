@@ -1,50 +1,47 @@
-import { DemoCard, DemoCardDescription } from '@site/src/components'
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
 
 <DemoCard title="Radio buttons con estilos de checkbox">
 
 <div className="grid gap-x-8 gap-y-5 grid-cols-2 mt-6 md:flex">
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="radio" name="options-5" />
 		<span>Option 1</span>
 	</label>
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="radio" name="options-5" />
 		<span>Option 2</span>
 	</label>
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="radio" name="options-5" />
 		<span>Option 3</span>
 	</label>
-	<label className="input-checkbox">
+	<label className="eolo-input-checkbox">
 		<input type="radio" name="options-5" disabled />
 		<span>Disabled</span>
 	</label>
 </div>
 
-
+<DemoCardCode>
 ```html
-<div class="space-x-8">
+<label class="eolo-input-checkbox">
+  <input type="radio" name="options" />
+  <span>Option 1</span>
+</label>
 
-  <label class="input-checkbox">
-    <input type="radio" name="options" />
-    <span>Option 1</span>
-  </label>
+<label class="eolo-input-checkbox">
+  <input type="radio" name="options" />
+  <span>Option 2</span>
+</label>
 
-  <label class="input-checkbox">
-    <input type="radio" name="options" />
-    <span>Option 2</span>
-  </label>
+<label class="eolo-input-checkbox">
+  <input type="radio" name="options" />
+  <span>Option 3</span>
+</label>
 
-  <label class="input-checkbox">
-    <input type="radio" name="options" />
-    <span>Option 3</span>
-  </label>
-
-  <label class="input-checkbox">
-    <input type="radio" name="options" disabled />
-    <span>Disabled</span>
-  </label>
-
-</div>
+<label class="eolo-input-checkbox">
+  <input type="radio" name="options" disabled />
+  <span>Disabled</span>
+</label>
 ```
+</DemoCardCode>
 </DemoCard>

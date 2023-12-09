@@ -5,7 +5,7 @@ import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/component
 <div className="max-w-sm mt-6">
 	<div className="space-y-1">
 		<label>Fecha</label>
-		<input type="date" />
+		<input type="date" className="eolo-input" />
 	</div>
 </div>
 
@@ -13,7 +13,7 @@ import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/component
 ```html
 <div class="space-y-1">
   <label>Fecha</label>
-  <input type="date" />
+  <input type="date" class="eolo-input" />
 </div>
 ```
 </DemoCardCode>
@@ -33,7 +33,7 @@ trae por defecto el navegador y que al hacer click en el campo puedas habilitar 
     <label>Fecha (personalizada)</label>
     <div className="eolo-input-group-inset">
       <i className="ri-calendar-line ri-xl" />
-      <input type="date" className="eolo-calendar-on-focus" />
+      <input type="date" className="eolo-input eolo-calendar-on-focus" />
     </div>
   </div>
 </div>
@@ -45,7 +45,7 @@ trae por defecto el navegador y que al hacer click en el campo puedas habilitar 
 
   <div class="eolo-input-group-inset">
     <i class="ri-calendar-line ri-xl" />
-    <input type="date" class="eolo-calendar-on-focus" />
+    <input type="date" class="eolo-input eolo-calendar-on-focus" />
   </div>
 </div>
 ```

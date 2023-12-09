@@ -59,7 +59,7 @@ Color
 /**
 Range
 **/
-input[type='range'] {
+.eolo-input[type='range'] {
 	&::-webkit-slider-runnable-track {
 		@apply bg-gray-300 dark:bg-black/30;
 	}
