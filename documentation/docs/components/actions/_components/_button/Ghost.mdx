@@ -3,22 +3,38 @@ import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/component
 <DemoCard title="Ghost">
 <div className="grid gap-4 mt-6 xl:flex">
 	<div>
-		<button className="eolo-btn eolo-ghost">
+		<button 
+      className="eolo-btn bg-opacity-20 border-transparent text-slate-400 
+                  hover:bg-slate-500 hover:text-white
+                  dark:bg-opacity-40 dark:border-transparent
+                  dark:hover:bg-slate-900">
 			Default
 		</button>
 	</div>
 	<div>
-		<button className="eolo-btn eolo-ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
+		<button 
+      className="eolo-btn bg-primary/10 border-transparent text-primary 
+								hover:bg-primary hover:text-white
+								dark:bg-primary/10 dark:border-transparent dark:text-primary-300
+								dark:hover:bg-primary dark:hover:text-white">
 			Primary
 		</button>
 	</div>
 	<div>
-		<button className="eolo-btn eolo-ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
+		<button 
+      className="eolo-btn bg-secondary/10 border-transparent text-secondary 
+									hover:bg-secondary hover:text-white
+									dark:bg-secondary/10 dark:border-transparent dark:text-secondary-300
+									dark:hover:bg-secondary dark:hover:text-white">
 			Secondary
 		</button>
 	</div>
 	<div>
-		<button className="eolo-btn eolo-ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:text-alt-600 dark:hover:text-white">
+		<button 
+      className="eolo-btn bg-alt/10 border-transparent text-alt-600 
+                hover:bg-alt hover:text-white
+                dark:bg-alt/10 dark:border-transparent dark:text-alt-300
+                dark:hover:bg-alt dark:hover:text-white">
 			Alternative
 		</button>
 	</div>
@@ -26,19 +42,19 @@ import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/component
 
 <DemoCardCode>
 ```html
-<button class="eolo-btn eolo-ghost">
+<button class="eolo-btn bg-opacity-20 border-transparent text-slate-400 hover:bg-slate-500 hover:text-white dark:bg-opacity-40 dark:border-transparent dark:hover:bg-slate-900">
   Default
 </button>
 
-<button class="eolo-btn eolo-ghost bg-primary text-primary hover:text-white dark:bg-primary dark:text-primary dark:hover:text-white">
+<button class="eolo-btn bg-primary/10 border-transparent text-primary hover:bg-primary hover:text-white dark:bg-primary/10 dark:border-transparent dark:text-primary-300 dark:hover:bg-primary dark:hover:text-white">
   Primary
 </button>
 
-<button class="eolo-btn eolo-ghost bg-secondary text-secondary hover:text-white dark:bg-secondary dark:text-secondary dark:hover:text-white">
+<button class="eolo-btn bg-secondary/10 border-transparent text-secondary hover:bg-secondary hover:text-white dark:bg-secondary/10 dark:border-transparent dark:text-secondary-300 dark:hover:bg-secondary dark:hover:text-white">
   Secondary
 </button>
 
-<button class="eolo-btn eolo-ghost bg-alt text-alt-600 hover:text-white dark:bg-alt dark:text-alt-600 dark:hover:text-white">
+<button class="eolo-btn bg-alt/10 border-transparent text-alt-600 hover:bg-alt hover:text-white dark:bg-alt/10 dark:border-transparent dark:text-alt-300 dark:hover:bg-alt dark:hover:text-white">
   Alternative
 </button>
 ```

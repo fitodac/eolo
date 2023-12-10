@@ -22,7 +22,6 @@ const tabs = require('./components/tabs')
 const spinner = require('./components/spinner')
 const modal = require('./components/modal')
 const overlay = require('./components/overlay')
-const toast = require('./components/toast')
 const collapsible = require('./components/collapsible')
 
 module.exports = plugin.withOptions(
@@ -44,7 +43,6 @@ module.exports = plugin.withOptions(
 			...spinner.OPTIONS,
 			...modal.OPTIONS,
 			...overlay.OPTIONS,
-			...toast.OPTIONS,
 			...collapsible.OPTIONS,
 		}
 	) => {
@@ -75,7 +73,6 @@ module.exports = plugin.withOptions(
 			spinner.COMPONENTS(addComponents, options)
 			modal.COMPONENTS(addComponents, options)
 			overlay.COMPONENTS(addComponents, options)
-			toast.COMPONENTS(addComponents, options)
 			collapsible.COMPONENTS(addComponents, options)
 
 			if (options.nocompatible) {

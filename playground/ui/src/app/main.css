@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-	background: url('/blueprint-bg.svg');
-	background-size: .5rem;
+.eolo-btn {
+	/* @apply bg-teal-500 border-teal-500; */
 }

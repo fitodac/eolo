@@ -10,9 +10,9 @@ const GLOBALS = {
 	spacing: {
 		DEFAULT: theme.spacing[3],
 		y: theme.spacing[3],
-		x: theme.spacing[7],
+		x: theme.spacing[5],
 		sm: {
-			x: theme.spacing[4],
+			x: theme.spacing[3],
 			y: theme.spacing[1.5],
 		},
 		lg: {

@@ -355,7 +355,13 @@ html:root {
 		transition: width var(--ifm-transition-fast) ease;
 		clip-path: inset(0);
 
-		@apply bg-slate-900 border-slate-900;
+		@apply bg-white dark:bg-slate-900 border-slate-900;
+	}
+
+	.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module{
+		> .menu__list {
+			@apply pt-5 pb-10;
+		}
 	}
 }
 

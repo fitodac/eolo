@@ -6,7 +6,6 @@ const OPTIONS = {
 	'.eolo-btn': {},
 	'.eolo-btn-sm': {},
 	'.eolo-btn-lg': {},
-	'.eolo-btn.eolo-ghost': {},
 	'.eolo-btn-icon': {},
 	'.eolo-btn_icon > svg': {},
 	'.eolo-btn.rounded': {},
@@ -41,7 +40,7 @@ const BASE = {
 		display: 'inline-flex',
 		'justify-content': 'center',
 		'align-items': 'center',
-		transition: theme.transitionProperty.all,
+		transition: '.25 eas-in-out',
 		'transition-duration': theme.transitionDuration[300],
 		'border-radius': theme.borderRadius.md,
 		cursor: 'pointer',
@@ -56,14 +55,14 @@ const BASE = {
 		SM: {
 			'font-size': theme.fontSize.xs[0],
 			padding: `${GLOBALS.spacing.sm.y} ${GLOBALS.spacing.sm.x}`,
+			height: '1.6rem',
 		},
 
 		LG: {
 			padding: `${GLOBALS.spacing.lg.y} ${GLOBALS.spacing.lg.x}`,
+			height: '2.9rem',
 			'max-height': theme.spacing[14],
 		},
-
-		GHOST: { border: 'transparent' },
 
 		/// Button icon:
 		ICON: {
@@ -145,10 +144,6 @@ const COMPONENTS = (addComponents, options) => {
 
 			['&.eolo-btn-sm']: { ...BASE.BTN.SM, ...options['.eolo-btn-sm'] },
 			['&.eolo-btn-lg']: { ...BASE.BTN.LG, ...options['.eolo-btn-lg'] },
-			['&.eolo-ghost']: {
-				...BASE.BTN.GHOST,
-				...options['.eolo-btn.eolo-ghost'],
-			},
 			['&.eolo-btn-icon']: {
 				...BASE.BTN.ICON,
 				...options['.eolo-btn-icon'],

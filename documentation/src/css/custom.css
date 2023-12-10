@@ -41,7 +41,7 @@
 }
 
 [class^='docMainContainer'] {
-	@apply bg-slate-100 text-slate-600 min-h-screen lg:pl-5 dark:bg-slate-900;
+	@apply bg-slate-100 text-slate-600 min-h-screen lg:pl-5 dark:bg-slate-800;
 }
 
 .markdown {

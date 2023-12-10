@@ -3,9 +3,9 @@ import { useState } from 'react'
 export const DemoCard = ({ title, children }) => {
 	return (
 		<div
-			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl
-			dark:bg-slate-900 dark:border-slate-800 dark:bg-opacity-60
-			lg:mx-0"
+			className="bg-white border border-slate-100 max-w-5xl mx-auto rounded-xl 
+			shadow-black/40 shadow
+			dark:bg-slate-900/20 dark:border-slate-900/20 lg:mx-0"
 		>
 			<div className="flex justify-between items-center px-6 pt-5">
 				<div className="text-slate-600 font-bold select-none dark:text-slate-200">
@@ -32,7 +32,7 @@ export const DemoCardCode = ({ children }) => {
 		<div className="bg-slate-200/20 px-6 pt-4 pb-5 -mx-6 mt-5 last:-mb-8 last:rounded-b-xl dark:bg-slate-950">
 			<div className="flex justify-end">
 				<button
-					className=" text-sm font-medium space-x-2 select-none dark:text-slate-400"
+					className="text-sm font-medium space-x-2 select-none transition-all hover:text-primary dark:text-slate-400 dark:hover:text-primary"
 					onClick={() => setState(!state)}
 				>
 					<span>{!state ? 'Show code' : 'Hide code'}</span>

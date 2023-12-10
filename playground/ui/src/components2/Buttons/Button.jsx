@@ -1,3 +1,4 @@
+import { SectionWrapper } from '@/app/_components/SectionWrapper'
 import { ButtonIcons } from './ButtonIcons'
 
 const btn = {
@@ -63,11 +64,9 @@ const btn = {
 	},
 }
 
-export const Buttons = () => {
+export const Button = () => {
 	return (
-		<section>
-			<div className="font-bold">Buttons</div>
-
+		<SectionWrapper {...{ title: 'Buttons', anchor: 'buttons' }}>
 			<div className="space-y-10 mt-3">
 				<div className="grid grid-cols-6">
 					<div className="grid gap-y-3">
@@ -148,8 +147,7 @@ export const Buttons = () => {
 				</div>
 
 				<ButtonIcons />
-
 			</div>
-		</section>
+		</SectionWrapper>
 	)
 }

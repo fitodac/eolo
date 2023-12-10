@@ -22,8 +22,14 @@ const BASE = {
 
 	P_P: { marginTop: theme.spacing[8] },
 
-	UL: { listStyleType: 'disc' },
-	OL: { listStyleType: 'decimal' },
+	UL: { 
+		listStyleType: 'disc',
+		'padding-left': '1.1rem'
+	},
+	OL: { 
+		listStyleType: 'decimal',
+		'padding-left': '1.1rem'
+	},
 
 	CODE: {
 		'font-size': theme.fontSize.sm[0],

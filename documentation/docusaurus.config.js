@@ -161,7 +161,7 @@ const config = {
 			// copyright: `&copy; ${new Date().getFullYear()} Built with Docusaurus.`,
 			// },
 			prism: {
-				theme: prismThemes.nightOwlLight,
+				theme: prismThemes.oneLight,
 				darkTheme: prismThemes.nightOwl,
 			},
 		}),
