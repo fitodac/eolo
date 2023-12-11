@@ -1,6 +1,6 @@
 @import 'theme.css';
-/* @import 'eolo'; */
-@import '../../../packages/ui/';
+@import 'eolo';
+/* @import '../../../packages/ui/'; */
 
 @tailwind base;
 @tailwind components;
