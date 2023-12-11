@@ -3,7 +3,7 @@ import { SectionWrapper } from '@/app/_components/SectionWrapper'
 export const Dropdown = () => {
 	return (
 		<SectionWrapper {...{ title: 'Dropdown', anchor: 'dropdown' }}>
-			<div className="mt-3">
+			<div className="mt-6">
 				<div className="eolo-dropdown">
 					<input
 						type="checkbox"
@@ -23,13 +23,28 @@ export const Dropdown = () => {
 						<div className="eolo-dropdown-nav w-40">
 							<ul className="text-sm">
 								<li>
-									<a href="#">View</a>
+									<a
+										href="#"
+										className="px-4 py-1 block select-none transition-all hover:bg-black/10 hover:text-primary dark:hover:bg-black/20"
+									>
+										View
+									</a>
 								</li>
 								<li>
-									<a href="#">Details</a>
+									<a
+										href="#"
+										className="px-4 py-1 block select-none transition-all hover:bg-black/10 hover:text-primary dark:hover:bg-black/20"
+									>
+										Details
+									</a>
 								</li>
 								<li>
-									<a href="#">Share</a>
+									<a
+										href="#"
+										className="px-4 py-1 block select-none transition-all hover:bg-black/10 hover:text-primary dark:hover:bg-black/20"
+									>
+										Share
+									</a>
 								</li>
 							</ul>
 						</div>

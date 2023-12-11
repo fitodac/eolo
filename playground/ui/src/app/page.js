@@ -23,7 +23,7 @@ export default function Home() {
 	return (
 		<>
 			<main className={`${darkMode}`}>
-				<div className="bg-gray-100 px-6 py-2 flex justify-end top-0 inset-x-0 fixed z-50 dark:bg-slate-900">
+				<div className="bg-gray-100 px-6 py-2 flex justify-end top-0 inset-x-0 fixed z-[100] dark:bg-slate-900">
 					<div className="space-x-4">
 						{'dark' !== darkMode && (
 							<button onClick={() => setDarkMode('dark')}>

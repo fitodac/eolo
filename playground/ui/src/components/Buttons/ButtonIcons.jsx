@@ -1,6 +1,6 @@
 export const ButtonIcons = () => {
 	return (
-		<div className="space-y-6">
+		<div className="space-y-6 pt-4">
 			<div className="flex gap-x-10 items-center">
 				<div className="text-sm font-semibold w-10">SVG</div>
 

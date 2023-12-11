@@ -1093,7 +1093,6 @@ video {
   line-height: 1;
   font-weight: 500;
   max-height: 2.5rem;
-  height: 2.4rem;
   padding: 0.625rem 1.25rem;
   display: inline-flex;
   justify-content: center;
@@ -1118,13 +1117,10 @@ video {
 .eolo-btn SM {
   font-size: 0.75rem;
   padding: 0.375rem 0.75rem;
-  height: 1.6rem;
 }
 
 .eolo-btn LG {
   padding: 1rem 2.5rem;
-  height: 2.9rem;
-  max-height: 3.5rem;
 }
 
 .eolo-btn ICON {
@@ -1145,6 +1141,10 @@ video {
 
 .eolo-btn BLOCK {
   text-align: center;
+}
+
+.eolo-btn {
+  height: 2.4rem;
 }
 
 .eolo-btn.eolo-btn-sm {
@@ -1201,6 +1201,7 @@ video {
   border-radius: 0px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  height: 2.4rem;
 }
 
 .eolo-btn-group > .eolo-btn:first-child {
@@ -1230,6 +1231,7 @@ video {
   border-radius: 0px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  height: 2.4rem;
 }
 
 .eolo-btn-group > label:first-child > .eolo-btn {
@@ -1265,6 +1267,7 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding: 0.375rem 0.75rem;
+  height: 1.6rem;
 }
 
 .eolo-btn-group-sm > .eolo-btn:first-child {
@@ -1272,6 +1275,52 @@ video {
 }
 
 .eolo-btn-group-sm > .eolo-btn:last-child {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-sm > label {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.eolo-btn-group-sm > label BTN {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-sm > label > [type=checkbox], .eolo-btn-group-sm > label > [type=radio] {
+  display: none;
+}
+
+.eolo-btn-group-sm > label > .eolo-btn {
+  font-size: 0.75rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 0.375rem 0.75rem;
+  height: 1.6rem;
+}
+
+.eolo-btn-group-sm > label:first-child > .eolo-btn {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-sm > label:last-child > .eolo-btn {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown > .eolo-btn-toggler > .eolo-btn {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown:first-child > .eolo-btn-toggler > .eolo-btn {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown:last-child > .eolo-btn-toggler > .eolo-btn {
   border-radius: 0 0.375rem 0.375rem 0;
 }
 
@@ -1296,12 +1345,74 @@ video {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+.eolo-btn-group-lg > .eolo-btn {
+  height: 2.9rem;
+}
+
 .eolo-btn-group-lg > .eolo-btn:first-child {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .eolo-btn-group-lg > .eolo-btn:last-child {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.eolo-btn-group-lg > label {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.eolo-btn-group-lg > label BTN {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-lg > label > [type=checkbox], .eolo-btn-group-lg > label > [type=radio] {
+  display: none;
+}
+
+.eolo-btn-group-lg > label > .eolo-btn {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 1rem 2.5rem;
+  max-height: 3.5rem;
+}
+
+.eolo-btn-group-lg > label > .eolo-btn FIRST_CHILD {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.eolo-btn-group-lg > label > .eolo-btn LAST_CHILD {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.eolo-btn-group-lg > label > .eolo-btn {
+  height: 2.9rem;
+}
+
+.eolo-btn-group-lg > label:first-child > .eolo-btn {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-lg > label:last-child > .eolo-btn {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown > .eolo-btn-toggler > .eolo-btn {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown:first-child > .eolo-btn-toggler > .eolo-btn {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown:last-child > .eolo-btn-toggler > .eolo-btn {
+  border-radius: 0 0.375rem 0.375rem 0;
 }
 
 .eolo-btn-toggler > [type=checkbox], .eolo-btn-toggler > [type=radio] {
@@ -3428,34 +3539,6 @@ table.eolo-table.eolo-table-compact > tbody > tr > td {
   fill: #fff;
 }
 
-/** Button primary */
-
-.eolo-btn-group-primary > label > input:checked + .btn {
-  --tw-border-opacity: 1;
-  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(26.4 120 194.4 / var(--tw-bg-opacity));
-}
-
-/** Button secondary */
-
-.eolo-btn-group-secondary > label > input:checked + .btn {
-  --tw-border-opacity: 1;
-  border-color: rgb(124.8 31.2 140.8 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(124.8 31.2 140.8 / var(--tw-bg-opacity));
-}
-
-/** Button alternative */
-
-.eolo-btn-group-alt > label > input:checked + .btn,
-  .eolo-btn-toggler input:checked + .btn-alt {
-  --tw-border-opacity: 1;
-  border-color: rgb(204 154.4 5.6 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 154.4 5.6 / var(--tw-bg-opacity));
-}
-
 .eolo-btn.eolo-btn-link {
   border-radius: 0px;
   border-color: transparent;
@@ -4519,6 +4602,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin-right: -1.5rem;
 }
 
+.-mx-7 {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -5365,6 +5453,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -5373,10 +5465,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .border-yellow-600 {
   --tw-border-opacity: 1;
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
-}
-
-.border-transparent {
-  border-color: transparent;
 }
 
 .border-l-pink-400 {
@@ -5456,6 +5544,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(153 115.8 4.2 / var(--tw-bg-opacity));
 }
 
+.bg-alt\/10 {
+  background-color: rgb(255 193 7 / 0.1);
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -5530,6 +5622,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(19.8 90 145.8 / var(--tw-bg-opacity));
 }
 
+.bg-primary\/10 {
+  background-color: rgb(33 150 243 / 0.1);
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -5600,6 +5696,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(93.6 23.4 105.6 / var(--tw-bg-opacity));
 }
 
+.bg-secondary\/10 {
+  background-color: rgb(156 39 176 / 0.1);
+}
+
 .bg-sky-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -5615,8 +5715,8 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200\/20 {
-  background-color: rgb(226 232 240 / 0.2);
+.bg-slate-200\/70 {
+  background-color: rgb(226 232 240 / 0.7);
 }
 
 .bg-slate-50 {
@@ -5663,18 +5763,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(161 98 7 / var(--tw-bg-opacity));
 }
 
-.bg-primary\/10 {
-  background-color: rgb(33 150 243 / 0.1);
-}
-
-.bg-secondary\/10 {
-  background-color: rgb(156 39 176 / 0.1);
-}
-
-.bg-alt\/10 {
-  background-color: rgb(255 193 7 / 0.1);
-}
-
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -5683,16 +5771,16 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   --tw-bg-opacity: 0.2;
 }
 
+.bg-opacity-5 {
+  --tw-bg-opacity: 0.05;
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
 
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
-}
-
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
 }
 
 .bg-cover {
@@ -5995,6 +6083,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(156 39 176 / var(--tw-text-opacity));
 }
 
+.text-secondary-600 {
+  --tw-text-opacity: 1;
+  color: rgb(140.4 35.1 158.4 / var(--tw-text-opacity));
+}
+
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -6015,6 +6108,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+.text-slate-600\/50 {
+  color: rgb(71 85 105 / 0.5);
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -6022,15 +6119,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-600\/50 {
-  color: rgb(71 85 105 / 0.5);
-}
-
-.text-secondary-600 {
-  --tw-text-opacity: 1;
-  color: rgb(140.4 35.1 158.4 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -6453,7 +6541,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   line-height: 1;
   font-weight: 500;
   max-height: 2.5rem;
-  height: 2.4rem;
   padding: 0.625rem 1.25rem;
   display: inline-flex;
   justify-content: center;
@@ -6478,13 +6565,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 .file\:eolo-btn::file-selector-button SM {
   font-size: 0.75rem;
   padding: 0.375rem 0.75rem;
-  height: 1.6rem;
 }
 
 .file\:eolo-btn::file-selector-button LG {
   padding: 1rem 2.5rem;
-  height: 2.9rem;
-  max-height: 3.5rem;
 }
 
 .file\:eolo-btn::file-selector-button ICON {
@@ -6505,6 +6589,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 
 .file\:eolo-btn::file-selector-button BLOCK {
   text-align: center;
+}
+
+.file\:eolo-btn::file-selector-button {
+  height: 2.4rem;
 }
 
 .file\:eolo-btn.eolo-btn-sm::file-selector-button {
@@ -6563,6 +6651,7 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-radius: 0px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  height: 2.4rem;
 }
 
 .eolo-btn-group > .file\:eolo-btn::file-selector-button:first-child {
@@ -6578,6 +6667,7 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-radius: 0px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  height: 2.4rem;
 }
 
 .eolo-btn-group > label:first-child > .file\:eolo-btn::file-selector-button {
@@ -6609,6 +6699,7 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding: 0.375rem 0.75rem;
+  height: 1.6rem;
 }
 
 .eolo-btn-group-sm > .file\:eolo-btn::file-selector-button:first-child {
@@ -6616,6 +6707,38 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
 }
 
 .eolo-btn-group-sm > .file\:eolo-btn::file-selector-button:last-child {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-sm > label > .file\:eolo-btn::file-selector-button {
+  font-size: 0.75rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 0.375rem 0.75rem;
+  height: 1.6rem;
+}
+
+.eolo-btn-group-sm > label:first-child > .file\:eolo-btn::file-selector-button {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-sm > label:last-child > .file\:eolo-btn::file-selector-button {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown:first-child > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-sm > .eolo-dropdown:last-child > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
   border-radius: 0 0.375rem 0.375rem 0;
 }
 
@@ -6636,12 +6759,60 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+.eolo-btn-group-lg > .file\:eolo-btn::file-selector-button {
+  height: 2.9rem;
+}
+
 .eolo-btn-group-lg > .file\:eolo-btn::file-selector-button:first-child {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .eolo-btn-group-lg > .file\:eolo-btn::file-selector-button:last-child {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.eolo-btn-group-lg > label > .file\:eolo-btn::file-selector-button {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding: 1rem 2.5rem;
+  max-height: 3.5rem;
+}
+
+.eolo-btn-group-lg > label > .file\:eolo-btn::file-selector-button FIRST_CHILD {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.eolo-btn-group-lg > label > .file\:eolo-btn::file-selector-button LAST_CHILD {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.eolo-btn-group-lg > label > .file\:eolo-btn::file-selector-button {
+  height: 2.9rem;
+}
+
+.eolo-btn-group-lg > label:first-child > .file\:eolo-btn::file-selector-button {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-lg > label:last-child > .file\:eolo-btn::file-selector-button {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
+  font-size: 0.875rem;
+  border-radius: 0px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown:first-child > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.eolo-btn-group-lg > .eolo-dropdown:last-child > .eolo-btn-toggler > .file\:eolo-btn::file-selector-button {
+  border-radius: 0 0.375rem 0.375rem 0;
 }
 
 .eolo-input-group-inset > .file\:eolo-btn::file-selector-button {
@@ -6764,9 +6935,9 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.hover\:border-primary-700:hover {
+.hover\:border-alt-600:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
+  border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
 }
 
 .hover\:border-primary-600:hover {
@@ -6774,14 +6945,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(29.7 135 218.7 / var(--tw-border-opacity));
 }
 
+.hover\:border-primary-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
+}
+
 .hover\:border-secondary-600:hover {
   --tw-border-opacity: 1;
   border-color: rgb(140.4 35.1 158.4 / var(--tw-border-opacity));
-}
-
-.hover\:border-alt-600:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
 }
 
 .hover\:border-opacity-90:hover {
@@ -6793,9 +6964,19 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(255 193 7 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-alt-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229.5 173.7 6.3 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29.7 135 218.7 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-700:hover {
@@ -6808,19 +6989,9 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(156 39 176 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-primary-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29.7 135 218.7 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-secondary-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(140.4 35.1 158.4 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-alt-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229.5 173.7 6.3 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-slate-500:hover {
@@ -6868,6 +7039,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(255 193 7 / var(--tw-border-opacity));
 }
 
+:is([data-theme="dark"] .dark\:border-alt-600) {
+  --tw-border-opacity: 1;
+  border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
+}
+
 :is([data-theme="dark"] .dark\:border-black\/70) {
   border-color: rgb(0 0 0 / 0.7);
 }
@@ -6882,6 +7058,11 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(156 39 176 / var(--tw-border-opacity));
 }
 
+:is([data-theme="dark"] .dark\:border-secondary-200) {
+  --tw-border-opacity: 1;
+  border-color: rgb(202.8 50.7 228.8 / var(--tw-border-opacity));
+}
+
 :is([data-theme="dark"] .dark\:border-slate-800) {
   --tw-border-opacity: 1;
   border-color: rgb(30 41 59 / var(--tw-border-opacity));
@@ -6891,22 +7072,12 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(15 23 42 / 0.2);
 }
 
-:is([data-theme="dark"] .dark\:border-white\/30) {
-  border-color: rgb(255 255 255 / 0.3);
-}
-
-:is([data-theme="dark"] .dark\:border-secondary-200) {
-  --tw-border-opacity: 1;
-  border-color: rgb(202.8 50.7 228.8 / var(--tw-border-opacity));
-}
-
-:is([data-theme="dark"] .dark\:border-alt-600) {
-  --tw-border-opacity: 1;
-  border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
-}
-
 :is([data-theme="dark"] .dark\:border-transparent) {
   border-color: transparent;
+}
+
+:is([data-theme="dark"] .dark\:border-white\/30) {
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 :is([data-theme="dark"] .dark\:border-l-pink-400) {
@@ -6929,9 +7100,17 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(255 193 7 / var(--tw-bg-opacity));
 }
 
+:is([data-theme="dark"] .dark\:bg-alt\/10) {
+  background-color: rgb(255 193 7 / 0.1);
+}
+
 :is([data-theme="dark"] .dark\:bg-primary) {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .dark\:bg-primary\/10) {
+  background-color: rgb(33 150 243 / 0.1);
 }
 
 :is([data-theme="dark"] .dark\:bg-secondary) {
@@ -6939,9 +7118,8 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(156 39 176 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .dark\:bg-slate-800) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+:is([data-theme="dark"] .dark\:bg-secondary\/10) {
+  background-color: rgb(156 39 176 / 0.1);
 }
 
 :is([data-theme="dark"] .dark\:bg-slate-900) {
@@ -6958,18 +7136,6 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .dark\:bg-primary\/10) {
-  background-color: rgb(33 150 243 / 0.1);
-}
-
-:is([data-theme="dark"] .dark\:bg-secondary\/10) {
-  background-color: rgb(156 39 176 / 0.1);
-}
-
-:is([data-theme="dark"] .dark\:bg-alt\/10) {
-  background-color: rgb(255 193 7 / 0.1);
-}
-
 :is([data-theme="dark"] .dark\:bg-opacity-10) {
   --tw-bg-opacity: 0.1;
 }
@@ -6982,9 +7148,9 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   --tw-bg-opacity: 0.4;
 }
 
-:is([data-theme="dark"] .dark\:text-alt) {
+:is([data-theme="dark"] .dark\:text-alt-300) {
   --tw-text-opacity: 1;
-  color: rgb(255 193 7 / var(--tw-text-opacity));
+  color: rgb(306 231.6 8.4 / var(--tw-text-opacity));
 }
 
 :is([data-theme="dark"] .dark\:text-alt-600) {
@@ -6997,9 +7163,19 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(33 150 243 / var(--tw-text-opacity));
 }
 
-:is([data-theme="dark"] .dark\:text-secondary) {
+:is([data-theme="dark"] .dark\:text-primary-300) {
   --tw-text-opacity: 1;
-  color: rgb(156 39 176 / var(--tw-text-opacity));
+  color: rgb(39.6 180 291.6 / var(--tw-text-opacity));
+}
+
+:is([data-theme="dark"] .dark\:text-secondary-200) {
+  --tw-text-opacity: 1;
+  color: rgb(202.8 50.7 228.8 / var(--tw-text-opacity));
+}
+
+:is([data-theme="dark"] .dark\:text-secondary-300) {
+  --tw-text-opacity: 1;
+  color: rgb(187.2 46.8 211.2 / var(--tw-text-opacity));
 }
 
 :is([data-theme="dark"] .dark\:text-slate-200) {
@@ -7031,44 +7207,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   color: rgb(255 255 255 / 0.7);
 }
 
-:is([data-theme="dark"] .dark\:text-secondary-200) {
-  --tw-text-opacity: 1;
-  color: rgb(202.8 50.7 228.8 / var(--tw-text-opacity));
-}
-
-:is([data-theme="dark"] .dark\:text-primary-300) {
-  --tw-text-opacity: 1;
-  color: rgb(39.6 180 291.6 / var(--tw-text-opacity));
-}
-
-:is([data-theme="dark"] .dark\:text-secondary-300) {
-  --tw-text-opacity: 1;
-  color: rgb(187.2 46.8 211.2 / var(--tw-text-opacity));
-}
-
-:is([data-theme="dark"] .dark\:text-alt-300) {
-  --tw-text-opacity: 1;
-  color: rgb(306 231.6 8.4 / var(--tw-text-opacity));
-}
-
 :is([data-theme="dark"] .dark\:ring-slate-900) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(15 23 42 / var(--tw-ring-opacity));
 }
 
-:is([data-theme="dark"] .dark\:hover\:border-primary-700:hover) {
+:is([data-theme="dark"] .dark\:hover\:border-alt:hover) {
   --tw-border-opacity: 1;
-  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
-}
-
-:is([data-theme="dark"] .dark\:hover\:border-primary-600:hover) {
-  --tw-border-opacity: 1;
-  border-color: rgb(29.7 135 218.7 / var(--tw-border-opacity));
-}
-
-:is([data-theme="dark"] .dark\:hover\:border-secondary-600:hover) {
-  --tw-border-opacity: 1;
-  border-color: rgb(140.4 35.1 158.4 / var(--tw-border-opacity));
+  border-color: rgb(255 193 7 / var(--tw-border-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:border-alt-600:hover) {
@@ -7076,14 +7222,19 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
 }
 
-:is([data-theme="dark"] .dark\:hover\:border-slate-900:hover) {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
-}
-
 :is([data-theme="dark"] .dark\:hover\:border-primary:hover) {
   --tw-border-opacity: 1;
   border-color: rgb(33 150 243 / var(--tw-border-opacity));
+}
+
+:is([data-theme="dark"] .dark\:hover\:border-primary-600:hover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(29.7 135 218.7 / var(--tw-border-opacity));
+}
+
+:is([data-theme="dark"] .dark\:hover\:border-primary-700:hover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:border-secondary:hover) {
@@ -7091,9 +7242,14 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   border-color: rgb(156 39 176 / var(--tw-border-opacity));
 }
 
-:is([data-theme="dark"] .dark\:hover\:border-alt:hover) {
+:is([data-theme="dark"] .dark\:hover\:border-secondary-600:hover) {
   --tw-border-opacity: 1;
-  border-color: rgb(255 193 7 / var(--tw-border-opacity));
+  border-color: rgb(140.4 35.1 158.4 / var(--tw-border-opacity));
+}
+
+:is([data-theme="dark"] .dark\:hover\:border-slate-900:hover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:border-opacity-90:hover) {
@@ -7105,9 +7261,19 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(255 193 7 / var(--tw-bg-opacity));
 }
 
+:is([data-theme="dark"] .dark\:hover\:bg-alt-600:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229.5 173.7 6.3 / var(--tw-bg-opacity));
+}
+
 :is([data-theme="dark"] .dark\:hover\:bg-primary:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
+}
+
+:is([data-theme="dark"] .dark\:hover\:bg-primary-600:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29.7 135 218.7 / var(--tw-bg-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:bg-primary-700:hover) {
@@ -7120,19 +7286,9 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td {
   background-color: rgb(156 39 176 / var(--tw-bg-opacity));
 }
 
-:is([data-theme="dark"] .dark\:hover\:bg-primary-600:hover) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29.7 135 218.7 / var(--tw-bg-opacity));
-}
-
 :is([data-theme="dark"] .dark\:hover\:bg-secondary-600:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(140.4 35.1 158.4 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] .dark\:hover\:bg-alt-600:hover) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229.5 173.7 6.3 / var(--tw-bg-opacity));
 }
 
 :is([data-theme="dark"] .dark\:hover\:bg-slate-900:hover) {

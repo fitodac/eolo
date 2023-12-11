@@ -11,25 +11,6 @@
 	@apply fill-white;
 }
 
-/** Button primary */
-.eolo-btn-group-primary > label > input:checked + .btn {
-	@apply bg-primary-700 
-	border-primary-700;
-}
-
-/** Button secondary */
-.eolo-btn-group-secondary > label > input:checked + .btn {
-	@apply bg-secondary-700 
-	border-secondary-700;
-}
-
-/** Button alternative */
-.eolo-btn-group-alt > label > input:checked + .btn,
-.eolo-btn-toggler input:checked + .btn-alt {
-	@apply bg-alt-700 
-	border-alt-700;
-}
-
 .eolo-btn.eolo-btn-link {
 	@apply bg-transparent
 	border-transparent

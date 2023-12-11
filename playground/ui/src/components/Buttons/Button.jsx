@@ -193,8 +193,8 @@ const btn = {
 export const Button = () => {
 	return (
 		<SectionWrapper {...{ title: 'Buttons', anchor: 'buttons' }}>
-			<div className="space-y-10 mt-3">
-				<div className="grid grid-cols-6">
+			<div className="max-w-3xl space-y-10 mt-6">
+				<div className="grid grid-cols-3">
 					<div className="grid gap-y-3">
 						{Object.keys(btn.sm.basic).map((i) => (
 							<div key={i}>
@@ -220,7 +220,7 @@ export const Button = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-6">
+				<div className="grid grid-cols-3">
 					<div className="grid gap-y-3">
 						{Object.keys(btn.md.basic).map((i) => (
 							<div key={i}>
@@ -246,7 +246,7 @@ export const Button = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-6">
+				<div className="grid grid-cols-3">
 					<div className="grid gap-y-3">
 						{Object.keys(btn.lg.basic).map((i) => (
 							<div key={i}>

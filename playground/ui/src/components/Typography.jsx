@@ -3,7 +3,7 @@ import { SectionWrapper } from '@/app/_components/SectionWrapper'
 export const Typography = () => {
 	return (
 		<SectionWrapper {...{ title: 'Typography', anchor: 'typography' }}>
-			<div className="eolo-content space-y-12 mt-3">
+			<div className="eolo-content space-y-12 mt-6">
 				<div className="space-y-5">
 					<h1>Heading 1</h1>
 					<h2>Heading 2</h2>
