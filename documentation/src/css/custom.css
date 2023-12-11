@@ -1,4 +1,4 @@
-@import './theme.css';
+/* @import './theme.css'; */
 /* @import 'eolo'; */
 @import '../../../packages/ui/';
 
@@ -80,4 +80,60 @@
 
 .prism-code {
 	@apply text-sm leading-tight;
+}
+
+
+/**
+THEME
+**/
+@media (min-width: 997px) {
+	.theme-doc-sidebar-container {
+		width: var(--doc-sidebar-width);
+		margin-top: calc(-1 * var(--ifm-navbar-height));
+		will-change: width;
+		transition: width var(--ifm-transition-fast) ease;
+		clip-path: inset(0);
+
+		@apply bg-white dark:bg-slate-900 border-slate-900;
+	}
+
+	.menu.thin-scrollbar{
+		> .menu__list {
+			@apply pt-5 pb-10;
+		}
+	}
+}
+
+.navbar__item {
+	@apply text-sm select-none;
+}
+
+.navbar__link {
+	@apply flex items-center gap-x-2;
+}
+
+.menu__list-item {
+	@apply text-sm leading-tight select-none;
+}
+.menu__list-item:not(:first-child) {
+	@apply m-0;
+}
+.menu__link {
+	@apply py-1;
+}
+.theme-doc-sidebar-item-category-level-1 {
+	@apply pt-2;
+}
+.menu__list .menu__list {
+	@apply pl-0 ml-2;
+}
+.menu__link:not([href]) {
+	@apply text-xs font-bold opacity-50;
+}
+.menu__list-item.theme-doc-sidebar-item-category-level-2 {
+	@apply mt-2;
+}
+
+.footer {
+	@apply text-xs;
 }
