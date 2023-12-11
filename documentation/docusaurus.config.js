@@ -68,8 +68,8 @@ const config = {
 				},
 				theme: {
 					customCss: [
-						'./src/css/custom.min.css',
 						'./node_modules/remixicon/fonts/remixicon.css',
+						'./src/css/custom.min.css',
 					],
 				},
 			}),

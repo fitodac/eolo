@@ -3,11 +3,6 @@ html[data-theme='light']:root {
 	--ifm-background-surface-color: rgb(255 255 255);
 }
 
-html[data-theme='dark']:root {
-	--ifm-background-color: rgb(30 41 59);
-	--ifm-background-surface-color: rgb(15 23 42);
-}
-
 html:root {
 	/* --ifm-color-scheme: light; */
 
@@ -192,7 +187,7 @@ html:root {
 	/* --ifm-image-alignment-padding: 1.25rem; */
 	/* Leading is the distance between two baselines */
 	/* TODO: add appropriate mobile leading */
-	/* --ifm-leading-desktop: 1.25; */
+	--ifm-leading-desktop: 1.2;
 	/* --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem); */
 	/* --ifm-list-left-padding: 2rem; */
 	/* --ifm-list-margin: 1rem; */
@@ -347,6 +342,20 @@ html:root {
 	--doc-sidebar-width: 250px;
 }
 
+html[data-theme='dark']:root {
+	--ifm-color-primary: #25c2a0;
+	--ifm-color-primary-dark: #21af90;
+	--ifm-color-primary-darker: #1fa588;
+	--ifm-color-primary-darkest: #1a8870;
+	--ifm-color-primary-light: #29d5b0;
+	--ifm-color-primary-lighter: #32d8b4;
+	--ifm-color-primary-lightest: #4fddbf;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+	--ifm-background-color: rgb(30 41 59);
+	--ifm-background-surface-color: rgb(15 23 42);
+}
+
 @media (min-width: 997px) {
 	.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-Sidebar-styles-module {
 		width: var(--doc-sidebar-width);
@@ -358,7 +367,7 @@ html:root {
 		@apply bg-white dark:bg-slate-900 border-slate-900;
 	}
 
-	.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module{
+	.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
 		> .menu__list {
 			@apply pt-5 pb-10;
 		}

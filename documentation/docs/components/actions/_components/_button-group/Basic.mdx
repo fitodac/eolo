@@ -1,0 +1,175 @@
+import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+
+<DemoCard title="Básicos">
+
+<DemoCardDescription>
+Usa un elemento con clase `.eolo-btn-group` para agrupar botones.
+
+Cada botón es tratado de manera independiente por lo que te permitirá crear combinaciones de estilos dentro de un mismo grupo.
+</DemoCardDescription>
+
+
+<div className="space-x-5">
+  <div className="eolo-btn-group">
+    <button className="eolo-btn">One</button>
+    <button className="eolo-btn">Two</button>
+    <button className="eolo-btn">Three</button>
+  </div>
+
+  <div className="eolo-btn-group">
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">One</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Two</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Three</button>
+  </div>
+
+  <div className="eolo-btn-group">
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">One</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Two</button>
+    <button className="eolo-btn bg-primary-400 border-primary-400 
+				hover:bg-primary-400-600 hover:border-primary-400-600 
+				dark:bg-white dark:border-white dark:text-primary 
+				dark:hover:bg-primary-100 dark:hover:border-primary-100">Three</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Four</button>
+  </div>
+</div>
+
+
+<DemoCardCode>
+```html title="Basic"
+<div class="eolo-btn-group">
+  <button class="eolo-btn">One</button>
+  <button class="eolo-btn">Two</button>
+  <button class="eolo-btn">Three</button>
+</div>
+```
+
+```html title="Primary"
+<div class="eolo-btn-group">
+  <button class="eolo-btn bg-primary border-primary 
+      hover:bg-primary-600 hover:border-primary-600 
+      dark:bg-primary dark:border-primary dark:text-white 
+      dark:hover:bg-primary-600 dark:hover:border-primary-600">One</button>
+  <button class="eolo-btn bg-primary border-primary 
+      hover:bg-primary-600 hover:border-primary-600 
+      dark:bg-primary dark:border-primary dark:text-white 
+      dark:hover:bg-primary-600 dark:hover:border-primary-600">Two</button>
+  <button class="eolo-btn bg-primary border-primary 
+      hover:bg-primary-600 hover:border-primary-600 
+      dark:bg-primary dark:border-primary dark:text-white 
+      dark:hover:bg-primary-600 dark:hover:border-primary-600">Three</button>
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Puedes crear botones mas pequeños con la clase `.eolo-btn-group-sm`
+</DemoCardDescription>
+
+<div className="space-x-5">
+  <div className="eolo-btn-group-sm">
+    <button className="eolo-btn">One</button>
+    <button className="eolo-btn">Two</button>
+    <button className="eolo-btn">Three</button>
+  </div>
+
+  <div className="eolo-btn-group-sm">
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">One</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Two</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Three</button>
+  </div>
+
+  <div className="eolo-btn-group-sm">
+    <button className="eolo-btn bg-secondary border-secondary 
+				hover:bg-secondary-600 hover:border-secondary-600 
+				dark:bg-secondary dark:border-secondary dark:text-white 
+				dark:hover:bg-secondary-600 dark:hover:border-secondary-600">One</button>
+    <button className="eolo-btn bg-secondary border-secondary 
+				hover:bg-secondary-600 hover:border-secondary-600 
+				dark:bg-secondary dark:border-secondary dark:text-white 
+				dark:hover:bg-secondary-600 dark:hover:border-secondary-600">Two</button>
+    <button className="eolo-btn bg-secondary border-secondary 
+				hover:bg-secondary-600 hover:border-secondary-600 
+				dark:bg-secondary dark:border-secondary dark:text-white 
+				dark:hover:bg-secondary-600 dark:hover:border-secondary-600">Three</button>
+  </div>
+</div>
+
+<DemoCardCode>
+```html title="Small button group"
+<div class="eolo-btn-group-sm">
+  <button class="eolo-btn">One</button>
+  <button class="eolo-btn">Two</button>
+  <button class="eolo-btn">Three</button>
+</div>
+```
+</DemoCardCode>
+
+<div className="h-6" />
+
+<DemoCardDescription>
+Puedes crear botones mas grandes con la clase `.eolo-btn-group-lg`
+</DemoCardDescription>
+
+<div className="space-x-5">
+  <div className="eolo-btn-group-lg">
+    <button className="eolo-btn">One</button>
+    <button className="eolo-btn">Two</button>
+    <button className="eolo-btn">Three</button>
+  </div>
+
+  <div className="eolo-btn-group-lg">
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">One</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Two</button>
+    <button className="eolo-btn bg-primary border-primary 
+				hover:bg-primary-600 hover:border-primary-600 
+				dark:bg-primary dark:border-primary dark:text-white 
+				dark:hover:bg-primary-600 dark:hover:border-primary-600">Three</button>
+  </div>
+</div>
+
+
+<DemoCardCode>
+```html title="Large button group"
+<div class="eolo-btn-group-lg">
+  <button class="eolo-btn">One</button>
+  <button class="eolo-btn">Two</button>
+  <button class="eolo-btn">Three</button>
+</div>
+```
+</DemoCardCode>
+</DemoCard>
