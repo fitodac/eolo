@@ -126,6 +126,10 @@ const BASE = {
 				},
 			},
 		},
+
+		DISABLED: {
+			opacity: '0.6',
+		},
 	},
 
 	HEIGHT: {
@@ -194,6 +198,11 @@ const COMPONENTS = (addComponents, options) => {
 				...BASE.GROUP.LABEL,
 
 				['> [type=checkbox], > [type=radio]']: { display: 'none' },
+				['> [type=checkbox]:disabled + .eolo-btn, > [type=radio]:disabled + .eolo-btn']:
+					{
+						...BASE.GROUP.DISABLED,
+					},
+
 				['> .eolo-btn']: {
 					...BASE.GROUP.CHILDREN,
 					...BASE.HEIGHT.DEFAULT,
@@ -239,6 +248,10 @@ const COMPONENTS = (addComponents, options) => {
 				...BASE.GROUP.LABEL,
 
 				['> [type=checkbox], > [type=radio]']: { display: 'none' },
+				['> [type=checkbox]:disabled + .eolo-btn, > [type=radio]:disabled + .eolo-btn']:
+					{
+						...BASE.GROUP.DISABLED,
+					},
 				['> .eolo-btn']: {
 					...BASE.GROUP.CHILDREN,
 					...BASE.GROUP.SM.BTN,
@@ -285,6 +298,10 @@ const COMPONENTS = (addComponents, options) => {
 				...BASE.GROUP.LABEL,
 
 				['> [type=checkbox], > [type=radio]']: { display: 'none' },
+				['> [type=checkbox]:disabled + .eolo-btn, > [type=radio]:disabled + .eolo-btn']:
+					{
+						...BASE.GROUP.DISABLED,
+					},
 				['> .eolo-btn']: {
 					...BASE.GROUP.CHILDREN,
 					...BASE.GROUP.LG.BTN,
