@@ -6,7 +6,8 @@
     "dev": "PORT=3010 next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+		"duplicate-components": "cp -r src/components src/components2"
   },
   "dependencies": {
     "next": "14.0.4",

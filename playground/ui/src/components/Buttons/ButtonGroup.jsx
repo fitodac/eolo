@@ -62,50 +62,68 @@ export const ButtonGroup = () => {
 				<div className="pt-5">
 					<span className="text-sm font-semibold">Checkbox</span>
 
-					<div className="flex gap-x-8 mt-3">
-						<div className="eolo-btn-group-sm">
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+					<div className="space-y-8 mt-3">
+						<div>
+							<div className="eolo-btn-group-sm">
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" disabled />
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 
-						<div className="eolo-btn-group">
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+						<div>
+							<div className="eolo-btn-group">
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" disabled />
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 
-						<div className="eolo-btn-group-lg">
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="checkbox" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+						<div>
+							<div className="eolo-btn-group-lg">
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input type="checkbox" className="peer" disabled />
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -113,50 +131,83 @@ export const ButtonGroup = () => {
 				<div className="pt-5">
 					<span className="text-sm font-semibold">Radio button</span>
 
-					<div className="flex gap-x-8 mt-3">
-						<div className="eolo-btn-group-sm">
-							<label>
-								<input type="radio" name="btnGroupSM" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroupSM" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroupSM" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+					<div className="space-y-8 mt-3">
+						<div>
+							<div className="eolo-btn-group-sm">
+								<label>
+									<input type="radio" name="btnGroupSM" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroupSM" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroupSM" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input
+										type="radio"
+										name="btnGroupSM"
+										className="peer"
+										disabled
+									/>
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 
-						<div className="eolo-btn-group">
-							<label>
-								<input type="radio" name="btnGroup" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroup" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroup" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+						<div>
+							<div className="eolo-btn-group">
+								<label>
+									<input type="radio" name="btnGroup" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroup" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroup" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input
+										type="radio"
+										name="btnGroupSM"
+										className="peer"
+										disabled
+									/>
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 
-						<div className="eolo-btn-group-lg">
-							<label>
-								<input type="radio" name="btnGroupLG" className="peer" />
-								<span className={btnClass.toggler}>One</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroupLG" className="peer" />
-								<span className={btnClass.toggler}>Two</span>
-							</label>
-							<label>
-								<input type="radio" name="btnGroupLG" className="peer" />
-								<span className={btnClass.toggler}>Three</span>
-							</label>
+						<div>
+							<div className="eolo-btn-group-lg">
+								<label>
+									<input type="radio" name="btnGroupLG" className="peer" />
+									<span className={btnClass.toggler}>One</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroupLG" className="peer" />
+									<span className={btnClass.toggler}>Two</span>
+								</label>
+								<label>
+									<input type="radio" name="btnGroupLG" className="peer" />
+									<span className={btnClass.toggler}>Three</span>
+								</label>
+								<label>
+									<input
+										type="radio"
+										name="btnGroupSM"
+										className="peer"
+										disabled
+									/>
+									<span className={btnClass.toggler}>Disabled</span>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>
