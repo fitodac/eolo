@@ -1,6 +1,6 @@
 /* @import './theme.css'; */
-/* @import 'eolo'; */
-@import '../../../packages/ui/';
+@import 'eolo';
+/* @import '../../../packages/ui/'; */
 
 @tailwind base;
 @tailwind components;
@@ -82,7 +82,6 @@
 	@apply text-sm leading-tight;
 }
 
-
 /**
 THEME
 **/
@@ -97,7 +96,7 @@ THEME
 		@apply bg-white dark:bg-slate-900 border-slate-900;
 	}
 
-	.menu.thin-scrollbar{
+	.menu.thin-scrollbar {
 		> .menu__list {
 			@apply pt-5 pb-10;
 		}
