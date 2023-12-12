@@ -6,8 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base{
-} */
 
 /**
  * Any CSS included here will be global. The classic template
@@ -23,44 +21,46 @@
 	font-size: 0.94rem;
 	line-height: 1.6;
 	@apply font-light dark:text-slate-300;
-
-	> h1:first-child {
-		@apply text-3xl font-semibold mt-6 dark:text-slate-200;
-	}
-
-	> h2:not(.in-content) {
-		@apply text-2xl font-semibold dark:text-slate-200;
-	}
-
-	> h3:not(.in-content) {
-		@apply text-xl font-bold dark:text-slate-200;
-	}
-
-	> strong {
-		@apply font-semibold;
-	}
-
-	p code {
-		@apply text-indigo-600
-		text-xs
-		px-1
-		py-0.5
-		ml-0.5
-		-top-px
-		relative
-		rounded-md
-		dark:bg-slate-900
-		dark:text-sky-500;
-	}
-
-	> ul {
-		@apply leading-tight space-y-2;
-
-		& li {
-			@apply ml-5 list-disc;
-		}
-	}
 }
+
+.markdown > h1:first-child {
+	@apply text-3xl font-semibold mt-6 dark:text-slate-200;
+}
+
+.markdown > h2:not(.in-content) {
+	@apply text-2xl font-semibold dark:text-slate-200;
+}
+
+.markdown > h3:not(.in-content) {
+	@apply text-xl font-bold dark:text-slate-200;
+}
+
+.markdown > strong {
+	@apply font-semibold;
+}
+
+.markdown p code {
+	@apply text-indigo-600
+	text-xs
+	px-1
+	py-0.5
+	ml-0.5
+	-top-px
+	relative
+	rounded-md
+	dark:bg-slate-900
+	dark:text-sky-500;
+}
+
+.markdown > ul {
+	@apply leading-tight space-y-2;
+}
+
+.markdown > ul li {
+	@apply ml-5 list-disc;
+}
+
+
 
 .use-h2-only-for-anchors > h2 {
 	visibility: hidden;
@@ -96,10 +96,8 @@ THEME
 		@apply bg-white dark:bg-slate-900 border-slate-900;
 	}
 
-	.menu.thin-scrollbar {
-		> .menu__list {
-			@apply pt-5 pb-10;
-		}
+	.menu.thin-scrollbar > .menu__list {
+		@apply pt-5 pb-10;
 	}
 }
 
