@@ -23,7 +23,7 @@ export const Control = () => {
 					<section>
 						<div className="text-sm font-semibold">Sections</div>
 
-						<div className="h-40 mt-3 scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100 dark:scrollbar-thumb-white/30 dark:scrollbar-track-black/30">
+						<div className="h-44 mt-3 scrollbar scrollbar-thumb-slate-400 scrollbar-track-slate-100 dark:scrollbar-thumb-white/30 dark:scrollbar-track-black/30">
 							<div className="grid">
 								<LinkItem {...{ anchor: 'typography', text: 'Typography' }} />
 								<LinkItem {...{ anchor: 'buttons', text: 'Buttons' }} />
@@ -33,6 +33,7 @@ export const Control = () => {
 								/>
 								<LinkItem {...{ anchor: 'input', text: 'Input' }} />
 								<LinkItem {...{ anchor: 'input-group', text: 'Input group' }} />
+								<LinkItem {...{ anchor: 'input-addon', text: 'Input addon' }} />
 								<LinkItem {...{ anchor: 'checkbox', text: 'Checkbox' }} />
 								<LinkItem {...{ anchor: 'radio', text: 'Radio buttons' }} />
 								<LinkItem {...{ anchor: 'toggler', text: 'Toggler' }} />
