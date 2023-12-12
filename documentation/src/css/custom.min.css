@@ -693,8 +693,7 @@ video {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: .25 eas-in-out;
-  transition-duration: 300ms;
+  transition: .2s ease-in-out;
   border-radius: 0.375rem;
   cursor: pointer;
   overflow: hidden;
@@ -720,6 +719,7 @@ video {
 }
 
 .eolo-btn ICON{
+  line-height: 0;
   width: 2.5rem;
   height: 2.5rem;
   padding: 0px;
@@ -728,7 +728,11 @@ video {
 }
 
 .eolo-btn ICON SVG{
-  transition: all;
+  transition: .2s ease-in-out;
+}
+
+.eolo-btn ICON ITEM{
+  font-size: 1.5rem;
 }
 
 .eolo-btn ROUNDED{
@@ -755,22 +759,6 @@ video {
   max-height: 3.5rem;
 }
 
-.eolo-btn.eolo-btn-icon{
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0px;
-  display: inline-grid;
-  place-content: center;
-}
-
-.eolo-btn.eolo-btn-icon SVG{
-  transition: all;
-}
-
-.eolo-btn.eolo-btn-icon svg{
-  transition: all;
-}
-
 .eolo-btn.rounded-full{
   border-radius: 9999px;
 }
@@ -780,12 +768,37 @@ video {
   padding: 0;
 }
 
-.eolo-btn > [class^=ri-]{
+.eolo-btn > [class^=ri-]:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x){
   font-size: 1.2rem;
 }
 
 .eolo-btn.block{
   text-align: center;
+}
+
+.eolo-btn.eolo-btn-icon{
+  line-height: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0px;
+  display: inline-grid;
+  place-content: center;
+}
+
+.eolo-btn.eolo-btn-icon SVG{
+  transition: .2s ease-in-out;
+}
+
+.eolo-btn.eolo-btn-icon ITEM{
+  font-size: 1.5rem;
+}
+
+.eolo-btn.eolo-btn-icon > svg{
+  transition: .2s ease-in-out;
+}
+
+.eolo-btn.eolo-btn-icon > *:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x){
+  font-size: 1.5rem;
 }
 
 .eolo-btn-group{
@@ -3124,7 +3137,7 @@ table.eolo-table.eolo-table-compact > tbody > tr > td{
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  color: rgb(255 255 255 / 0.6);
+  color: rgb(255 255 255 / 0.7);
 }
 
 .eolo-btn:not([class*=bg-]):hover{
@@ -3143,7 +3156,12 @@ table.eolo-table.eolo-table-compact > tbody > tr > td{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.eolo-btn-icon svg:not([class*=fill-]){
+.eolo-btn-icon:not([class*=text-]){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.eolo-btn-icon > svg:not([class*=fill-]){
   fill: #fff;
 }
 
@@ -4179,6 +4197,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   margin-top: 0.75rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -4295,12 +4317,24 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   width: 10rem;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .w-7{
   width: 1.75rem;
 }
 
 .w-8{
   width: 2rem;
+}
+
+.w-9{
+  width: 2.25rem;
 }
 
 .w-96{
@@ -4436,12 +4470,20 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   justify-content: flex-end;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-3{
@@ -4452,12 +4494,20 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
 
 .gap-7{
   gap: 1.75rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-x-10{
@@ -4516,6 +4566,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   row-gap: 1.25rem;
 }
 
+.gap-y-8{
+  row-gap: 2rem;
+}
+
 .-space-x-3 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(-0.75rem * var(--tw-space-x-reverse));
@@ -4562,6 +4616,12 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   --tw-space-y-reverse: 0;
   margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]){
@@ -4671,6 +4731,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
 .border-primary-700{
   --tw-border-opacity: 1;
   border-color: rgb(26.4 120 194.4 / var(--tw-border-opacity));
+}
+
+.border-primary\/90{
+  border-color: rgb(33 150 243 / 0.9);
 }
 
 .border-red-500{
@@ -4876,6 +4940,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
   background-color: rgb(33 150 243 / 0.1);
 }
 
+.bg-primary\/5{
+  background-color: rgb(33 150 243 / 0.05);
+}
+
 .bg-red-500{
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -5010,6 +5078,10 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
 
 .fill-primary{
   fill: #2196F3;
+}
+
+.fill-red-500{
+  fill: #ef4444;
 }
 
 .fill-white{
@@ -5529,25 +5601,34 @@ table.eolo-table.eolo-table-hoverable > tbody tr:hover > td{
 THEME
 **/
 
-/* 
 @media (min-width: 997px) {
-	.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-Sidebar-styles-module {
-		width: var(--doc-sidebar-width);
-		margin-top: calc(-1 * var(--ifm-navbar-height));
-		will-change: width;
-		transition: width var(--ifm-transition-fast) ease;
-		clip-path: inset(0);
+  .theme-doc-sidebar-container {
+    width: var(--doc-sidebar-width);
+    margin-top: calc(-1 * var(--ifm-navbar-height));
+    will-change: width;
+    transition: width var(--ifm-transition-fast) ease;
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+    --tw-border-opacity: 1;
+    border-color: rgb(15 23 42 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
 
-		@apply bg-white dark:bg-slate-900 border-slate-900;
-	}
+  :is([data-theme="dark"] .theme-doc-sidebar-container){
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  }
 
-	.menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
-		> .menu__list {
-			@apply pt-5 pb-10;
-		}
-	}
-} 
-*/
+  .menu.thin-scrollbar{
+    > .menu__list{
+      padding-top: 1.25rem;
+    }
+    > .menu__list{
+      padding-bottom: 2.5rem;
+    }
+  }
+}
 
 .navbar__item{
   -webkit-user-select: none;
@@ -5614,8 +5695,7 @@ THEME
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: .25 eas-in-out;
-  transition-duration: 300ms;
+  transition: .2s ease-in-out;
   border-radius: 0.375rem;
   cursor: pointer;
   overflow: hidden;
@@ -5641,6 +5721,7 @@ THEME
 }
 
 .file\:eolo-btn::file-selector-button ICON{
+  line-height: 0;
   width: 2.5rem;
   height: 2.5rem;
   padding: 0px;
@@ -5649,7 +5730,11 @@ THEME
 }
 
 .file\:eolo-btn::file-selector-button ICON SVG{
-  transition: all;
+  transition: .2s ease-in-out;
+}
+
+.file\:eolo-btn::file-selector-button ICON ITEM{
+  font-size: 1.5rem;
 }
 
 .file\:eolo-btn::file-selector-button ROUNDED{
@@ -5682,22 +5767,6 @@ THEME
   max-height: 3.5rem;
 }
 
-.file\:eolo-btn.eolo-btn-icon::file-selector-button{
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0px;
-  display: inline-grid;
-  place-content: center;
-}
-
-.file\:eolo-btn.eolo-btn-icon::file-selector-button SVG{
-  transition: all;
-}
-
-.file\:eolo-btn.eolo-btn-icon::file-selector-button svg{
-  transition: all;
-}
-
 .file\:eolo-btn.rounded-full::file-selector-button{
   border-radius: 9999px;
 }
@@ -5707,12 +5776,37 @@ THEME
   padding: 0;
 }
 
-.file\:eolo-btn::file-selector-button > [class^=ri-]{
+.file\:eolo-btn::file-selector-button > [class^=ri-]:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x){
   font-size: 1.2rem;
 }
 
 .file\:eolo-btn.block::file-selector-button{
   text-align: center;
+}
+
+.file\:eolo-btn.eolo-btn-icon::file-selector-button{
+  line-height: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0px;
+  display: inline-grid;
+  place-content: center;
+}
+
+.file\:eolo-btn.eolo-btn-icon::file-selector-button SVG{
+  transition: .2s ease-in-out;
+}
+
+.file\:eolo-btn.eolo-btn-icon::file-selector-button ITEM{
+  font-size: 1.5rem;
+}
+
+.file\:eolo-btn.eolo-btn-icon::file-selector-button > svg{
+  transition: .2s ease-in-out;
+}
+
+.file\:eolo-btn.eolo-btn-icon::file-selector-button > *:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x){
+  font-size: 1.5rem;
 }
 
 .eolo-btn-group > .file\:eolo-btn::file-selector-button{
@@ -5916,7 +6010,7 @@ THEME
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  color: rgb(255 255 255 / 0.6);
+  color: rgb(255 255 255 / 0.7);
 }
 
 .file\:eolo-btn::file-selector-button:not([class*=bg-]):hover{
@@ -6019,6 +6113,11 @@ THEME
 .hover\:border-alt-600:hover{
   --tw-border-opacity: 1;
   border-color: rgb(229.5 173.7 6.3 / var(--tw-border-opacity));
+}
+
+.hover\:border-primary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(33 150 243 / var(--tw-border-opacity));
 }
 
 .hover\:border-primary-600:hover{
@@ -6144,6 +6243,10 @@ THEME
   border-color: rgb(33 150 243 / var(--tw-border-opacity));
 }
 
+:is([data-theme="dark"] .dark\:border-primary\/90){
+  border-color: rgb(33 150 243 / 0.9);
+}
+
 :is([data-theme="dark"] .dark\:border-secondary){
   --tw-border-opacity: 1;
   border-color: rgb(156 39 176 / var(--tw-border-opacity));
@@ -6152,6 +6255,11 @@ THEME
 :is([data-theme="dark"] .dark\:border-secondary-200){
   --tw-border-opacity: 1;
   border-color: rgb(202.8 50.7 228.8 / var(--tw-border-opacity));
+}
+
+:is([data-theme="dark"] .dark\:border-slate-700){
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
 :is([data-theme="dark"] .dark\:border-slate-800){
@@ -6205,8 +6313,16 @@ THEME
   background-color: rgb(33 150 243 / var(--tw-bg-opacity));
 }
 
+:is([data-theme="dark"] .dark\:bg-primary-400\/20){
+  background-color: rgb(36.3 165 267.3 / 0.2);
+}
+
 :is([data-theme="dark"] .dark\:bg-primary\/10){
   background-color: rgb(33 150 243 / 0.1);
+}
+
+:is([data-theme="dark"] .dark\:bg-primary\/5){
+  background-color: rgb(33 150 243 / 0.05);
 }
 
 :is([data-theme="dark"] .dark\:bg-secondary){
@@ -6235,10 +6351,6 @@ THEME
 :is([data-theme="dark"] .dark\:bg-white){
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-:is([data-theme="dark"] .dark\:bg-opacity-10){
-  --tw-bg-opacity: 0.1;
 }
 
 :is([data-theme="dark"] .dark\:bg-opacity-20){
@@ -6382,6 +6494,11 @@ THEME
   background-color: rgb(46.2 210 340.2 / var(--tw-bg-opacity));
 }
 
+:is([data-theme="dark"] .dark\:hover\:bg-primary-400:hover){
+  --tw-bg-opacity: 1;
+  background-color: rgb(36.3 165 267.3 / var(--tw-bg-opacity));
+}
+
 :is([data-theme="dark"] .dark\:hover\:bg-primary-600:hover){
   --tw-bg-opacity: 1;
   background-color: rgb(29.7 135 218.7 / var(--tw-bg-opacity));
@@ -6462,6 +6579,10 @@ THEME
     width: 24rem;
   }
 
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -6505,6 +6626,12 @@ THEME
 
   .xl\:gap-3{
     gap: 0.75rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 /*# sourceMappingURL=custom.min.css.map */
