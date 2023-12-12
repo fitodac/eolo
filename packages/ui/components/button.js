@@ -38,8 +38,7 @@ const BASE = {
 		display: 'inline-flex',
 		'justify-content': 'center',
 		'align-items': 'center',
-		transition: '.25 eas-in-out',
-		'transition-duration': theme.transitionDuration[300],
+		transition: '.2s ease-in-out',
 		'border-radius': theme.borderRadius.md,
 		cursor: 'pointer',
 		overflow: 'hidden',
@@ -59,15 +58,21 @@ const BASE = {
 			padding: `${GLOBALS.spacing.lg.y} ${GLOBALS.spacing.lg.x}`,
 		},
 
-		/// Button icon:
 		ICON: {
+			'line-height': 0,
 			width: theme.spacing[10],
 			height: theme.spacing[10],
 			padding: theme.spacing[0],
 			display: 'inline-grid',
 			'place-content': 'center',
 
-			SVG: { transition: theme.transitionProperty.all },
+			SVG: {
+				transition: '.2s ease-in-out',
+			},
+
+			ITEM: {
+				'font-size': '1.5rem',
+			},
 		},
 		ROUNDED: { 'border-radius': theme.borderRadius.full },
 		BLOCK: { 'text-align': 'center' },
@@ -162,19 +167,24 @@ const COMPONENTS = (addComponents, options) => {
 				...BASE.BTN.LG,
 				...BASE.HEIGHT.LG,
 			},
-			['&.eolo-btn-icon']: {
-				...BASE.BTN.ICON,
-
-				['svg']: { ...BASE.BTN.ICON.SVG },
-			},
 			['&.rounded-full']: {
 				...BASE.BTN.ROUNDED,
 			},
 			['&.eolo-btn-link']: { ...BASE.LINK },
 			['> [class^=ri-]']: {
-				...BASE.RI,
+				['&:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x)']:
+					{
+						...BASE.RI,
+					},
 			},
 			['&.block']: { ...BASE.BTN.BLOCK },
+			['&.eolo-btn-icon']: {
+				...BASE.BTN.ICON,
+
+				['> svg']: { ...BASE.BTN.ICON.SVG },
+				['> *:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x)']:
+					{ ...BASE.BTN.ICON.ITEM },
+			},
 		},
 	})
 
