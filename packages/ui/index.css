@@ -229,7 +229,7 @@
   .eolo-toggler > input[type=radio]:checked + span::before {
     @apply bg-white/70;
   }
-  .eolo-input-group-inset {
+  .eolo-input-group {
     @apply bg-white
 	border-[var(--tw-ui-input-border-color)] 
 	font-[var(--tw-ui-text-color)]
@@ -237,36 +237,36 @@
 	dark:border-white/20
 	dark:text-slate-200;
   }
-  .eolo-input-group-inset input[type=text],
-  .eolo-input-group-inset .eolo-input[type=text],
-  .eolo-input-group-inset input[type=password],
-  .eolo-input-group-inset .eolo-input[type=password],
-  .eolo-input-group-inset input[type=email],
-  .eolo-input-group-inset .eolo-input[type=email],
-  .eolo-input-group-inset input[type=number],
-  .eolo-input-group-inset .eolo-input[type=number],
-  .eolo-input-group-inset input[type=tel],
-  .eolo-input-group-inset .eolo-input[type=tel],
-  .eolo-input-group-inset input[type=search],
-  .eolo-input-group-inset .eolo-input[type=search],
-  .eolo-input-group-inset input[type=url],
-  .eolo-input-group-inset .eolo-input[type=url],
-  .eolo-input-group-inset input[type=file],
-  .eolo-input-group-inset .eolo-input[type=file],
-  .eolo-input-group-inset input[type=date],
-  .eolo-input-group-inset .eolo-input[type=date],
-  .eolo-input-group-inset input[type=time],
-  .eolo-input-group-inset .eolo-input[type=time],
-  .eolo-input-group-inset input[type=datetime-local],
-  .eolo-input-group-inset .eolo-input[type=datetime-local],
-  .eolo-input-group-inset input[type=week],
-  .eolo-input-group-inset .eolo-input[type=week],
-  .eolo-input-group-inset input[type=color],
-  .eolo-input-group-inset .eolo-input[type=color] {
+  .eolo-input-group input[type=text],
+  .eolo-input-group .eolo-input[type=text],
+  .eolo-input-group input[type=password],
+  .eolo-input-group .eolo-input[type=password],
+  .eolo-input-group input[type=email],
+  .eolo-input-group .eolo-input[type=email],
+  .eolo-input-group input[type=number],
+  .eolo-input-group .eolo-input[type=number],
+  .eolo-input-group input[type=tel],
+  .eolo-input-group .eolo-input[type=tel],
+  .eolo-input-group input[type=search],
+  .eolo-input-group .eolo-input[type=search],
+  .eolo-input-group input[type=url],
+  .eolo-input-group .eolo-input[type=url],
+  .eolo-input-group input[type=file],
+  .eolo-input-group .eolo-input[type=file],
+  .eolo-input-group input[type=date],
+  .eolo-input-group .eolo-input[type=date],
+  .eolo-input-group input[type=time],
+  .eolo-input-group .eolo-input[type=time],
+  .eolo-input-group input[type=datetime-local],
+  .eolo-input-group .eolo-input[type=datetime-local],
+  .eolo-input-group input[type=week],
+  .eolo-input-group .eolo-input[type=week],
+  .eolo-input-group input[type=color],
+  .eolo-input-group .eolo-input[type=color] {
     @apply bg-transparent dark:bg-transparent;
   }
-  .eolo-input-group-inset select,
-  .eolo-input-group-inset select.eolo-input {
+  .eolo-input-group select,
+  .eolo-input-group select.eolo-input {
     @apply bg-transparent dark:bg-transparent;
   }
   .eolo-content code {

@@ -36,47 +36,35 @@ const BASE = {
 	},
 
 	GROUP: {
-		DEFAULT: {
-			display: 'inline-flex',
-			'align-items': 'center',
-			'column-gap': theme.spacing[1.5],
-			width: '100%',
+		'border-width': theme.borderWidth.DEFAULT,
+		width: '100%',
+		height: '2.5rem',
+		padding: theme.spacing[2],
+		display: 'inline-flex',
+		'align-items': 'center',
+		'column-gap': theme.spacing[1.5],
+		'border-radius': theme.borderRadius.md,
 
-			BTN: {
-				'padding-left': theme.spacing[4],
-				'padding-right': theme.spacing[4],
-			},
-			INPUT: {
-				height: 'fit-content',
-				flex: 1,
-			},
+		BTN: {
+			height: '1.6rem',
+			padding: `${theme.spacing[1]} ${theme.spacing[3]}`,
+			'border-radius': theme.borderRadius.md,
 		},
 
-		INSET: {
-			'border-width': theme.borderWidth.DEFAULT,
-			width: '100%',
-			height: '2.5rem',
-			padding: theme.spacing[2],
-			display: 'inline-flex',
-			'align-items': 'center',
-			'column-gap': theme.spacing[1.5],
-			'border-radius': theme.borderRadius.md,
+		BTN_ICON: {
+			width: '1.6rem',
+			height: '1.6rem',
+		},
 
-			BTN: {
-				height: '1.6rem',
-				padding: `${theme.spacing[1]} ${theme.spacing[3]}`,
-				'border-radius': theme.borderRadius.md,
-			},
-			INPUT: {
-				background: 'transparent',
-				border: 'none',
-				padding: 0,
-				flex: 1,
-				'border-radius': 0,
+		INPUT: {
+			background: 'transparent',
+			border: 'none',
+			padding: 0,
+			flex: 1,
+			'border-radius': 0,
 
-				FIRTST_CHILD: { padding: `0 0 0 ${GLOBALS.spacing.DEFAULT}` },
-				LAST_CHILD: { padding: `0 ${GLOBALS.spacing.DEFAULT} 0 0` },
-			},
+			FIRTST_CHILD: { padding: `0 0 0 ${GLOBALS.spacing.DEFAULT}` },
+			LAST_CHILD: { padding: `0 ${GLOBALS.spacing.DEFAULT} 0 0` },
 		},
 	},
 
@@ -145,15 +133,12 @@ const COMPONENTS = (addComponents, options) => {
 		addComponents({
 			[`.eolo-input${e}`]: {
 				...BASE.INPUT,
-				...options['input'],
 
 				['&:focus, &:focus-visible']: {
 					...BASE.INPUT.FOCUS,
-					...options['input:focus'],
 				},
 				['&::placeholder']: {
 					...BASE.INPUT.PLACEHOLDER,
-					...options['input:placeholder'],
 				},
 				['&::-webkit-calendar-picker-indicator']: {
 					...BASE.INPUT.CALENDAR_PICKER_INDICATOR,
@@ -164,44 +149,28 @@ const COMPONENTS = (addComponents, options) => {
 
 	addComponents({
 		['.eolo-input-group']: {
-			...BASE.GROUP.DEFAULT,
-			...options['.eolo-input-group'],
+			...BASE.GROUP,
 
-			['& > .btn']: {
-				...BASE.GROUP.DEFAULT.BTN,
-				...options['.eolo-input-group > .btn'],
-			},
+			['.eolo-btn']: {
+				...BASE.GROUP.BTN,
 
-			['& > input, & > select']: {
-				...BASE.GROUP.DEFAULT.INPUT,
-				...options['.eolo-input-group > input'],
-				...options['.eolo-input-group > select'],
-			},
-		},
-	})
-
-	addComponents({
-		['.eolo-input-group-inset']: {
-			...BASE.GROUP.INSET,
-			...options['.eolo-input-group-inset'],
-
-			['& > input, & > .eolo-input']: {
-				...BASE.GROUP.INSET.INPUT,
-				...options['.eolo-input-group-inset > input'],
-
-				['&:first-child']: {
-					...BASE.GROUP.INSET.INPUT.FIRTST_CHILD,
-					...options['.eolo-input-group-inset > input:first-child'],
+				['&.eolo-btn-icon']: {
+					...BASE.GROUP.BTN_ICON,
 				},
+			},
+
+			['.eolo-input, input, select']: {
+				...BASE.GROUP.INPUT,
+			},
+
+			['& > .eolo-input, & > input, & > select']: {
+				// ['&:first-child']: {
+				// 	...BASE.GROUP.INPUT.FIRTST_CHILD,
+				// },
+
 				['&:last-child']: {
-					...BASE.GROUP.INSET.INPUT.LAST_CHILD,
-					...options['.eolo-input-group-inset > input:last-child'],
+					...BASE.GROUP.INPUT.LAST_CHILD,
 				},
-			},
-
-			['& > .eolo-btn']: {
-				...BASE.GROUP.INSET.BTN,
-				...options['.eolo-input-group-inset > .btn'],
 			},
 		},
 	})

@@ -2,7 +2,6 @@ import {
 	Checkbox,
 	Input,
 	InputGroup,
-	InputAddon,
 	RadioButton,
 	Range,
 	Select,
@@ -17,7 +16,6 @@ export const FormFields = () => {
 				<Select />
 			</div>
 			<InputGroup />
-			<InputAddon />
 			<Checkbox />
 			<RadioButton />
 			<Toggler />

@@ -6,7 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -59,8 +58,6 @@
 .markdown > ul li {
 	@apply ml-5 list-disc;
 }
-
-
 
 .use-h2-only-for-anchors > h2 {
 	visibility: hidden;

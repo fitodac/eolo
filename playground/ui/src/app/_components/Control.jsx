@@ -33,7 +33,6 @@ export const Control = () => {
 								/>
 								<LinkItem {...{ anchor: 'input', text: 'Input' }} />
 								<LinkItem {...{ anchor: 'input-group', text: 'Input group' }} />
-								<LinkItem {...{ anchor: 'input-addon', text: 'Input addon' }} />
 								<LinkItem {...{ anchor: 'checkbox', text: 'Checkbox' }} />
 								<LinkItem {...{ anchor: 'radio', text: 'Radio buttons' }} />
 								<LinkItem {...{ anchor: 'toggler', text: 'Toggler' }} />

@@ -1,80 +1,125 @@
-import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
+import {
+	DemoCard,
+	DemoCardDescription,
+	DemoCardCode,
+} from '@site/src/components'
 
 <DemoCard title="Input groups">
 
 <DemoCardDescription>
-Usa la clase `.eolo-input-group` para agrupar elementos de formulario en una sola línea.
+  **Eolo Input Group** se trata de un _"envoltorio"_ para agrupar elementos de interacción de usuario 
+  como son inputs y botones (por ejemplo) dando la apariencia de que se trata de un `<input>`, sin serlo.
+
+Usa la clase `.eolo-input-group` en un contenedor para lograr este diseño.
+
 </DemoCardDescription>
 
-<div className="grid gap-x-10 gap-y-4 2xl:grid-cols-2">
-	<div className="space-y-1">
-		<label>Example #1</label>
-		<div className="eolo-input-group">
-			<input type="text" placeholder="Find your product..." className="eolo-input" />
-			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Search</button>
-		</div>
-	</div>
-
-	<div className="space-y-1">
-		<label>Example #2</label>
-		<div className="eolo-input-group">
-			<input type="text" placeholder="Name" className="eolo-input" />
-			<input type="text" placeholder="Lastname" className="eolo-input" />
-			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Register</button>
-		</div>
-	</div>
-</div>
-
-<DemoCardCode>
-```html title="Example #1"
-<div class="eolo-input-group">
-  <input type="text" placeholder="Find your product..." class="eolo-input" />
-  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
-    Search
-  </button>
-</div>
-```
-
-```html title="Example #2"
-<div class="eolo-input-group">
-  <input type="text" placeholder="Name" class="eolo-input" />
-  <input type="text" placeholder="Lastname" class="eolo-input" />
-  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
-    Register
-  </button>
-</div>
-```
-</DemoCardCode>
-
-<div className="h-6" />
-
-<DemoCardDescription>
-Usa la clase `.eolo-input-group-inset` para enmarcar uno o más inputs junto con otros componentes.
-</DemoCardDescription>
-
-<div className="max-w-sm">
-	<div className="space-y-1">
-		<label>Inset</label>
-		<div className="eolo-input-group-inset">
-			<input type="text" placeholder="somebody@gmail.com" className="eolo-input" />
-			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Ok</button>
-			<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">Cancel</button>
-		</div>
+<div className="max-w-md space-y-1">
+	<label>Example #1</label>
+	<div className="eolo-input-group">
+		<input
+			type="text"
+			placeholder="somebody@gmail.com"
+			className="eolo-input"
+		/>
+		<button
+			className="eolo-btn bg-primary border-primary 
+                hover:bg-primary-600 hover:border-primary-600
+                dark:bg-primary-400 dark:border-primary-400 dark:text-white
+                hover:dark:bg-primary-600 hover:dark:border-primary-600"
+		>
+			Ok
+		</button>
+		<button
+			className="eolo-btn bg-primary border-primary 
+                hover:bg-primary-600 hover:border-primary-600
+                dark:bg-primary-400 dark:border-primary-400 dark:text-white
+                hover:dark:bg-primary-600 hover:dark:border-primary-600"
+		>
+			Cancel
+		</button>
 	</div>
 </div>
 
-
+<!-- prettier-ignore -->
 <DemoCardCode>
 ```html
 <div class="eolo-input-group-inset">
   <input type="text" placeholder="somebody@gmail.com" class="eolo-input" />
-  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+  <button 
+    class="eolo-btn bg-primary border-primary 
+          hover:bg-primary-600 hover:border-primary-600
+          dark:bg-primary-400 dark:border-primary-400 dark:text-white
+          hover:dark:bg-primary-600 hover:dark:border-primary-600">
     Ok
   </button>
-  <button class="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+  <button 
+    class="eolo-btn bg-primary border-primary 
+          hover:bg-primary-600 hover:border-primary-600
+          dark:bg-primary-400 dark:border-primary-400 dark:text-white
+          hover:dark:bg-primary-600 hover:dark:border-primary-600">
     Cancel
   </button>
 </div>
 ```
 </DemoCardCode>
+<!-- prettier-ignore -->
+
+<div className="max-w-md space-y-1 mt-6">
+	<label>Example #2</label>
+	<div className="eolo-input-group">
+		<input
+			type="text"
+			placeholder="Find your product..."
+			className="eolo-input"
+		/>
+		<button
+			className="eolo-btn eolo-btn-icon bg-transparent border-transparent text-slate-500 
+                dark:bg-transparent dark:border-transparent
+                hover:text-primary"
+		>
+			<i className="ri-search-line"></i>
+		</button>
+	</div>
+</div>
+
+<!-- prettier-ignore -->
+<DemoCardCode>
+```html
+<div class="eolo-input-group">
+  <input type="text" placeholder="Find your product..." class="eolo-input" />
+  <button class="eolo-btn eolo-btn-icon bg-transparent border-transparent text-slate-500 dark:bg-transparent dark:border-transparent hover:text-primary">
+    <i class="ri-search-line"></i>
+  </button>
+</div>
+```
+</DemoCardCode>
+<!-- prettier-ignore -->
+
+<div className="max-w-md space-y-1 mt-6">
+	<label>Example #3</label>
+	<div className="eolo-input-group">
+		<input type="text" placeholder="Name" className="eolo-input" />
+		<div className="bg-slate-300 w-px h-full" />
+		<input type="text" placeholder="Lastname" className="eolo-input ml-2" />
+		<button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+			Register
+		</button>
+	</div>
+</div>
+
+<!-- prettier-ignore -->
+<DemoCardCode>
+```html
+<div class="eolo-input-group">
+  <input type="text" placeholder="Name" className="eolo-input" />
+  <div className="bg-slate-300 w-px h-full" />
+  <input type="text" placeholder="Lastname" className="eolo-input ml-2" />
+  <button className="eolo-btn bg-primary border-primary text-white dark:bg-primary dark:border-primary dark:text-white">
+    Register
+  </button>
+</div>
+```
+</DemoCardCode>
+<!-- prettier-ignore -->
 </DemoCard>
