@@ -1,10 +1,18 @@
-import { DemoCard, DemoCardDescription, DemoCardCode } from '@site/src/components'
-
+import {
+	DemoCard,
+	DemoCardDescription,
+	DemoCardCode,
+} from '@site/src/components'
 
 <DemoCard title="Básicos">
 
 <DemoCardDescription>
-Los botones son elementos esenciales para la interactividad en páginas web. Permiten a los usuarios realizar acciones como enviar formularios o activar eventos. En el diseño de interfaces, la biblioteca Tailwind UI destaca al ofrecer botones cuidadosamente diseñados. Estos componentes no solo son funcionales, sino que también aportan una estética atractiva y coherente, mejorando la experiencia del usuario.
+	Los botones son elementos esenciales para la interactividad en páginas web.
+	Permiten a los usuarios realizar acciones como enviar formularios o activar
+	eventos. En el diseño de interfaces, la biblioteca Tailwind UI destaca al
+	ofrecer botones cuidadosamente diseñados. Estos componentes no solo son
+	funcionales, sino que también aportan una estética atractiva y coherente,
+	mejorando la experiencia del usuario.
 </DemoCardDescription>
 
 <div className="grid gap-4 xl:flex">
@@ -12,45 +20,52 @@ Los botones son elementos esenciales para la interactividad en páginas web. Per
 		<button className="eolo-btn">Default</button>
 	</div>
 	<div>
-		<button 
-      className="eolo-btn bg-primary border-primary 
+		<button
+			className="eolo-btn bg-primary border-primary 
 								hover:bg-primary-600 hover:border-primary-600 
 								dark:bg-primary dark:border-primary dark:text-white 
-								dark:hover:bg-primary-600 dark:hover:border-primary-600">
-		Primary
+								dark:hover:bg-primary-600 dark:hover:border-primary-600"
+		>
+			Primary
 		</button>
 	</div>
 	<div>
-		<button 
-      className="eolo-btn bg-secondary border-secondary 
+		<button
+			className="eolo-btn bg-secondary border-secondary 
 									hover:bg-secondary-600 hover:border-secondary-600 
 									dark:bg-secondary dark:border-secondary dark:text-white 
-									dark:hover:bg-secondary-600 dark:hover:border-secondary-600">
+									dark:hover:bg-secondary-600 dark:hover:border-secondary-600"
+		>
 			Secondary
 		</button>
 	</div>
 	<div>
-		<button 
-      className="eolo-btn bg-alt border-alt
+		<button
+			className="eolo-btn bg-alt border-alt
                 hover:bg-alt-600 hover:border-alt-600 
                 dark:bg-alt dark:border-alt dark:text-white
-                dark:hover:bg-alt-600 dark:hover:border-alt-600">
+                dark:hover:bg-alt-600 dark:hover:border-alt-600"
+		>
 			Alternative
 		</button>
 	</div>
 </div>
 
-
 <DemoCardCode>
 ```html
 <button class="eolo-btn">Default</button>
 
-<button class="eolo-btn bg-primary border-primary hover:bg-primary-600 hover:border-primary-600 dark:bg-primary dark:border-primary dark:text-white dark:hover:bg-primary-600 dark:hover:border-primary-600">
-  Primary
+<button
+	class="eolo-btn bg-primary border-primary 
+        hover:bg-primary-600 hover:border-primary-600 
+        dark:bg-primary dark:border-primary dark:text-white 
+        dark:hover:bg-primary-600 dark:hover:border-primary-600"
+>
+	Primary
 </button>
 
 <button class="eolo-btn bg-secondary border-secondary hover:bg-secondary-600 hover:border-secondary-600 dark:bg-secondary dark:border-secondary dark:text-white dark:hover:bg-secondary-600 dark:hover:border-secondary-600">
-  Secondary
+	Secondary
 </button>
 
 <button className="eolo-btn bg-alt border-alt hover:bg-alt-600 hover:border-alt-600 dark:bg-alt dark:border-alt dark:text-white dark:hover:bg-alt-600 dark:hover:border-alt-600">

@@ -34,7 +34,7 @@ const BASE = {
 		'line-height': theme.lineHeight.none,
 		'font-weight': theme.fontWeight.medium,
 		'max-height': theme.spacing[10],
-		padding: `${theme.spacing[2.5]} ${theme.spacing[5]}`,
+		padding: `${theme.spacing[2]} ${theme.spacing[5]}`,
 		display: 'inline-flex',
 		'justify-content': 'center',
 		'align-items': 'center',
@@ -79,8 +79,14 @@ const BASE = {
 	},
 
 	LINK: {
-		border: 'none',
-		padding: 0,
+		'text-decoration': 'none',
+		'border-width': 0,
+
+		HOVER: {
+			'text-decoration': 'underline',
+			'text-decoration-thickness': '1px',
+			'text-underline-offset': '2px',
+		},
 	},
 
 	TOGGLER: { display: 'none' },
@@ -91,8 +97,8 @@ const BASE = {
 		CHILDREN: {
 			'font-size': theme.fontSize.sm[0],
 			'border-radius': theme.borderRadius.none,
-			'padding-left': theme.spacing[5],
-			'padding-right': theme.spacing[5],
+			'padding-left': theme.spacing[4],
+			'padding-right': theme.spacing[4],
 		},
 		CHILDREN_FIRST: {
 			'border-radius': `${theme.borderRadius.md} 0 0 ${theme.borderRadius.md}`,
@@ -170,7 +176,6 @@ const COMPONENTS = (addComponents, options) => {
 			['&.rounded-full']: {
 				...BASE.BTN.ROUNDED,
 			},
-			['&.eolo-btn-link']: { ...BASE.LINK },
 			['> [class^=ri-]']: {
 				['&:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x)']:
 					{
@@ -184,6 +189,15 @@ const COMPONENTS = (addComponents, options) => {
 				['> svg']: { ...BASE.BTN.ICON.SVG },
 				['> *:not(.ri-fw):not(.ri-xxs):not(.ri-xs):not(.ri-sm):not(.ri-1x):not(.ri-lg):not(.ri-xl):not(.ri-2x):not(.ri-3x):not(.ri-4x):not(.ri-5x):not(.ri-6x):not(.ri-7x):not(.ri-8x):not(.ri-9x):not(.ri-10x)']:
 					{ ...BASE.BTN.ICON.ITEM },
+			},
+		},
+
+		['.eolo-btn-link, a.eolo-btn-link, btn.eolo-btn-link']: {
+			...BASE.BTN,
+			...BASE.LINK,
+
+			['&:hover, &:active, &:focus, &:active:focus']: {
+				...BASE.LINK.HOVER,
 			},
 		},
 	})

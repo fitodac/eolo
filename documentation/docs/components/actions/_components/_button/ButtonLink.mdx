@@ -1,0 +1,35 @@
+import {
+	DemoCard,
+	DemoCardDescription,
+	DemoCardCode,
+} from '@site/src/components'
+
+<DemoCard title="Button link">
+
+<div className="space-x-8 mt-6">
+	<a href="#" className="eolo-btn-link">
+		Button link with an `<a>` tag
+	</a>
+	<button className="eolo-btn-link">Button link with `<button>`</button>
+	<a href="#" className="eolo-btn-link text-primary">
+		Custom color
+	</a>
+	<a href="#" className="eolo-btn-link text-primary bg-primary/10">
+		And I'm a button link too!
+	</a>
+</div>
+
+<DemoCardCode>
+```html
+<a href="#" class="eolo-btn-link">Button link</a>
+
+<button class="eolo-btn-link">Button link</button>
+
+<a href="#" class="eolo-btn-link text-primary">
+	Button link
+</a>
+
+<a href="#" class="eolo-btn-link text-primary bg-primary/10">Button link</a>
+```
+</DemoCardCode>
+</DemoCard>
